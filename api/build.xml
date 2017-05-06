@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project name="api" default="build" basedir=".">
+<project name="api" default="build" basedir="">
 
     <property name="version"  value="bantam"/>
     <property name="docs.dir" value="html"/>
@@ -9,7 +9,7 @@
     <target name="clean">
          <delete dir="${docs.dir}"/>
 	 <delete>
-	   <fileset dir ="." defaultexcludes="no">
+	   <fileset dir ="" defaultexcludes="no">
 	     <include name="*~"/>
 	     <include name="*#*"/>
 	   </fileset>

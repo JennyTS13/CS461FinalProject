@@ -51,5 +51,5 @@ public class version {
   /*. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .*/
 
   /** The command name normally used to invoke this program */ 
-  public static final String program_name = "java_cup";
+  public static final String program_name = "bin/java_cup";
 }

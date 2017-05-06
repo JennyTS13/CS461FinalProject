@@ -12,10 +12,8 @@ import bantam.ast.*;
 import bantam.util.ClassTreeNode;
 import bantam.util.ErrorHandler;
 import bantam.util.SymbolTable;
-import java_cup.runtime.Symbol;
 
 import java.util.*;
-import java.util.stream.StreamSupport;
 
 /**
  * Visitor class to traverse the class ast to type check

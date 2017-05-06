@@ -15,7 +15,6 @@ import bantam.ast.Method;
 import bantam.util.ClassTreeNode;
 import bantam.util.ErrorHandler;
 import bantam.util.SymbolTable;
-import java_cup.runtime.Symbol;
 
 import java.util.Arrays;
 import java.util.HashSet;

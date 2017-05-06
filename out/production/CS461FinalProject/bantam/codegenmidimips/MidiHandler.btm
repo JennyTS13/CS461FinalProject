@@ -1,0 +1,36 @@
+/*
+ * File: MidiHandler.btm
+ * Author: Tiffany Lam, Jenny Lin
+ * Course: CS461
+ * Project: 6
+ * Date: May 10, 2017
+ */
+
+/**
+ * MidiHandler class
+ * Handles MIDI calls
+ */
+class Main {
+
+    /**
+     * Used to get note information to play it
+     * Will edit MIPS code
+     */
+    void play(Note n) {
+        n.getPitch();
+        n.getDuration();
+        n.getInstrument();
+        n.getVolume();
+    }
+
+    /**
+     * Used for rests in between notes
+     * Will write MIPS code
+     */
+    void rest(){}
+
+    /**
+     * Has to have main method to be legal
+     */
+    void main(){}
+}

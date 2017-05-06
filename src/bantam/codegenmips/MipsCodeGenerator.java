@@ -34,7 +34,6 @@
 
 package bantam.codegenmips;
 
-import bantam.ast.Field;
 import bantam.ast.Method;
 import bantam.util.ClassTreeNode;
 import javafx.util.Pair;

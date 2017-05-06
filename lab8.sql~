@@ -1,3 +1,0 @@
-//Exercise 1
-USE imdb_small;
-SELECT * FROM actors WHERE first_name = 'Julia';

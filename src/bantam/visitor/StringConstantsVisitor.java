@@ -8,14 +8,10 @@
 
 package bantam.visitor;
 
-import bantam.ast.Class_;
 import bantam.ast.ConstStringExpr;
-import bantam.ast.FormalList;
 import bantam.ast.Program;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
