@@ -1,0 +1,11 @@
+class Main{int b;  //5
+    int c /*field c*/=3;int d
+    = 3;
+
+    /** main method of Main class*/void
+    main(){
+          TextIO textIO = new TextIO();
+          textIO.putString("hi");
+          int a = 3 >> 4;
+    return/**test*/5;break/**test*/     ; }
+}

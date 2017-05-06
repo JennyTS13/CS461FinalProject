@@ -1,0 +1,48 @@
+/** This is a badly formatted program. Run with the -pv or -ppv flag */
+//Foobar
+class Main{int b;  //5
+    int c /*field c*/=3;int d
+    = 3;
+
+    /** main method of Main class*/void
+    main(){             return/**test*/5;break/**test*/     ; }
+    void
+        foo(int a, int
+        b  ,int c ) {
+        }
+    void bar(int a) {}
+    void baz(String    s) /*hello*/{
+        int x=3;
+        int y = 3;
+        int z =3;
+        int a= 3;
+        int bool = "s" instanceof/**test*/String/**test*/;
+        Object o = "s";
+        String a = (String ) o;
+        foo(2, 3,4);
+        //this/**test*/.x=3;
+        //if(5 instanceof/**test*/x/**test*/){}
+        //if(this/***/./***/x){}
+        new/***/x(/***/);
+        //(/***/x)(y);
+        if(true){bar(1);}/***/else/***/{
+
+
+        bar(1);
+
+        }
+        for(;; i++){}
+        int i = (2 / (3 + 4) * 5);
+    }
+
+}
+
+//Class Foo
+//Blah
+class /*hi*/Foo extends Main{
+
+}
+
+/* class Bar */
+class Bar   extends         Foo     {               }
+/**End of Program*/

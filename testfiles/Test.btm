@@ -1,0 +1,483 @@
+/*
+ * File: Test.btm
+ * Author: Tiffany Lam, Jenny Lin
+ * Course: CS461
+ * Project: 4B
+ * Date: April 15, 2017
+ */
+
+/**
+ * Bantam source program that tests our compiler
+ */
+
+class Main {
+    String s = "a";
+    void main() {
+        int s = 3;
+        TextIO textIO = new TextIO();
+        textIO.putInt(s);
+        FunctionalityTest test = new FunctionalityTest();
+        test.testAll();
+    }
+}
+
+/**
+ * simple point class for testing purposes
+ */
+class Point {
+    int x;
+    int y;
+
+    /**
+     * returns x coord
+     */
+    int getX() {
+        return x;
+    }
+
+    /**
+     * returns y coord
+     */
+    int getY() {
+        return y;
+    }
+
+    /**
+     * sets x coord
+     */
+    void setX(int x) {
+        this.x = x;
+    }
+
+    /**
+     * sets y coord
+     */
+    void setY(int y) {
+        this.y = y;
+    }
+
+    /**
+     * returns a copy of the point
+     */
+    Point clone() {
+        Point newPoint = new Point();
+        newPoint.setX(this.x);
+        newPoint.setY(this.y);
+        return newPoint;
+    }
+}
+
+/**
+ * super class created for testing purposes
+ */
+class TestSuperClass {
+    TextIO textIO = new TextIO();
+    int integer = 24;
+
+    /**
+     * prints the value of the input boolean
+     */
+    void printBooleanValue( boolean bool ) {
+        if(bool)
+            textIO.putString("true");
+        else
+            textIO.putString("false");
+    }
+
+    /**
+     * returns the name of the class
+     */
+    String getClassName() {
+        return "TestSuperClass";
+    }
+}
+
+/**
+ * class that tests the correctness of our bantam code generator
+ */
+class FunctionalityTest extends TestSuperClass {
+    TextIO textIO = new TextIO();
+    int integer = 13;
+    boolean bool = true;
+    String s = "abc";
+
+    /**
+     * returns the name of the class
+     */
+    String getClassName() {
+        return "FunctionalityTest";
+    }
+
+    /**
+     * tests that fields are instantiated properly
+     */
+    void testFieldInit() {
+        textIO.putString("\n\nChecking that fields are instantiated correctly.\n");
+
+        textIO.putString("expected: 13; actual: ");
+        textIO.putInt(integer);
+
+        textIO.putString("\nexpected: abc; actual: ");
+        textIO.putString(s);
+    }
+
+    /**
+     * tests that variable values are instantiated properly
+     */
+    void testAssignExpr() {
+        textIO.putString("\n\nChecking that variable values are assigned correctly.\n");
+
+        int i = 0;
+        textIO.putString("int i = 0 \t expected: 0; actual: ");
+        textIO.putInt(i);
+
+        i = 7;
+        textIO.putString("\ni = 7 \t expected: 7; actual: ");
+        textIO.putInt(i);
+
+        integer = 3;
+        textIO.putString("\ninteger = 3 \t expected: 3; actual: ");
+        textIO.putInt(i);
+    }
+
+    /**
+     * tests binary arithmetic expressions
+     */
+    void testBinaryArithExpr() {
+        integer = 13;
+        textIO.putString("\n\nChecking binary arithmetic expressions.\n");
+        textIO.putString("integer from test class \t expect: 13 actual: ");
+        textIO.putInt(integer);
+
+        textIO.putString("\ninteger from super class \t expect: 24 actual: ");
+        textIO.putInt(super.integer);
+
+        textIO.putString("\ninteger = 1 + 3 \t expect: 4 actual: ");
+        integer = 1 + 3;
+        textIO.putInt(integer);
+
+        textIO.putString("\nthis.integer = 5 - 2 \t expect: 3 actual: ");
+        this.integer = 5 - 2;
+        textIO.putInt(integer);
+
+        textIO.putString("\nsuper.integer = 4 * 2 \t expect: 8 actual: ");
+        super.integer = 4 * 2;
+        textIO.putInt(super.integer);
+
+        textIO.putString("\ninteger = 24 / 4 \t expect: 6 actual: ");
+        integer = 24 / 4;
+        textIO.putInt(integer);
+
+        textIO.putString("\ninteger = 10 % 2 \t expect: 0 actual: ");
+        integer = 10 % 2;
+        textIO.putInt(integer);
+    }
+
+    /**
+     * tests binary comparison expressions
+     */
+    void testBinaryCompExpr() {
+        textIO.putString("\n\nChecking binary comparison expressions.\n");
+
+        integer = 0;
+        textIO.putString("integer==0 \t expected: true; actual: ");
+        printBooleanValue(integer==0);
+
+        textIO.putString("\ninteger>=0 \t expected: true; actual: ");
+        printBooleanValue(integer>=0);
+
+        textIO.putString("\ninteger>0 \t expected: false; actual: ");
+        printBooleanValue(integer>0);
+
+        textIO.putString("\ninteger<=0 \t expected: true; actual: ");
+        printBooleanValue(integer<=0);
+
+        integer = 0;
+        textIO.putString("\ninteger<0 \t expected: false; actual: ");
+        printBooleanValue(integer<0);
+
+        textIO.putString("\ninteger!=0 \t expected: false; actual: ");
+        printBooleanValue(integer!=0);
+    }
+
+    /**
+     * tests binary logic expressions
+     */
+    void testBinaryLogicExpr() {
+        textIO.putString("\n\nChecking binary logic expressions.\n");
+
+        boolean t = true;
+        boolean f = false;
+
+        textIO.putString("t&&f \t expected: false; actual: ");
+        printBooleanValue(t&&f);
+
+        textIO.putString("\nt||f \t expected: true; actual: ");
+        printBooleanValue(t||f);
+
+        int a = 3 << -1;
+
+        textIO.putString("\n3 << -1 \t expected: -2147483648; actual: ");
+        textIO.putInt(a);
+    }
+
+    /**
+     * tests break statements
+     */
+    void testBreakStmt() {
+        textIO.putString("\n\nChecking that break statements are working properly.\n");
+        textIO.putString("Should only print 12345 and repeats 3 times\n");
+        int i = 0;
+        int j = 0;
+        for(i = 0; i<3; i++) {
+            for(j = 1; j<10; j++) {
+                if(j>5)
+                    break;
+                textIO.putInt(j);
+            }
+            textIO.putString("\n");
+        }
+    }
+
+    /**
+     * tests cast expressions
+     */
+    void testCastExpr() {
+        textIO.putString("\n\nChecking legal downcasting. Shouldn't change method called");
+        TestSuperClass superTest = new FunctionalityTest();
+        FunctionalityTest test = (FunctionalityTest)superTest;
+
+        textIO.putString("\nsuperTest.getClassName(); \t expected: FunctionalityTest; actual: ");
+        textIO.putString(superTest.getClassName());
+        textIO.putString("\ntest.getClassName(); \t expected: FunctionalityTest; actual: ");
+        textIO.putString(test.getClassName());
+    }
+
+    /**
+     * tests constant expressions
+     */
+    void testConstExpr() {
+        textIO.putString("\n\nChecking constant expressions.\n");
+
+        textIO.putString("Should print Constant String: ");
+        textIO.putString("Constant String");
+
+        textIO.putString("\nShould print 123: ");
+        textIO.putInt(123);
+
+        textIO.putString("\nShould print false: ");
+        printBooleanValue(false);
+    }
+
+    /**
+     * tests declaration statement
+     */
+    void testDeclStmt() {
+        textIO.putString("\n\nChecking declaration statement.\n");
+
+        int i = 0;
+        textIO.putString("int i = 0; \t expected: 0; actual: ");
+        textIO.putInt(i);
+
+        int foo = 13;
+        textIO.putString("\nint foo = 13; \t expected: 13; actual: ");
+        textIO.putInt(foo);
+
+        String alphabet = "abc";
+        textIO.putString("\nString alphabet = abc; \t expected: abc; actual: ");
+        textIO.putString(alphabet);
+    }
+
+    /**
+     * tests dispatch expressions
+     */
+    void testDispatchExpr() {
+        textIO.putString("\n\nChecking dispatch expressions.\n");
+
+        Point p = new Point();
+        p.setX(3);
+        p.setY(4);
+        textIO.putString("p.getX(); \t expected: 3; actual: ");
+        textIO.putInt(p.getX());
+        textIO.putString("\np.getY(); \t expected: 4; actual: ");
+        textIO.putInt(p.getY());
+
+        Point q = new Point();
+        q.setX(15);
+        q.setY(p.getY());
+        textIO.putString("\nq.getX(); \t expected: 15; actual: ");
+        textIO.putInt(q.getX());
+        textIO.putString("\nq.getY(); \t expected: 4; actual: ");
+        textIO.putInt(q.getY());
+
+        textIO.putString("\ngetClassName(); \t expected: FunctionalityTest; actual: ");
+        textIO.putString(getClassName());
+        textIO.putString("\nthis.getClassName(); \t expected: FunctionalityTest; actual: ");
+        textIO.putString(this.getClassName());
+        textIO.putString("\nsuper.getClassName(); \t expected: TestSuperClass; actual: ");
+        textIO.putString(super.getClassName());
+    }
+
+    /**
+     * tests for statements
+     */
+    void testForStmt() {
+        textIO.putString("\n\nChecking for statements.\n");
+
+        textIO.putString("Should print 012345.\n");
+        int i = 0;
+        for(;; i++) {
+            textIO.putInt(i);
+            if(i==5) {
+                break;
+            }
+        }
+
+        textIO.putString("\nShould print 0123456789.\n");
+        for(i = 0; i<10; i++) {
+            textIO.putInt(i);
+        }
+    }
+
+    /**
+     * tests if statements
+     */
+    void testIfStmt() {
+        textIO.putString("\n\nChecking if statements.\n");
+
+        textIO.putString("expected: Printing from then; actual: ");
+        if(true)
+            textIO.putString("Printing from then");
+
+        textIO.putString("\nexpected: Printing from else; actual: ");
+        if(false)
+            textIO.putString("Printing from then");
+        else
+            textIO.putString("Printing from else");
+    }
+
+    /**
+     * tests new expressions
+     */
+    void testNewExpr() {
+        textIO.putString("\n\nChecking new expressions.\n");
+        Point p = new Point();
+        Point q = new Point();
+        // p and q should be 2 different point objects
+        textIO.putString("p.equals(q) \t expected: false; actual: ");
+        printBooleanValue(p.equals(q));
+    }
+
+    /**
+     * tests return statements
+     */
+    void testReturnStmt() {
+        textIO.putString("\n\nChecking return statements.\n");
+        Point p = new Point();
+        p.setX(3);
+        p.setY(4);
+        int x = p.getX();
+        int y = p.getY();
+        textIO.putString("int x = p.getX(); \t expected: 3; actual: ");
+        textIO.putInt(x);
+        textIO.putString("\nint y = p.getY(); \t expected: 4; actual: ");
+        textIO.putInt(y);
+    }
+
+    /**
+     * tests unary expressions
+     */
+    void testUnaryExpr() {
+        textIO.putString("\n\nChecking unary expressions.\n");
+        int i = 13;
+        boolean t = true;
+
+        textIO.putString("textIO.putInt(i++); \t expected: 13; actual: ");
+        textIO.putInt(i++);
+        textIO.putString("\ni; \t expected: 14; actual: ");
+        textIO.putInt(i);
+
+        textIO.putString("\ntextIO.putInt(++i); \t expected: 15; actual: ");
+        textIO.putInt(++i);
+        textIO.putString("\ni; \t expected: 15; actual: ");
+        textIO.putInt(i);
+
+        textIO.putString("\ntextIO.putInt(i--); \t expected: 15; actual: ");
+        textIO.putInt(i--);
+        textIO.putString("\ni; \t expected: 14; actual: ");
+        textIO.putInt(i);
+
+        textIO.putString("\ntextIO.putInt(--i); \t expected: 13; actual: ");
+        textIO.putInt(--i);
+        textIO.putString("\ni; \t expected: 13; actual: ");
+        textIO.putInt(i);
+
+        i--;
+        textIO.putString("\ni--; \t expected: 13; actual: ");
+        textIO.putInt(i);
+
+        i = -i;
+        textIO.putString("\ni = -i; \t expected: -13; actual: ");
+        textIO.putInt(i);
+
+        t = !t;
+        textIO.putString("\nt = !t; \t expected: false; actual: ");
+        printBooleanValue(t);
+    }
+
+    /**
+     * tests variable expressions
+     */
+    void testVarExpr() {
+        textIO.putString("\n\nChecking variable expressions.\n");
+        integer = 13;
+        super.integer = 9;
+
+        textIO.putString("integer = 13; \t expected: 13; actual: ");
+        textIO.putInt(integer);
+
+        textIO.putString("\nthis.integer \t expected: 13; actual: ");
+        textIO.putInt(this.integer);
+
+        textIO.putString("\nsuper.integer = 9; \t expected: 9; actual: ");
+        textIO.putInt(super.integer);
+    }
+
+
+    /**
+     * tests while statements
+     */
+    void testWhileStmt() {
+        textIO.putString("\n\nChecking while statements.\n");
+        textIO.putString("Should print 54321.\n");
+        int i = 5;
+        while(i>0) {
+            textIO.putInt(i);
+            i--;
+        }
+    }
+
+    /**
+     * runs all the test methods
+     */
+    void testAll() {
+        testFieldInit();
+        testAssignExpr();
+        testBinaryArithExpr();
+        testBinaryCompExpr();
+        testBinaryLogicExpr();
+        testBreakStmt();
+        testCastExpr();
+        testConstExpr();
+        testDeclStmt();
+        testDispatchExpr();
+        testForStmt();
+        testIfStmt();
+        testNewExpr();
+        testReturnStmt();
+        testUnaryExpr();
+        testVarExpr();
+        this.testVarExpr();
+        testWhileStmt();
+    }
+}

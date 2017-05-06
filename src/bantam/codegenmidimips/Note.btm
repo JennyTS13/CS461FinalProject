@@ -1,0 +1,146 @@
+/*
+ * File: Note.btm
+ * Author: Tiffany Lam, Jenny Lin
+ * Course: CS461
+ * Project: 6
+ * Date: May 10, 2017
+ */
+
+/**
+ * Note class
+ * Contains information about pitch, duration, instrument, and volume
+ */
+class Main {
+
+    /**
+     * the note's pitch
+     */
+    int pitch;
+
+    /**
+     * the note's duration
+     */
+    int duration;
+
+    /**
+     * the note's instrument
+     */
+    int instrument;
+
+    /**
+     * the note's volume
+     */
+    int volume;
+
+    /**
+     * sets the attributes of a note (pitch, octave, duration, instrument, and volume)
+     */
+    void setNoteAttributes(String notePitch, int noteOctave,
+                            int noteDuration, String instrumentName, int noteVolume) {
+        if (notePitch.equals("C#") || notePitch.equals("Db")) {
+            this.pitch = 61+noteOctave*12;
+        }
+        else if (notePitch.equals("D")) {
+            this.pitch = 62+noteOctave*12;
+        }
+        else if (notePitch.equals("D#") || notePitch.equals("Eb")) {
+            this.pitch = 63+noteOctave*12;
+        }
+        else if (notePitch.equals("E") || notePitch.equals("Fb")) {
+            this.pitch = 64+noteOctave*12;
+        }
+        else if (notePitch.equals("E#") || notePitch.equals("F")) {
+            this.pitch = 65+noteOctave*12;
+        }
+        else if (notePitch.equals("F#") || notePitch.equals("Gb")) {
+            this.pitch = 66+noteOctave*12;
+        }
+        else if (notePitch.equals("G")) {
+            this.pitch = 67+noteOctave*12;
+        }
+        else if (notePitch.equals("G#") || notePitch.equals("Ab")) {
+            this.pitch = 68+noteOctave*12;
+        }
+        else if (notePitch.equals("A")) {
+            this.pitch = 69+noteOctave*12;
+        }
+        else if (notePitch.equals("A#") || notePitch.equals("Bb")) {
+            this.pitch = 70+noteOctave*12;
+        }
+        else if (notePitch.equals("B") || notePitch.equals("Cb")) {
+            this.pitch = 71+noteOctave*12;
+        }
+        else {
+            this.pitch = 72+noteOctave*12;
+        }
+
+        this.duration = noteDuration;
+
+        if (instrumentName.equals("Violin")) {
+            this.instrument = 40;
+        }
+        else if (instrumentName.equals("Viola")) {
+            this.instrument = 41;
+        }
+        else if (instrumentName.equals("Cello")) {
+            this.instrument = 42;
+        }
+        else if (instrumentName.equals("Bassoon")) {
+            this.instrument = 70;
+        }
+        else if (instrumentName.equals("Horn")) {
+            this.instrument = 60;
+        }
+        else if (instrumentName.equals("Trombone")) {
+            this.instrument = 57;
+        }
+        else if (instrumentName.equals("Clarinet")) {
+            this.instrument = 71;
+        }
+        else if (instrumentName.equals("Flute")) {
+            this.instrument = 73;
+        }
+        else if (instrumentName.equals("Oboe")) {
+            this.instrument = 68;
+        }
+        // otherwise piano
+        else {
+            this.instrument = 0;
+        }
+
+        this.volume = noteVolume;
+    }
+
+    /**
+     * returns the note's pitch
+     */
+    int getPitch() {
+        return this.pitch;
+    }
+
+    /**
+     * returns the note's duration
+     */
+    int getDuration() {
+        return this.duration;
+    }
+
+    /**
+     * returns the note's instrument
+     */
+    int getInstrument() {
+        return this.instrument;
+    }
+
+    /**
+     * returns the note's volume
+     */
+    int getVolume() {
+        return this.volume;
+    }
+
+    /**
+     * Has to have main method to be legal
+     */
+    void main() {}
+}

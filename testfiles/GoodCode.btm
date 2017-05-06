@@ -1,0 +1,497 @@
+/*
+djskrien
+GoodCode.btm
+*/
+
+class Main
+{
+    TextIO io = new TextIO();
+    // With these fields, Main object will match "abc"
+    // representation exactly except in ID and dispatch pointer
+    int length = 3;
+    int characters = 1633837824;
+
+    /**
+     * computes whether a number is prime.
+     *
+     * @param n is the number to check if prime, n must be >= 2.
+     * @return a boolean indicating whether number is prime or not.
+     */
+    boolean isPrime(int n) {
+        boolean isPrime = true;
+        int i = 2;
+
+        while (i<(n-1)&&isPrime) {
+            if (n%i==0) {
+                isPrime = false;
+            }
+            i = i+1;
+        }
+        return isPrime;
+    }
+
+    int turn(String name, int numBeansLeft) {
+        int pickedBeans = 0; // beans picked up
+
+        // loop until user enters a valid number of beans to pick up 
+        // must (1, 2, or 3) and a number less than the beans remaining
+        while (true) {
+            // prompt user and read the picked beans
+            io.putString(name).putString(", how many beans to pick up? (");
+            io.putInt(numBeansLeft).putString(" left) ");
+            pickedBeans = io.getInt();
+
+            // if the picked beans is not 1, 2, 3, then reprompt
+            if (pickedBeans < 1 || pickedBeans > 3) {
+                io.putString("number of beans must be 1, 2, or 3\n");
+            }
+            // else if the picked beans > remainingg beans then reprompt
+            else if (pickedBeans > numBeansLeft) {
+                io.putString("can't pick up more beans than are left\n");
+            }
+            // otherwise, we have a valid pick, and so return it
+            else {
+                return pickedBeans;
+            }
+        }
+
+        // return 0 (needed for compiler)
+        return 0;
+    }
+
+    /* main method */
+    void main() {
+        int x = 0;
+        int y = 1;
+        int z = 2;
+
+        io.putString("x=").putInt(x).putString("\n");
+        io.putString("y=").putInt(y).putString("\n");
+        io.putString("z=").putInt(z).putString("\n");
+
+        io.putString("Executing: x = y = z\n");
+        x = y = z;
+
+        io.putString("x=").putInt(x).putString("\n");
+        io.putString("y=").putInt(y).putString("\n");
+        io.putString("z=").putInt(z).putString("\n");
+
+        String s = "abc";
+        Object o = (Object) (s);
+        //io = (TextIO)(o);
+
+
+        s = "abcdefghijklmnopqrstuvwxyz";
+        String s1 = "ejflasdjfweofksalhfawlejfs";
+        String s2 = "abcdefghijklmnopqrstuvwxyz";
+        String s3 = "0123456789";
+
+        (new TextIO()).putString("s: ").putString(s).putString("\n");
+
+        (new TextIO()).putString("s.length(): ").putInt(s.length()).putString("\n");
+
+        (new TextIO()).putString("s2: ").putString(s2).putString("\n");
+        (new TextIO()).putString("s2.length(): ").putInt(s2.length()).putString("\n");
+
+        if (s.equals(s2)) {
+            (new TextIO()).putString("s.equals(s2): true\n");
+        }
+        else {
+            (new TextIO()).putString("s.equals(s2): false\n");
+        }
+        if (s2.equals(s)) {
+            (new TextIO()).putString("s2.equals(s): true\n");
+        }
+        else {
+            (new TextIO()).putString("s2.equals(s): false\n");
+        }
+
+        (new TextIO()).putString("s3: ").putString(s3).putString("\n");
+        (new TextIO()).putString("s3.length(): ").putInt(s3.length()).putString("\n");
+
+        if (s.equals(s3)) {
+            (new TextIO()).putString("s.equals(s3): true\n");
+        }
+        else {
+            (new TextIO()).putString("s.equals(s3): false\n");
+        }
+        if (s3.equals(s)) {
+            (new TextIO()).putString("s3.equals(s): true\n");
+        }
+        else {
+            (new TextIO()).putString("s3.equals(s): false\n");
+        }
+
+        (new TextIO()).putString("s.concat(s2): ").putString(s.concat(s2)).putString
+                ("\n");
+        (new TextIO()).putString("s2.concat(s): ").putString(s2.concat(s)).putString
+                ("\n");
+
+        (new TextIO()).putString("s.concat(s3): ").putString(s.concat(s3)).putString
+                ("\n");
+        (new TextIO()).putString("s3.concat(s): ").putString(s3.concat(s)).putString
+                ("\n");
+
+
+        (new TextIO()).putString("s.substring(0, 0): ").putString(s.substring(0, 0))
+                .putString("\n");
+        (new TextIO()).putString("s.substring(2, 8): ").putString(s.substring(2, 8))
+                .putString("\n");
+        (new TextIO()).putString("s2.substring(1, 2): ").putString(s2.substring(1, 2))
+                .putString("\n");
+        (new TextIO()).putString("s2.substring(1, 7): ").putString(s2.substring(1, 7))
+                .putString("\n");
+        (new TextIO()).putString("s3.substring(2, 7): ").putString(s3.substring(2, 7))
+                .putString("\n");
+        (new TextIO()).putString("s3.substring(1, 10): ").putString(s3.substring(1, 10)
+        ).putString("\n");
+
+        String s4 = "ab";
+        Object m = new Main();
+        String s5 = "";
+        String s6 = null;
+        // an io object for printing the results
+        io = new TextIO();
+
+        // should print: string object equals itself
+        if (s1.equals(s1)) {
+            io.putString("String object equals itself\n");
+        }
+        else {
+            io.putString("String object does not equal itself\n");
+        }
+
+        // should print: string object equals itself casted to Object
+        if (s1.equals(o)) {
+            io.putString("String object equals itself casted to Object\n");
+        }
+        else {
+            io.putString("String object does not equal itself casted to Object\n");
+        }
+
+        // should print: "abc" equals "abc"
+        if (s1.equals(s2)) {
+            io.putString("\"abc\" equals \"abc\"\n");
+        }
+        else {
+            io.putString("\"abc\" does not equal \"abc\"\n");
+        }
+
+        // should print: "abc" does not equal "abcd"
+        if (s1.equals(s3)) {
+            io.putString("\"abc\" equals \"abcd\"\n");
+        }
+        else {
+            io.putString("\"abc\" does not equal \"abcd\"\n");
+        }
+
+        // should print: "abc" does not equal "ab"
+        if (s1.equals(s4)) {
+            io.putString("\"abc\" equals \"ab\"\n");
+        }
+        else {
+            io.putString("\"abc\" does not equal \"ab\"\n");
+        }
+
+        // should print: "abc" does not equal Main object
+        if (s1.equals(m)) {
+            io.putString("\"abc\" equals Main object\n");
+        }
+        else {
+            io.putString("\"abc\" does not equal Main object\n");
+        }
+
+        // should print: "abc" does not equal ""
+        if (s1.equals(s5)) {
+            io.putString("\"abc\" equals \"\"\n");
+        }
+        else {
+            io.putString("\"abc\" does not equal \"\"\n");
+        }
+
+        int max = 3;
+        // check that max >= 2
+        if (max < 2) {
+            io.putString("number must be > 1\n");
+            (new Sys()).exit(1);
+        }
+        else {
+            // find prime numbers from 2 to max
+            int i = 2;
+            while (i <= max) {
+                // check whether ith number is prime, if so print it out
+                if (isPrime(i)) {
+                    io.putInt(i).putString(" is prime.\n");
+                }
+                i = i + 1;
+            }
+        }
+
+
+        io.putString("(new Object()).toString()=").
+                putString((new Object()).toString()).putString("\n");
+
+        io.putString("(new TextIO()).toString()=").
+                putString((new TextIO()).toString()).putString("\n");
+
+        io.putString("\"abc\".toString()=").
+                putString("abc".toString()).putString("\n");
+
+        io.putString("(new Integer()).init(5).toString()=").
+                putString((new Integer()).init(5).toString()).putString("\n");
+
+        io.putString("(new Integer()).fib(5)=").
+                putInt((new Integer()).fib(5)).putString("\n");
+
+        io.putString("instanceOf: ");
+        instanceOf();
+
+        return;
+    }
+
+    void instanceOf() {
+        int d = 0;
+        String s = "abc";
+        Object o = new Object();
+        for (d = 0; d < 23; d++) {
+            s.toString().toString().toString();
+            Object fds = o.clone().clone().clone();
+            boolean bdt = fds == s;
+            if (bdt) {
+                io.putString("daf");
+            }
+        }
+
+        Sys sys = new Sys();
+
+        if (o instanceof Object) {
+            io.putString("Object object instance of Object\n");
+            io.putString("Casting Object object to Object object...");
+            Object x = (Object) (o);
+            io.putString(" successful\n");
+        }
+        else {
+            io.putString("Object object not instance of Object\n");
+        }
+        if (o instanceof TextIO) {
+            io.putString("Object object instance of TextIO\n");
+            io.putString("Casting Object object to TextIO object...");
+            TextIO x = (TextIO) (o);
+            io.putString(" successful\n");
+        }
+        else {
+            io.putString("Object object not instance of TextIO\n");
+        }
+        if (o instanceof String) {
+            io.putString("Object object instance of String\n");
+            io.putString("Casting Object object to String object...");
+            String x = (String) (o);
+            io.putString(" successful\n");
+        }
+        else {
+            io.putString("Object object not instance of String\n");
+        }
+        if (o instanceof Sys) {
+            io.putString("Object object instance of Sys\n");
+            io.putString("Casting Object object to Sys object...");
+            Sys x = (Sys) (o);
+            io.putString(" successful\n");
+        }
+        else {
+            io.putString("Object object not instance of Sys\n");
+        }
+
+
+        if (io instanceof Object) {
+            io.putString("TextIO object instance of Object\n");
+            io.putString("Casting TextIO object to Object object...");
+            Object x = (Object) (io);
+            io.putString(" successful\n");
+        }
+        else {
+            io.putString("TextIO object not instance of Object\n");
+        }
+        if (io instanceof TextIO) {
+            io.putString("TextIO object instance of TextIO\n");
+            io.putString("Casting TextIO object to TextIO object...");
+            TextIO x = (TextIO) (io);
+            io.putString(" successful\n");
+        }
+        else {
+            io.putString("TextIO object not instance of TextIO\n");
+        }
+
+
+        if (s instanceof Object) {
+            io.putString("String object instance of Object\n");
+            io.putString("Casting String object to Object object...");
+            Object x = (Object) (s);
+            io.putString(" successful\n");
+        }
+        else {
+            io.putString("String object not instance of Object\n");
+        }
+        if (s instanceof String) {
+            io.putString("String object instance of String\n");
+            io.putString("Casting String object to String object...");
+            String x = (String) (s);
+            io.putString(" successful\n");
+        }
+        else {
+            io.putString("String object not instance of String\n");
+        }
+
+
+        if (sys instanceof Object) {
+            io.putString("Sys object instance of Object\n");
+            io.putString("Casting Sys object to Object object...");
+            Object x = (Object) (sys);
+            io.putString(" successful\n");
+        }
+        else {
+            io.putString("Sys object not instance of Object\n");
+        }
+        if (sys instanceof Sys) {
+            io.putString("Sys object instance of Sys\n");
+            io.putString("Casting Sys object to Sys object...");
+            Sys x = (Sys) (sys);
+            io.putString(" successful\n");
+        }
+        else {
+            io.putString("Sys object not instance of Sys\n");
+        }
+
+        return;
+
+    }
+}
+
+class Integer
+{
+    int num = 5;
+
+    int intValue() {
+        return num;
+    }
+
+    Integer init(int n) {
+        num = n;
+        return new Integer();
+    }
+
+    String digitToString(int d) {
+        String s = null;
+        if (d == 0) {
+            s = "0";
+        }
+        else if (d == 1) {
+            s = "1";
+        }
+        else if (d == 2) {
+            s = "2";
+        }
+        else if (d == 3) {
+            s = "3";
+        }
+        else if (d == 4) {
+            s = "4";
+        }
+        else if (d == 5) {
+            s = "5";
+        }
+        else if (d == 6) {
+            s = "6";
+        }
+        else if (d == 7) {
+            s = "7";
+        }
+        else if (d == 8) {
+            s = "8";
+        }
+        else if (d == 9) {
+            s = "9";
+        }
+        return s;
+    }
+
+    String toString() {
+        String s = "";
+        int n = num;
+
+        if (n < 0) {
+            n = -n;
+        }
+
+        if (n == 0) {
+            s = "0";
+        }
+        else {
+            while (n > 0) {
+                int d = n % 10;
+                s = digitToString(d).concat(s);
+                n = n / 10;
+            }
+        }
+
+        if (num < 0) {
+            s = "-".concat(s);
+        }
+
+        return s;
+    }
+
+    boolean equals(Object o) {
+        boolean ret = false;
+
+        if (o == null) {
+            (new TextIO()).putString("Integer.equals called with null object\n");
+            (new Sys()).exit(-1);
+        }
+
+        if (o instanceof Integer) {
+            Integer i = (Integer) (o);
+            if (num == i.intValue()) {
+                ret = true;
+            }
+        }
+
+        return ret;
+    }
+
+    /**
+     * Compute the nth fibonacci number
+     *
+     * @param n nth fibonacci number to compute
+     * @return the fibonacci number
+     */
+    int fib(int n) {
+        TextIO io = new TextIO();
+        //n = io.putString("Enter a non-negative number:  ").getInt();
+
+        // make sure n is non-negative
+        if (n < 0) {
+            // if n is negative report error and exit
+            io.putString("Number cannot be negative\n");
+            (new Sys()).exit(1);
+        }
+
+        int result = 0;
+
+        // if 0 return 0 (special case)
+        if (n == 0) {
+            result = 0;
+        }
+        // if 1 return 1 (special case)
+        else if (n == 1) {
+            result = 1;
+        }
+        // otherwise recursively compute the n-1 and n-2
+        // fibonacci numbers and return their sum
+        else {
+            result = fib(n - 1) + fib(n - 2);
+        }
+
+        return result;
+    }
+
+}
