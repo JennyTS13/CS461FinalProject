@@ -2,28 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a2606ef-fccb-4e35-a55b-d0e7adc61672" name="Default" comment="Added codegen bits">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS461FinalProject.iml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/CS461FinalProject.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BantamJavaStudentPkg.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cs461finalproject.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cs461finalproject.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ant.xml" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/build.xml" afterPath="$PROJECT_DIR$/api/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/java_cup/version.java" afterPath="$PROJECT_DIR$/bin/java_cup/version.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BantamJavaStudentPkg/bantam/build.xml" afterPath="$PROJECT_DIR$/out/production/BantamJavaStudentPkg/bantam/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bantam/build.xml" afterPath="$PROJECT_DIR$/src/bantam/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bantam/codegenmips/MipsCodeGenerator.java" afterPath="$PROJECT_DIR$/src/bantam/codegenmips/MipsCodeGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bantam/visitor/MemberVisitor.java" afterPath="$PROJECT_DIR$/src/bantam/visitor/MemberVisitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bantam/visitor/StringConstantsVisitor.java" afterPath="$PROJECT_DIR$/src/bantam/visitor/StringConstantsVisitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bantam/visitor/TypeCheckVisitor.java" afterPath="$PROJECT_DIR$/src/bantam/visitor/TypeCheckVisitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testfiles/build.xml" afterPath="$PROJECT_DIR$/testfiles/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/build.xml" afterPath="$PROJECT_DIR$/tools/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/javacup/java_cup/version.java" afterPath="$PROJECT_DIR$/tools/javacup/java_cup/version.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -128,9 +108,9 @@
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2059" selection-end-column="10" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2170" selection-end-column="10" />
               <folding>
-                <marker date="1494093401000" expanded="true" signature="105109:105197" ph="..." />
+                <marker date="1494093506000" expanded="true" signature="109610:109673" ph="..." />
               </folding>
             </state>
           </provider>
@@ -1481,7 +1461,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="713" y="23" width="1145" height="889" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1496,7 +1476,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2330009" sideWeight="0.49765807" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2330009" sideWeight="0.49765807" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14179105" sideWeight="0.5023419" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22484134" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2031,9 +2011,9 @@
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2059" selection-end-column="10" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2170" selection-end-column="10" />
           <folding>
-            <marker date="1494093401000" expanded="true" signature="105109:105197" ph="..." />
+            <marker date="1494093506000" expanded="true" signature="109610:109673" ph="..." />
           </folding>
         </state>
       </provider>
