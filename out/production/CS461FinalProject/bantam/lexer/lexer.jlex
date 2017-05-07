@@ -208,8 +208,7 @@ import java.math.BigInteger;
 
 <YYINITIAL>class            { return new Symbol(TokenIds.CLASS,
 						        new Token("CLASS", yyline)); }
-(/\*([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*\*+/)|(//.*)      { return new Symbol(TokenIds.COMMENT,
-                                                            new Token(yytext(), yyline)); }
+(/\*([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*\*+/)|(//.*)      { }
 \/\*([^*/]|[\r\n])*          { return new Symbol(TokenIds.LEX_ERROR,
                                 new Token("Unterminated multiline comment.", yyline)); }
 \"([^\\\"]|\\.)*[\r\n]+([^\\\"]|\\.)*\"  { return new Symbol(TokenIds.LEX_ERROR,
@@ -249,9 +248,9 @@ instanceof                  { return new Symbol(TokenIds.INSTANCEOF,
                                 new Token("!", yyline)); }
 "<<"                        { return new Symbol(TokenIds.SIGNEDLEFTSHIFT,
                                 new Token("<<", yyline)); }
-\>\>\>                      { return new Symbol(TokenIds.UNSIGNEDRIGHTSHIFT,
+">>>"                       { return new Symbol(TokenIds.UNSIGNEDRIGHTSHIFT,
                                 new Token(">>>", yyline)); }
-\>\>                        { return new Symbol(TokenIds.SIGNEDRIGHTSHIFT,
+">>"                        { return new Symbol(TokenIds.SIGNEDRIGHTSHIFT,
                                 new Token(">>", yyline)); }
 &&                          { return new Symbol(TokenIds.AND,
                                 new Token("&&", yyline)); }
@@ -322,8 +321,7 @@ true|false                  { return new Symbol(TokenIds.BOOLEAN_CONST,
                                 new Token(",", yyline)); }
 \.                          { return new Symbol(TokenIds.DOT,
                                 new Token(".", yyline)); }
-[ \t\r\n\f]+                { return new Symbol(TokenIds.SPACING,
-                                new Token(yytext(), yyline));}
+[ \t\r\n\f]                 { }
 [^0-9a-zA-Z]                { return new Symbol(TokenIds.LEX_ERROR,
                                 new Token("Unsupported character.", yyline)); }
 .                           { throw new RuntimeException("Unmatched lexeme " +

@@ -248,9 +248,9 @@ instanceof                  { return new Symbol(TokenIds.INSTANCEOF,
                                 new Token("!", yyline)); }
 "<<"                        { return new Symbol(TokenIds.SIGNEDLEFTSHIFT,
                                 new Token("<<", yyline)); }
-\>\>\>                      { return new Symbol(TokenIds.UNSIGNEDRIGHTSHIFT,
+">>>"                       { return new Symbol(TokenIds.UNSIGNEDRIGHTSHIFT,
                                 new Token(">>>", yyline)); }
-\>\>                        { return new Symbol(TokenIds.SIGNEDRIGHTSHIFT,
+">>"                        { return new Symbol(TokenIds.SIGNEDRIGHTSHIFT,
                                 new Token(">>", yyline)); }
 &&                          { return new Symbol(TokenIds.AND,
                                 new Token("&&", yyline)); }

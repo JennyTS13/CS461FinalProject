@@ -358,17 +358,293 @@ String_const_30:
 	.align	2
 String_const_31:
 	.word	1
+	.word	52
+	.word	String_dispatch_table
+	.word	34
+	.ascii	""
+	.byte	0xA
+	.ascii	"-32 << -4 "
+	.byte	0x9
+	.ascii	" expected: 0; actual: "
+	.byte	0
+	.align	2
+String_const_32:
+	.word	1
+	.word	52
+	.word	String_dispatch_table
+	.word	33
+	.ascii	""
+	.byte	0xA
+	.ascii	"32 << -4 "
+	.byte	0x9
+	.ascii	" expected: 0; actual: "
+	.byte	0
+	.align	2
+String_const_33:
+	.word	1
+	.word	52
+	.word	String_dispatch_table
+	.word	34
+	.ascii	""
+	.byte	0xA
+	.ascii	"32 << 4 "
+	.byte	0x9
+	.ascii	" expected: 512; actual: "
+	.byte	0
+	.align	2
+String_const_34:
+	.word	1
+	.word	56
+	.word	String_dispatch_table
+	.word	36
+	.ascii	""
+	.byte	0xA
+	.ascii	"-32 << 4 "
+	.byte	0x9
+	.ascii	" expected: -512; actual: "
+	.byte	0
+	.align	2
+String_const_35:
+	.word	1
+	.word	52
+	.word	String_dispatch_table
+	.word	35
+	.ascii	""
+	.byte	0xA
+	.ascii	"-32 >> -4 "
+	.byte	0x9
+	.ascii	" expected: -1; actual: "
+	.byte	0
+	.align	2
+String_const_36:
+	.word	1
+	.word	52
+	.word	String_dispatch_table
+	.word	33
+	.ascii	""
+	.byte	0xA
+	.ascii	"32 >> -4 "
+	.byte	0x9
+	.ascii	" expected: 0; actual: "
+	.byte	0
+	.align	2
+String_const_37:
+	.word	1
+	.word	52
+	.word	String_dispatch_table
+	.word	32
+	.ascii	""
+	.byte	0xA
+	.ascii	"32 >> 4 "
+	.byte	0x9
+	.ascii	" expected: 2; actual: "
+	.byte	0
+	.align	2
+String_const_38:
+	.word	1
+	.word	52
+	.word	String_dispatch_table
+	.word	34
+	.ascii	""
+	.byte	0xA
+	.ascii	"-32 >> 4 "
+	.byte	0x9
+	.ascii	" expected: -2; actual: "
+	.byte	0
+	.align	2
+String_const_39:
+	.word	1
+	.word	56
+	.word	String_dispatch_table
+	.word	36
+	.ascii	""
+	.byte	0xA
+	.ascii	"-32 >>> -4 "
+	.byte	0x9
+	.ascii	" expected: 15; actual: "
+	.byte	0
+	.align	2
+String_const_40:
+	.word	1
+	.word	52
+	.word	String_dispatch_table
+	.word	34
+	.ascii	""
+	.byte	0xA
+	.ascii	"32 >>> -4 "
+	.byte	0x9
+	.ascii	" expected: 0; actual: "
+	.byte	0
+	.align	2
+String_const_41:
+	.word	1
+	.word	52
+	.word	String_dispatch_table
+	.word	33
+	.ascii	""
+	.byte	0xA
+	.ascii	"32 >>> 4 "
+	.byte	0x9
+	.ascii	" expected: 2; actual: "
+	.byte	0
+	.align	2
+String_const_42:
+	.word	1
 	.word	60
 	.word	String_dispatch_table
 	.word	42
 	.ascii	""
 	.byte	0xA
-	.ascii	"3 << -1 "
+	.ascii	"-32 >>> 4 "
 	.byte	0x9
-	.ascii	" expected: -2147483648; actual: "
+	.ascii	" expected: 268435454; actual: "
 	.byte	0
 	.align	2
-String_const_32:
+String_const_43:
+	.word	1
+	.word	56
+	.word	String_dispatch_table
+	.word	36
+	.ascii	""
+	.byte	0xA
+	.ascii	"-37 & -13 "
+	.byte	0x9
+	.ascii	" expected: -45; actual: "
+	.byte	0
+	.align	2
+String_const_44:
+	.word	1
+	.word	52
+	.word	String_dispatch_table
+	.word	34
+	.ascii	""
+	.byte	0xA
+	.ascii	"37 & -13 "
+	.byte	0x9
+	.ascii	" expected: 33; actual: "
+	.byte	0
+	.align	2
+String_const_45:
+	.word	1
+	.word	52
+	.word	String_dispatch_table
+	.word	32
+	.ascii	""
+	.byte	0xA
+	.ascii	"37 & 13 "
+	.byte	0x9
+	.ascii	" expected: 5; actual: "
+	.byte	0
+	.align	2
+String_const_46:
+	.word	1
+	.word	52
+	.word	String_dispatch_table
+	.word	33
+	.ascii	""
+	.byte	0xA
+	.ascii	"-37 & 13 "
+	.byte	0x9
+	.ascii	" expected: 9; actual: "
+	.byte	0
+	.align	2
+String_const_47:
+	.word	1
+	.word	52
+	.word	String_dispatch_table
+	.word	35
+	.ascii	""
+	.byte	0xA
+	.ascii	"-37 | -13 "
+	.byte	0x9
+	.ascii	" expected: -5; actual: "
+	.byte	0
+	.align	2
+String_const_48:
+	.word	1
+	.word	52
+	.word	String_dispatch_table
+	.word	34
+	.ascii	""
+	.byte	0xA
+	.ascii	"37 | -13 "
+	.byte	0x9
+	.ascii	" expected: -9; actual: "
+	.byte	0
+	.align	2
+String_const_49:
+	.word	1
+	.word	52
+	.word	String_dispatch_table
+	.word	33
+	.ascii	""
+	.byte	0xA
+	.ascii	"37 | 13 "
+	.byte	0x9
+	.ascii	" expected: 45; actual: "
+	.byte	0
+	.align	2
+String_const_50:
+	.word	1
+	.word	52
+	.word	String_dispatch_table
+	.word	35
+	.ascii	""
+	.byte	0xA
+	.ascii	"-37 | 13 "
+	.byte	0x9
+	.ascii	" expected: -33; actual: "
+	.byte	0
+	.align	2
+String_const_51:
+	.word	1
+	.word	52
+	.word	String_dispatch_table
+	.word	35
+	.ascii	""
+	.byte	0xA
+	.ascii	"-37 ^ -13 "
+	.byte	0x9
+	.ascii	" expected: 40; actual: "
+	.byte	0
+	.align	2
+String_const_52:
+	.word	1
+	.word	52
+	.word	String_dispatch_table
+	.word	35
+	.ascii	""
+	.byte	0xA
+	.ascii	"37 ^ -13 "
+	.byte	0x9
+	.ascii	" expected: -42; actual: "
+	.byte	0
+	.align	2
+String_const_53:
+	.word	1
+	.word	52
+	.word	String_dispatch_table
+	.word	33
+	.ascii	""
+	.byte	0xA
+	.ascii	"37 ^ 13 "
+	.byte	0x9
+	.ascii	" expected: 40; actual: "
+	.byte	0
+	.align	2
+String_const_54:
+	.word	1
+	.word	52
+	.word	String_dispatch_table
+	.word	35
+	.ascii	""
+	.byte	0xA
+	.ascii	"-37 ^ 13 "
+	.byte	0x9
+	.ascii	" expected: -42; actual: "
+	.byte	0
+	.align	2
+String_const_55:
 	.word	1
 	.word	72
 	.word	String_dispatch_table
@@ -382,7 +658,7 @@ String_const_32:
 	.ascii	""
 	.byte	0
 	.align	2
-String_const_33:
+String_const_56:
 	.word	1
 	.word	64
 	.word	String_dispatch_table
@@ -392,7 +668,7 @@ String_const_33:
 	.ascii	""
 	.byte	0
 	.align	2
-String_const_34:
+String_const_57:
 	.word	1
 	.word	20
 	.word	String_dispatch_table
@@ -402,7 +678,7 @@ String_const_34:
 	.ascii	""
 	.byte	0
 	.align	2
-String_const_35:
+String_const_58:
 	.word	1
 	.word	80
 	.word	String_dispatch_table
@@ -414,7 +690,7 @@ String_const_35:
 	.ascii	"Checking legal downcasting. Shouldn't change method called"
 	.byte	0
 	.align	2
-String_const_36:
+String_const_59:
 	.word	1
 	.word	84
 	.word	String_dispatch_table
@@ -426,7 +702,7 @@ String_const_36:
 	.ascii	" expected: FunctionalityTest; actual: "
 	.byte	0
 	.align	2
-String_const_37:
+String_const_60:
 	.word	1
 	.word	80
 	.word	String_dispatch_table
@@ -438,7 +714,7 @@ String_const_37:
 	.ascii	" expected: FunctionalityTest; actual: "
 	.byte	0
 	.align	2
-String_const_38:
+String_const_61:
 	.word	1
 	.word	52
 	.word	String_dispatch_table
@@ -452,7 +728,7 @@ String_const_38:
 	.ascii	""
 	.byte	0
 	.align	2
-String_const_39:
+String_const_62:
 	.word	1
 	.word	44
 	.word	String_dispatch_table
@@ -462,7 +738,7 @@ String_const_39:
 	.ascii	"abc String: "
 	.byte	0
 	.align	2
-String_const_40:
+String_const_63:
 	.word	1
 	.word	24
 	.word	String_dispatch_table
@@ -472,7 +748,7 @@ String_const_40:
 	.ascii	"abc"
 	.byte	0
 	.align	2
-String_const_41:
+String_const_64:
 	.word	1
 	.word	36
 	.word	String_dispatch_table
@@ -482,7 +758,7 @@ String_const_41:
 	.ascii	"Should print 123: "
 	.byte	0
 	.align	2
-String_const_42:
+String_const_65:
 	.word	1
 	.word	40
 	.word	String_dispatch_table
@@ -492,7 +768,7 @@ String_const_42:
 	.ascii	"Should print false: "
 	.byte	0
 	.align	2
-String_const_43:
+String_const_66:
 	.word	1
 	.word	52
 	.word	String_dispatch_table
@@ -506,7 +782,7 @@ String_const_43:
 	.ascii	""
 	.byte	0
 	.align	2
-String_const_44:
+String_const_67:
 	.word	1
 	.word	52
 	.word	String_dispatch_table
@@ -516,7 +792,7 @@ String_const_44:
 	.ascii	" expected: 0; actual: "
 	.byte	0
 	.align	2
-String_const_45:
+String_const_68:
 	.word	1
 	.word	56
 	.word	String_dispatch_table
@@ -528,7 +804,7 @@ String_const_45:
 	.ascii	" expected: 13; actual: "
 	.byte	0
 	.align	2
-String_const_46:
+String_const_69:
 	.word	1
 	.word	68
 	.word	String_dispatch_table
@@ -540,7 +816,7 @@ String_const_46:
 	.ascii	" expected: abc; actual: "
 	.byte	0
 	.align	2
-String_const_47:
+String_const_70:
 	.word	1
 	.word	52
 	.word	String_dispatch_table
@@ -554,7 +830,7 @@ String_const_47:
 	.ascii	""
 	.byte	0
 	.align	2
-String_const_48:
+String_const_71:
 	.word	1
 	.word	52
 	.word	String_dispatch_table
@@ -564,7 +840,7 @@ String_const_48:
 	.ascii	" expected: 3; actual: "
 	.byte	0
 	.align	2
-String_const_49:
+String_const_72:
 	.word	1
 	.word	52
 	.word	String_dispatch_table
@@ -576,7 +852,7 @@ String_const_49:
 	.ascii	" expected: 4; actual: "
 	.byte	0
 	.align	2
-String_const_50:
+String_const_73:
 	.word	1
 	.word	52
 	.word	String_dispatch_table
@@ -588,7 +864,7 @@ String_const_50:
 	.ascii	" expected: 15; actual: "
 	.byte	0
 	.align	2
-String_const_51:
+String_const_74:
 	.word	1
 	.word	52
 	.word	String_dispatch_table
@@ -600,7 +876,7 @@ String_const_51:
 	.ascii	" expected: 4; actual: "
 	.byte	0
 	.align	2
-String_const_52:
+String_const_75:
 	.word	1
 	.word	76
 	.word	String_dispatch_table
@@ -612,7 +888,7 @@ String_const_52:
 	.ascii	" expected: FunctionalityTest; actual: "
 	.byte	0
 	.align	2
-String_const_53:
+String_const_76:
 	.word	1
 	.word	80
 	.word	String_dispatch_table
@@ -624,7 +900,7 @@ String_const_53:
 	.ascii	" expected: FunctionalityTest; actual: "
 	.byte	0
 	.align	2
-String_const_54:
+String_const_77:
 	.word	1
 	.word	76
 	.word	String_dispatch_table
@@ -636,7 +912,7 @@ String_const_54:
 	.ascii	" expected: TestSuperClass; actual: "
 	.byte	0
 	.align	2
-String_const_55:
+String_const_78:
 	.word	1
 	.word	44
 	.word	String_dispatch_table
@@ -650,7 +926,7 @@ String_const_55:
 	.ascii	""
 	.byte	0
 	.align	2
-String_const_56:
+String_const_79:
 	.word	1
 	.word	40
 	.word	String_dispatch_table
@@ -660,7 +936,7 @@ String_const_56:
 	.ascii	""
 	.byte	0
 	.align	2
-String_const_57:
+String_const_80:
 	.word	1
 	.word	44
 	.word	String_dispatch_table
@@ -672,7 +948,7 @@ String_const_57:
 	.ascii	""
 	.byte	0
 	.align	2
-String_const_58:
+String_const_81:
 	.word	1
 	.word	44
 	.word	String_dispatch_table
@@ -686,7 +962,7 @@ String_const_58:
 	.ascii	""
 	.byte	0
 	.align	2
-String_const_59:
+String_const_82:
 	.word	1
 	.word	56
 	.word	String_dispatch_table
@@ -694,7 +970,7 @@ String_const_59:
 	.ascii	"expected: Printing from then; actual: "
 	.byte	0
 	.align	2
-String_const_60:
+String_const_83:
 	.word	1
 	.word	36
 	.word	String_dispatch_table
@@ -702,7 +978,7 @@ String_const_60:
 	.ascii	"Printing from then"
 	.byte	0
 	.align	2
-String_const_61:
+String_const_84:
 	.word	1
 	.word	56
 	.word	String_dispatch_table
@@ -712,7 +988,7 @@ String_const_61:
 	.ascii	"expected: Printing from else; actual: "
 	.byte	0
 	.align	2
-String_const_62:
+String_const_85:
 	.word	1
 	.word	36
 	.word	String_dispatch_table
@@ -720,7 +996,7 @@ String_const_62:
 	.ascii	"Printing from else"
 	.byte	0
 	.align	2
-String_const_63:
+String_const_86:
 	.word	1
 	.word	44
 	.word	String_dispatch_table
@@ -734,7 +1010,7 @@ String_const_63:
 	.ascii	""
 	.byte	0
 	.align	2
-String_const_64:
+String_const_87:
 	.word	1
 	.word	68
 	.word	String_dispatch_table
@@ -744,7 +1020,7 @@ String_const_64:
 	.ascii	" expected: true; actual: "
 	.byte	0
 	.align	2
-String_const_65:
+String_const_88:
 	.word	1
 	.word	68
 	.word	String_dispatch_table
@@ -756,7 +1032,7 @@ String_const_65:
 	.ascii	" expected: false; actual: "
 	.byte	0
 	.align	2
-String_const_66:
+String_const_89:
 	.word	1
 	.word	48
 	.word	String_dispatch_table
@@ -770,7 +1046,7 @@ String_const_66:
 	.ascii	""
 	.byte	0
 	.align	2
-String_const_67:
+String_const_90:
 	.word	1
 	.word	56
 	.word	String_dispatch_table
@@ -780,7 +1056,7 @@ String_const_67:
 	.ascii	" expected: false; actual: "
 	.byte	0
 	.align	2
-String_const_68:
+String_const_91:
 	.word	1
 	.word	48
 	.word	String_dispatch_table
@@ -794,7 +1070,7 @@ String_const_68:
 	.ascii	""
 	.byte	0
 	.align	2
-String_const_69:
+String_const_92:
 	.word	1
 	.word	60
 	.word	String_dispatch_table
@@ -804,7 +1080,7 @@ String_const_69:
 	.ascii	" expected: 3; actual: "
 	.byte	0
 	.align	2
-String_const_70:
+String_const_93:
 	.word	1
 	.word	60
 	.word	String_dispatch_table
@@ -816,7 +1092,7 @@ String_const_70:
 	.ascii	" expected: 4; actual: "
 	.byte	0
 	.align	2
-String_const_71:
+String_const_94:
 	.word	1
 	.word	48
 	.word	String_dispatch_table
@@ -830,7 +1106,7 @@ String_const_71:
 	.ascii	""
 	.byte	0
 	.align	2
-String_const_72:
+String_const_95:
 	.word	1
 	.word	64
 	.word	String_dispatch_table
@@ -840,7 +1116,7 @@ String_const_72:
 	.ascii	" expected: 13; actual: "
 	.byte	0
 	.align	2
-String_const_73:
+String_const_96:
 	.word	1
 	.word	48
 	.word	String_dispatch_table
@@ -852,7 +1128,7 @@ String_const_73:
 	.ascii	" expected: 14; actual: "
 	.byte	0
 	.align	2
-String_const_74:
+String_const_97:
 	.word	1
 	.word	64
 	.word	String_dispatch_table
@@ -864,7 +1140,7 @@ String_const_74:
 	.ascii	" expected: 15; actual: "
 	.byte	0
 	.align	2
-String_const_75:
+String_const_98:
 	.word	1
 	.word	48
 	.word	String_dispatch_table
@@ -876,7 +1152,7 @@ String_const_75:
 	.ascii	" expected: 15; actual: "
 	.byte	0
 	.align	2
-String_const_76:
+String_const_99:
 	.word	1
 	.word	64
 	.word	String_dispatch_table
@@ -888,7 +1164,7 @@ String_const_76:
 	.ascii	" expected: 15; actual: "
 	.byte	0
 	.align	2
-String_const_77:
+String_const_100:
 	.word	1
 	.word	64
 	.word	String_dispatch_table
@@ -900,7 +1176,7 @@ String_const_77:
 	.ascii	" expected: 13; actual: "
 	.byte	0
 	.align	2
-String_const_78:
+String_const_101:
 	.word	1
 	.word	48
 	.word	String_dispatch_table
@@ -912,7 +1188,7 @@ String_const_78:
 	.ascii	" expected: 13; actual: "
 	.byte	0
 	.align	2
-String_const_79:
+String_const_102:
 	.word	1
 	.word	48
 	.word	String_dispatch_table
@@ -924,7 +1200,7 @@ String_const_79:
 	.ascii	" expected: 13; actual: "
 	.byte	0
 	.align	2
-String_const_80:
+String_const_103:
 	.word	1
 	.word	52
 	.word	String_dispatch_table
@@ -936,7 +1212,7 @@ String_const_80:
 	.ascii	" expected: -13; actual: "
 	.byte	0
 	.align	2
-String_const_81:
+String_const_104:
 	.word	1
 	.word	56
 	.word	String_dispatch_table
@@ -948,7 +1224,7 @@ String_const_81:
 	.ascii	" expected: false; actual: "
 	.byte	0
 	.align	2
-String_const_82:
+String_const_105:
 	.word	1
 	.word	52
 	.word	String_dispatch_table
@@ -962,7 +1238,7 @@ String_const_82:
 	.ascii	""
 	.byte	0
 	.align	2
-String_const_83:
+String_const_106:
 	.word	1
 	.word	56
 	.word	String_dispatch_table
@@ -972,7 +1248,7 @@ String_const_83:
 	.ascii	" expected: 13; actual: "
 	.byte	0
 	.align	2
-String_const_84:
+String_const_107:
 	.word	1
 	.word	56
 	.word	String_dispatch_table
@@ -984,7 +1260,7 @@ String_const_84:
 	.ascii	" expected: 13; actual: "
 	.byte	0
 	.align	2
-String_const_85:
+String_const_108:
 	.word	1
 	.word	60
 	.word	String_dispatch_table
@@ -996,7 +1272,7 @@ String_const_85:
 	.ascii	" expected: 9; actual: "
 	.byte	0
 	.align	2
-String_const_86:
+String_const_109:
 	.word	1
 	.word	48
 	.word	String_dispatch_table
@@ -1010,7 +1286,7 @@ String_const_86:
 	.ascii	""
 	.byte	0
 	.align	2
-String_const_87:
+String_const_110:
 	.word	1
 	.word	40
 	.word	String_dispatch_table
@@ -4165,7 +4441,7 @@ label15:
 	# evaluate right expr
 	# evaluate value to negate
 	# load int value into $v0
-	li $v0 1
+	li $v0 4
 	# negate value in $v0 
 	neg $v0 $v0
 	# if the right expr is 0, don't do any shifts
@@ -4174,8 +4450,11 @@ label15:
 	add $sp $sp -4
 	sw $v0 0($sp)
 	# evaluate left expr
+	# evaluate value to negate
 	# load int value into $v0
-	li $v0 3
+	li $v0 32
+	# negate value in $v0 
+	neg $v0 $v0
 	# pop result of right expr off stack onto $v1
 	lw $v1 0($sp)
 	add $sp $sp 4
@@ -4183,6 +4462,2103 @@ label15:
 	sllv $v0 $v0 $v1
 	# end of signed left shift expr
 label16:
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putInt
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 44($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putString
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_32
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putString
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 40($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putInt
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# binary signed left shift expr
+	# evaluate right expr
+	# evaluate value to negate
+	# load int value into $v0
+	li $v0 4
+	# negate value in $v0 
+	neg $v0 $v0
+	# if the right expr is 0, don't do any shifts
+	beq $v0 $zero label17
+	# push result of right expr onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# evaluate left expr
+	# load int value into $v0
+	li $v0 32
+	# pop result of right expr off stack onto $v1
+	lw $v1 0($sp)
+	add $sp $sp 4
+	# shift left expr($v0) by $v1 bits
+	sllv $v0 $v0 $v1
+	# end of signed left shift expr
+label17:
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putInt
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 44($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putString
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_33
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putString
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 40($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putInt
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# binary signed left shift expr
+	# evaluate right expr
+	# load int value into $v0
+	li $v0 4
+	# if the right expr is 0, don't do any shifts
+	beq $v0 $zero label18
+	# push result of right expr onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# evaluate left expr
+	# load int value into $v0
+	li $v0 32
+	# pop result of right expr off stack onto $v1
+	lw $v1 0($sp)
+	add $sp $sp 4
+	# shift left expr($v0) by $v1 bits
+	sllv $v0 $v0 $v1
+	# end of signed left shift expr
+label18:
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putInt
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 44($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putString
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_34
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putString
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 40($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putInt
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# binary signed left shift expr
+	# evaluate right expr
+	# load int value into $v0
+	li $v0 4
+	# if the right expr is 0, don't do any shifts
+	beq $v0 $zero label19
+	# push result of right expr onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# evaluate left expr
+	# evaluate value to negate
+	# load int value into $v0
+	li $v0 32
+	# negate value in $v0 
+	neg $v0 $v0
+	# pop result of right expr off stack onto $v1
+	lw $v1 0($sp)
+	add $sp $sp 4
+	# shift left expr($v0) by $v1 bits
+	sllv $v0 $v0 $v1
+	# end of signed left shift expr
+label19:
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putInt
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 44($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putString
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_35
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putString
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 40($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putInt
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# binary signed right shift expr
+	# evaluate right expr
+	# evaluate value to negate
+	# load int value into $v0
+	li $v0 4
+	# negate value in $v0 
+	neg $v0 $v0
+	# if the right expr is 0, don't do any shifts
+	beq $v0 $zero label20
+	# push result of right expr onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# evaluate left expr
+	# evaluate value to negate
+	# load int value into $v0
+	li $v0 32
+	# negate value in $v0 
+	neg $v0 $v0
+	# pop result of right expr off stack onto $v1
+	lw $v1 0($sp)
+	add $sp $sp 4
+	# find the positive number of bits to shift, store in $t1
+	rem $t1 $v1 32
+	add $t1 $t1 32
+	rem $t1 $t1 32
+	# Load -1 into $t2, if the result is -1, break
+	li $t2 -1
+	# shift left expr($v0) by $t1 bits
+	# same as dividing $v0 $t1 times
+label21:
+	beq $v0 $t2 label20
+	div $v0 $v0 2
+	sub $t1 $t1 1
+	bgt $t1 $zero label21
+	# end of signed right shift expr
+label20:
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putInt
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 44($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putString
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_36
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putString
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 40($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putInt
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# binary signed right shift expr
+	# evaluate right expr
+	# evaluate value to negate
+	# load int value into $v0
+	li $v0 4
+	# negate value in $v0 
+	neg $v0 $v0
+	# if the right expr is 0, don't do any shifts
+	beq $v0 $zero label22
+	# push result of right expr onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# evaluate left expr
+	# load int value into $v0
+	li $v0 32
+	# pop result of right expr off stack onto $v1
+	lw $v1 0($sp)
+	add $sp $sp 4
+	# find the positive number of bits to shift, store in $t1
+	rem $t1 $v1 32
+	add $t1 $t1 32
+	rem $t1 $t1 32
+	# Load -1 into $t2, if the result is -1, break
+	li $t2 -1
+	# shift left expr($v0) by $t1 bits
+	# same as dividing $v0 $t1 times
+label23:
+	beq $v0 $t2 label22
+	div $v0 $v0 2
+	sub $t1 $t1 1
+	bgt $t1 $zero label23
+	# end of signed right shift expr
+label22:
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putInt
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 44($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putString
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_37
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putString
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 40($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putInt
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# binary signed right shift expr
+	# evaluate right expr
+	# load int value into $v0
+	li $v0 4
+	# if the right expr is 0, don't do any shifts
+	beq $v0 $zero label24
+	# push result of right expr onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# evaluate left expr
+	# load int value into $v0
+	li $v0 32
+	# pop result of right expr off stack onto $v1
+	lw $v1 0($sp)
+	add $sp $sp 4
+	# find the positive number of bits to shift, store in $t1
+	rem $t1 $v1 32
+	add $t1 $t1 32
+	rem $t1 $t1 32
+	# Load -1 into $t2, if the result is -1, break
+	li $t2 -1
+	# shift left expr($v0) by $t1 bits
+	# same as dividing $v0 $t1 times
+label25:
+	beq $v0 $t2 label24
+	div $v0 $v0 2
+	sub $t1 $t1 1
+	bgt $t1 $zero label25
+	# end of signed right shift expr
+label24:
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putInt
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 44($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putString
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_38
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putString
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 40($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putInt
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# binary signed right shift expr
+	# evaluate right expr
+	# load int value into $v0
+	li $v0 4
+	# if the right expr is 0, don't do any shifts
+	beq $v0 $zero label26
+	# push result of right expr onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# evaluate left expr
+	# evaluate value to negate
+	# load int value into $v0
+	li $v0 32
+	# negate value in $v0 
+	neg $v0 $v0
+	# pop result of right expr off stack onto $v1
+	lw $v1 0($sp)
+	add $sp $sp 4
+	# find the positive number of bits to shift, store in $t1
+	rem $t1 $v1 32
+	add $t1 $t1 32
+	rem $t1 $t1 32
+	# Load -1 into $t2, if the result is -1, break
+	li $t2 -1
+	# shift left expr($v0) by $t1 bits
+	# same as dividing $v0 $t1 times
+label27:
+	beq $v0 $t2 label26
+	div $v0 $v0 2
+	sub $t1 $t1 1
+	bgt $t1 $zero label27
+	# end of signed right shift expr
+label26:
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putInt
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 44($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putString
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_39
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putString
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 40($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putInt
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# binary unsigned right shift expr
+	# evaluate right expr
+	# evaluate value to negate
+	# load int value into $v0
+	li $v0 4
+	# negate value in $v0 
+	neg $v0 $v0
+	# if the right expr is 0, don't do any shifts
+	beq $v0 $zero label28
+	# push result of right expr onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# evaluate left expr
+	# evaluate value to negate
+	# load int value into $v0
+	li $v0 32
+	# negate value in $v0 
+	neg $v0 $v0
+	# pop result of right expr off stack onto $v1
+	lw $v1 0($sp)
+	add $sp $sp 4
+	# shift left expr($v0) by $v1 bits
+	srlv $v0 $v0 $v1
+	# end of unsigned right shift expr
+label28:
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putInt
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 44($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putString
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_40
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putString
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 40($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putInt
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# binary unsigned right shift expr
+	# evaluate right expr
+	# evaluate value to negate
+	# load int value into $v0
+	li $v0 4
+	# negate value in $v0 
+	neg $v0 $v0
+	# if the right expr is 0, don't do any shifts
+	beq $v0 $zero label29
+	# push result of right expr onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# evaluate left expr
+	# load int value into $v0
+	li $v0 32
+	# pop result of right expr off stack onto $v1
+	lw $v1 0($sp)
+	add $sp $sp 4
+	# shift left expr($v0) by $v1 bits
+	srlv $v0 $v0 $v1
+	# end of unsigned right shift expr
+label29:
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putInt
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 44($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putString
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_41
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putString
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 40($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putInt
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# binary unsigned right shift expr
+	# evaluate right expr
+	# load int value into $v0
+	li $v0 4
+	# if the right expr is 0, don't do any shifts
+	beq $v0 $zero label30
+	# push result of right expr onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# evaluate left expr
+	# load int value into $v0
+	li $v0 32
+	# pop result of right expr off stack onto $v1
+	lw $v1 0($sp)
+	add $sp $sp 4
+	# shift left expr($v0) by $v1 bits
+	srlv $v0 $v0 $v1
+	# end of unsigned right shift expr
+label30:
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putInt
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 44($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putString
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_42
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putString
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 40($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putInt
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# binary unsigned right shift expr
+	# evaluate right expr
+	# load int value into $v0
+	li $v0 4
+	# if the right expr is 0, don't do any shifts
+	beq $v0 $zero label31
+	# push result of right expr onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# evaluate left expr
+	# evaluate value to negate
+	# load int value into $v0
+	li $v0 32
+	# negate value in $v0 
+	neg $v0 $v0
+	# pop result of right expr off stack onto $v1
+	lw $v1 0($sp)
+	add $sp $sp 4
+	# shift left expr($v0) by $v1 bits
+	srlv $v0 $v0 $v1
+	# end of unsigned right shift expr
+label31:
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putInt
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 44($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putString
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_43
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putString
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 40($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putInt
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# binary bitwise AND expr
+	# evaluate left expr
+	# evaluate value to negate
+	# load int value into $v0
+	li $v0 37
+	# negate value in $v0 
+	neg $v0 $v0
+	# push result of left expr onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# evaluate right expr
+	# evaluate value to negate
+	# load int value into $v0
+	li $v0 13
+	# negate value in $v0 
+	neg $v0 $v0
+	# pop result of left expr off stack onto $v1
+	lw $v1 0($sp)
+	add $sp $sp 4
+	and $v0 $v0 $v1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putInt
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 44($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putString
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_44
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putString
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 40($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putInt
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# binary bitwise AND expr
+	# evaluate left expr
+	# load int value into $v0
+	li $v0 37
+	# push result of left expr onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# evaluate right expr
+	# evaluate value to negate
+	# load int value into $v0
+	li $v0 13
+	# negate value in $v0 
+	neg $v0 $v0
+	# pop result of left expr off stack onto $v1
+	lw $v1 0($sp)
+	add $sp $sp 4
+	and $v0 $v0 $v1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putInt
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 44($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putString
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_45
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putString
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 40($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putInt
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# binary bitwise AND expr
+	# evaluate left expr
+	# load int value into $v0
+	li $v0 37
+	# push result of left expr onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# evaluate right expr
+	# load int value into $v0
+	li $v0 13
+	# pop result of left expr off stack onto $v1
+	lw $v1 0($sp)
+	add $sp $sp 4
+	and $v0 $v0 $v1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putInt
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 44($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putString
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_46
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putString
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 40($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putInt
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# binary bitwise AND expr
+	# evaluate left expr
+	# evaluate value to negate
+	# load int value into $v0
+	li $v0 37
+	# negate value in $v0 
+	neg $v0 $v0
+	# push result of left expr onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# evaluate right expr
+	# load int value into $v0
+	li $v0 13
+	# pop result of left expr off stack onto $v1
+	lw $v1 0($sp)
+	add $sp $sp 4
+	and $v0 $v0 $v1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putInt
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 44($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putString
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_47
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putString
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 40($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putInt
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# binary bitwise OR expr
+	# evaluate left expr
+	# evaluate value to negate
+	# load int value into $v0
+	li $v0 37
+	# negate value in $v0 
+	neg $v0 $v0
+	# push result of left expr onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# evaluate right expr
+	# evaluate value to negate
+	# load int value into $v0
+	li $v0 13
+	# negate value in $v0 
+	neg $v0 $v0
+	# pop result of left expr off stack onto $v1
+	lw $v1 0($sp)
+	add $sp $sp 4
+	or $v0 $v0 $v1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putInt
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 44($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putString
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_48
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putString
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 40($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putInt
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# binary bitwise OR expr
+	# evaluate left expr
+	# load int value into $v0
+	li $v0 37
+	# push result of left expr onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# evaluate right expr
+	# evaluate value to negate
+	# load int value into $v0
+	li $v0 13
+	# negate value in $v0 
+	neg $v0 $v0
+	# pop result of left expr off stack onto $v1
+	lw $v1 0($sp)
+	add $sp $sp 4
+	or $v0 $v0 $v1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putInt
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 44($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putString
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_49
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putString
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 40($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putInt
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# binary bitwise OR expr
+	# evaluate left expr
+	# load int value into $v0
+	li $v0 37
+	# push result of left expr onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# evaluate right expr
+	# load int value into $v0
+	li $v0 13
+	# pop result of left expr off stack onto $v1
+	lw $v1 0($sp)
+	add $sp $sp 4
+	or $v0 $v0 $v1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putInt
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 44($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putString
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_50
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putString
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 40($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putInt
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# binary bitwise OR expr
+	# evaluate left expr
+	# evaluate value to negate
+	# load int value into $v0
+	li $v0 37
+	# negate value in $v0 
+	neg $v0 $v0
+	# push result of left expr onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# evaluate right expr
+	# load int value into $v0
+	li $v0 13
+	# pop result of left expr off stack onto $v1
+	lw $v1 0($sp)
+	add $sp $sp 4
+	or $v0 $v0 $v1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putInt
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 44($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putString
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_51
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putString
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 40($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putInt
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# binary bitwise XOR expr
+	# evaluate left expr
+	# evaluate value to negate
+	# load int value into $v0
+	li $v0 37
+	# negate value in $v0 
+	neg $v0 $v0
+	# push result of left expr onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# evaluate right expr
+	# evaluate value to negate
+	# load int value into $v0
+	li $v0 13
+	# negate value in $v0 
+	neg $v0 $v0
+	# pop result of left expr off stack onto $v1
+	lw $v1 0($sp)
+	add $sp $sp 4
+	xor $v0 $v0 $v1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putInt
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 44($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putString
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_52
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putString
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 40($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putInt
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# binary bitwise XOR expr
+	# evaluate left expr
+	# load int value into $v0
+	li $v0 37
+	# push result of left expr onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# evaluate right expr
+	# evaluate value to negate
+	# load int value into $v0
+	li $v0 13
+	# negate value in $v0 
+	neg $v0 $v0
+	# pop result of left expr off stack onto $v1
+	lw $v1 0($sp)
+	add $sp $sp 4
+	xor $v0 $v0 $v1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putInt
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 44($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putString
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_53
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putString
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 40($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putInt
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# binary bitwise XOR expr
+	# evaluate left expr
+	# load int value into $v0
+	li $v0 37
+	# push result of left expr onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# evaluate right expr
+	# load int value into $v0
+	li $v0 13
+	# pop result of left expr off stack onto $v1
+	lw $v1 0($sp)
+	add $sp $sp 4
+	xor $v0 $v0 $v1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putInt
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 44($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putString
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_54
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: putString
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 40($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to putInt
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 20($a0)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# binary bitwise XOR expr
+	# evaluate left expr
+	# evaluate value to negate
+	# load int value into $v0
+	li $v0 37
+	# negate value in $v0 
+	neg $v0 $v0
+	# push result of left expr onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# evaluate right expr
+	# load int value into $v0
+	li $v0 13
+	# pop result of left expr off stack onto $v1
+	lw $v1 0($sp)
+	add $sp $sp 4
+	xor $v0 $v0 $v1
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -4243,7 +6619,7 @@ FunctionalityTest.testBreakStmt:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_32
+	la $v0 String_const_55
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -4279,7 +6655,7 @@ FunctionalityTest.testBreakStmt:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_33
+	la $v0 String_const_56
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -4336,7 +6712,7 @@ FunctionalityTest.testBreakStmt:
 	# load int value into $v0
 	li $v0 0
 	sw $v0 0($fp)
-label17:
+label32:
 	# for statement predicate check
 	# < expr
 	# evaluate left expr
@@ -4352,15 +6728,15 @@ label17:
 	lw $v1 0($sp)
 	add $sp $sp 4
 	# branch to lt label if left expr < right expr
-	blt $v1 $v0 label19
+	blt $v1 $v0 label34
 	move $v0 $zero
-	b label20
+	b label35
 	# left expr < right expr
-label19:
+label34:
 	li $v0 -1
-label20:
+label35:
 	# branch to end of ForStmt if predicate is false
-	beq $zero $v0 label18
+	beq $zero $v0 label33
 
 	# for statement
 	# for statement init
@@ -4368,7 +6744,7 @@ label20:
 	# load int value into $v0
 	li $v0 1
 	sw $v0 4($fp)
-label21:
+label36:
 	# for statement predicate check
 	# < expr
 	# evaluate left expr
@@ -4384,15 +6760,15 @@ label21:
 	lw $v1 0($sp)
 	add $sp $sp 4
 	# branch to lt label if left expr < right expr
-	blt $v1 $v0 label23
+	blt $v1 $v0 label38
 	move $v0 $zero
-	b label24
+	b label39
 	# left expr < right expr
-label23:
+label38:
 	li $v0 -1
-label24:
+label39:
 	# branch to end of ForStmt if predicate is false
-	beq $zero $v0 label22
+	beq $zero $v0 label37
 	# if statement
 	# > expr
 	# evaluate left expr
@@ -4408,20 +6784,20 @@ label24:
 	lw $v1 0($sp)
 	add $sp $sp 4
 	# branch to gt label if left expr > right expr
-	bgt $v1 $v0 label26
+	bgt $v1 $v0 label41
 	move $v0 $zero
-	b label27
+	b label42
 	# left expr > right expr
-label26:
+label41:
 	li $v0 -1
-label27:
+label42:
 	# branch to end of IfStmt if predicate is false
-	beq $zero $v0 label25
+	beq $zero $v0 label40
 	# break out of loop
-	b label22
+	b label37
 
 	# end of if statement
-label25:
+label40:
 	# code for call to putInt
 	# Saving important registers
 	add $sp $sp -4
@@ -4466,10 +6842,10 @@ label25:
 	# save incremented value into variable
 	sw $v1 4($fp)
 	# unconditional branch to beginning of ForStmt
-	b label21
+	b label36
 
 	# end of for statement
-label22:
+label37:
 	# code for call to putString
 	# Saving important registers
 	add $sp $sp -4
@@ -4484,7 +6860,7 @@ label22:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_34
+	la $v0 String_const_57
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -4514,10 +6890,10 @@ label22:
 	# save incremented value into variable
 	sw $v1 0($fp)
 	# unconditional branch to beginning of ForStmt
-	b label17
+	b label32
 
 	# end of for statement
-label18:
+label33:
 
 	# Starting epilog of method
 	# pop space for local vars
@@ -4557,7 +6933,7 @@ FunctionalityTest.testCastExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_35
+	la $v0 String_const_58
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -4623,22 +6999,22 @@ FunctionalityTest.testCastExpr:
 	# load target type start idx into $v1
 	li $v1 9
 	# branch to false if $v0 < $v1
-	blt $v0 $v1 label29
+	blt $v0 $v1 label44
 	# load target type end idx into $v1
 	li $v1 9
 	# branch to false if $v0 > $v1
-	bgt $v0 $v1 label29
+	bgt $v0 $v1 label44
 	li $v0 -1
-	b label28
+	b label43
 	# throwing class cast exception
-label29:
+label44:
 	# object's type id passed via $t0
 	move $t0 $v0
 	# target type id passed via $t1
 	li $t1 9
 	jal _class_cast_error
 	# end of cast  expr
-label28:
+label43:
 	lw $v0 0($sp)
 	add $sp $sp 4
 	# Restoring important registers
@@ -4662,7 +7038,7 @@ label28:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_36
+	la $v0 String_const_59
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -4763,7 +7139,7 @@ label28:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_37
+	la $v0 String_const_60
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -4889,7 +7265,7 @@ FunctionalityTest.testConstExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_38
+	la $v0 String_const_61
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -4925,7 +7301,7 @@ FunctionalityTest.testConstExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_39
+	la $v0 String_const_62
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -4961,7 +7337,7 @@ FunctionalityTest.testConstExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_40
+	la $v0 String_const_63
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -4997,7 +7373,7 @@ FunctionalityTest.testConstExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_41
+	la $v0 String_const_64
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -5069,7 +7445,7 @@ FunctionalityTest.testConstExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_42
+	la $v0 String_const_65
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -5164,7 +7540,7 @@ FunctionalityTest.testDeclStmt:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_43
+	la $v0 String_const_66
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -5214,7 +7590,7 @@ FunctionalityTest.testDeclStmt:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_44
+	la $v0 String_const_67
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -5300,7 +7676,7 @@ FunctionalityTest.testDeclStmt:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_45
+	la $v0 String_const_68
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -5386,7 +7762,7 @@ FunctionalityTest.testDeclStmt:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_46
+	la $v0 String_const_69
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -5483,7 +7859,7 @@ FunctionalityTest.testDispatchExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_47
+	la $v0 String_const_70
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -5620,7 +7996,7 @@ FunctionalityTest.testDispatchExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_48
+	la $v0 String_const_71
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -5721,7 +8097,7 @@ FunctionalityTest.testDispatchExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_49
+	la $v0 String_const_72
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -5952,7 +8328,7 @@ FunctionalityTest.testDispatchExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_50
+	la $v0 String_const_73
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -6053,7 +8429,7 @@ FunctionalityTest.testDispatchExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_51
+	la $v0 String_const_74
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -6154,7 +8530,7 @@ FunctionalityTest.testDispatchExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_52
+	la $v0 String_const_75
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -6253,7 +8629,7 @@ FunctionalityTest.testDispatchExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_53
+	la $v0 String_const_76
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -6354,7 +8730,7 @@ FunctionalityTest.testDispatchExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_54
+	la $v0 String_const_77
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -6480,7 +8856,7 @@ FunctionalityTest.testForStmt:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_55
+	la $v0 String_const_78
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -6516,7 +8892,7 @@ FunctionalityTest.testForStmt:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_56
+	la $v0 String_const_79
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -6554,7 +8930,7 @@ FunctionalityTest.testForStmt:
 	sw $v0 0($fp)
 
 	# for statement
-label30:
+label45:
 	# code for call to putInt
 	# Saving important registers
 	add $sp $sp -4
@@ -6606,20 +8982,20 @@ label30:
 	lw $v1 0($sp)
 	add $sp $sp 4
 	# branch to eq label if left == right
-	beq $v1 $v0 label33
+	beq $v1 $v0 label48
 	move $v0 $zero
-	b label34
+	b label49
 	# left expr == right expr
-label33:
+label48:
 	li $v0 -1
-label34:
+label49:
 	# branch to end of IfStmt if predicate is false
-	beq $zero $v0 label32
+	beq $zero $v0 label47
 	# break out of loop
-	b label31
+	b label46
 
 	# end of if statement
-label32:
+label47:
 	# evaluate variable to increment
 	# load variable from stack to $v0
 	lw $v0 0($fp)
@@ -6628,10 +9004,10 @@ label32:
 	# save incremented value into variable
 	sw $v1 0($fp)
 	# unconditional branch to beginning of ForStmt
-	b label30
+	b label45
 
 	# end of for statement
-label31:
+label46:
 	# code for call to putString
 	# Saving important registers
 	add $sp $sp -4
@@ -6646,7 +9022,7 @@ label31:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_57
+	la $v0 String_const_80
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -6675,7 +9051,7 @@ label31:
 	# load int value into $v0
 	li $v0 0
 	sw $v0 0($fp)
-label35:
+label50:
 	# for statement predicate check
 	# < expr
 	# evaluate left expr
@@ -6691,15 +9067,15 @@ label35:
 	lw $v1 0($sp)
 	add $sp $sp 4
 	# branch to lt label if left expr < right expr
-	blt $v1 $v0 label37
+	blt $v1 $v0 label52
 	move $v0 $zero
-	b label38
+	b label53
 	# left expr < right expr
-label37:
+label52:
 	li $v0 -1
-label38:
+label53:
 	# branch to end of ForStmt if predicate is false
-	beq $zero $v0 label36
+	beq $zero $v0 label51
 	# code for call to putInt
 	# Saving important registers
 	add $sp $sp -4
@@ -6744,10 +9120,10 @@ label38:
 	# save incremented value into variable
 	sw $v1 0($fp)
 	# unconditional branch to beginning of ForStmt
-	b label35
+	b label50
 
 	# end of for statement
-label36:
+label51:
 
 	# Starting epilog of method
 	# pop space for local vars
@@ -6787,7 +9163,7 @@ FunctionalityTest.testIfStmt:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_58
+	la $v0 String_const_81
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -6823,7 +9199,7 @@ FunctionalityTest.testIfStmt:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_59
+	la $v0 String_const_82
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -6849,7 +9225,7 @@ FunctionalityTest.testIfStmt:
 	# load boolean value into $v0
 	li $v0 -1
 	# branch to end of IfStmt if predicate is false
-	beq $zero $v0 label39
+	beq $zero $v0 label54
 	# code for call to putString
 	# Saving important registers
 	add $sp $sp -4
@@ -6864,7 +9240,7 @@ FunctionalityTest.testIfStmt:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_60
+	la $v0 String_const_83
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -6888,7 +9264,7 @@ FunctionalityTest.testIfStmt:
 
 
 	# end of if statement
-label39:
+label54:
 	# code for call to putString
 	# Saving important registers
 	add $sp $sp -4
@@ -6903,7 +9279,7 @@ label39:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_61
+	la $v0 String_const_84
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -6929,7 +9305,7 @@ label39:
 	# load boolean value into $v0
 	li $v0 0
 	# branch to else statement if predicate is false
-	beq $zero $v0 label41
+	beq $zero $v0 label56
 	# code for call to putString
 	# Saving important registers
 	add $sp $sp -4
@@ -6944,7 +9320,7 @@ label39:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_60
+	la $v0 String_const_83
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -6967,10 +9343,10 @@ label39:
 	add $sp $sp 4
 
 	# unconditional branch to end of IfStmt
-	b label40
+	b label55
 
 	# else statement
-label41:
+label56:
 	# code for call to putString
 	# Saving important registers
 	add $sp $sp -4
@@ -6985,7 +9361,7 @@ label41:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_62
+	la $v0 String_const_85
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -7009,7 +9385,7 @@ label41:
 
 
 	# end of if statement
-label40:
+label55:
 
 	# Starting epilog of method
 	# pop space for local vars
@@ -7049,7 +9425,7 @@ FunctionalityTest.testInstanceof:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_63
+	la $v0 String_const_86
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -7099,7 +9475,7 @@ FunctionalityTest.testInstanceof:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_64
+	la $v0 String_const_87
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -7140,18 +9516,18 @@ FunctionalityTest.testInstanceof:
 	# load target type start idx into $v1
 	li $v1 1
 	# branch to false if $v0 < $v1
-	blt $v0 $v1 label43
+	blt $v0 $v1 label58
 	# load target type end idx into $v1
 	li $v1 1
 	# branch to false if $v0 > $v1
-	bgt $v0 $v1 label43
+	bgt $v0 $v1 label58
 	li $v0 -1
-	b label42
+	b label57
 	# evaluation to false for instance of
-label43:
+label58:
 	move $v0 $zero
 	# end of instance of expr
-label42:
+label57:
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -7187,7 +9563,7 @@ label42:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_65
+	la $v0 String_const_88
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -7228,18 +9604,18 @@ label42:
 	# load target type start idx into $v1
 	li $v1 7
 	# branch to false if $v0 < $v1
-	blt $v0 $v1 label45
+	blt $v0 $v1 label60
 	# load target type end idx into $v1
 	li $v1 7
 	# branch to false if $v0 > $v1
-	bgt $v0 $v1 label45
+	bgt $v0 $v1 label60
 	li $v0 -1
-	b label44
+	b label59
 	# evaluation to false for instance of
-label45:
+label60:
 	move $v0 $zero
 	# end of instance of expr
-label44:
+label59:
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -7300,7 +9676,7 @@ FunctionalityTest.testNewExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_66
+	la $v0 String_const_89
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -7394,7 +9770,7 @@ FunctionalityTest.testNewExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_67
+	la $v0 String_const_90
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -7523,7 +9899,7 @@ FunctionalityTest.testReturnStmt:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_68
+	la $v0 String_const_91
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -7746,7 +10122,7 @@ FunctionalityTest.testReturnStmt:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_69
+	la $v0 String_const_92
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -7818,7 +10194,7 @@ FunctionalityTest.testReturnStmt:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_70
+	la $v0 String_const_93
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -7915,7 +10291,7 @@ FunctionalityTest.testUnaryExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_71
+	la $v0 String_const_94
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -7979,7 +10355,7 @@ FunctionalityTest.testUnaryExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_72
+	la $v0 String_const_95
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -8056,7 +10432,7 @@ FunctionalityTest.testUnaryExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_73
+	la $v0 String_const_96
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -8128,7 +10504,7 @@ FunctionalityTest.testUnaryExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_74
+	la $v0 String_const_97
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -8205,7 +10581,7 @@ FunctionalityTest.testUnaryExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_75
+	la $v0 String_const_98
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -8277,7 +10653,7 @@ FunctionalityTest.testUnaryExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_76
+	la $v0 String_const_99
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -8354,7 +10730,7 @@ FunctionalityTest.testUnaryExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_73
+	la $v0 String_const_96
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -8426,7 +10802,7 @@ FunctionalityTest.testUnaryExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_77
+	la $v0 String_const_100
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -8503,7 +10879,7 @@ FunctionalityTest.testUnaryExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_78
+	la $v0 String_const_101
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -8582,7 +10958,7 @@ FunctionalityTest.testUnaryExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_79
+	la $v0 String_const_102
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -8661,7 +11037,7 @@ FunctionalityTest.testUnaryExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_80
+	la $v0 String_const_103
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -8740,7 +11116,7 @@ FunctionalityTest.testUnaryExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_81
+	la $v0 String_const_104
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -8835,7 +11211,7 @@ FunctionalityTest.testVarExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_82
+	la $v0 String_const_105
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -8879,7 +11255,7 @@ FunctionalityTest.testVarExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_83
+	la $v0 String_const_106
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -8951,7 +11327,7 @@ FunctionalityTest.testVarExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_84
+	la $v0 String_const_107
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -9023,7 +11399,7 @@ FunctionalityTest.testVarExpr:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_85
+	la $v0 String_const_108
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -9120,7 +11496,7 @@ FunctionalityTest.testWhileStmt:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_86
+	la $v0 String_const_109
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -9156,7 +11532,7 @@ FunctionalityTest.testWhileStmt:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_87
+	la $v0 String_const_110
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -9194,7 +11570,7 @@ FunctionalityTest.testWhileStmt:
 	sw $v0 0($fp)
 
 	# while statement
-label46:
+label61:
 	# > expr
 	# evaluate left expr
 	# load variable from stack to $v0
@@ -9209,15 +11585,15 @@ label46:
 	lw $v1 0($sp)
 	add $sp $sp 4
 	# branch to gt label if left expr > right expr
-	bgt $v1 $v0 label48
+	bgt $v1 $v0 label63
 	move $v0 $zero
-	b label49
+	b label64
 	# left expr > right expr
-label48:
+label63:
 	li $v0 -1
-label49:
+label64:
 	# branch to end of WhileStmt if predicate is false
-	beq $zero $v0 label47
+	beq $zero $v0 label62
 	# code for call to putInt
 	# Saving important registers
 	add $sp $sp -4
@@ -9262,10 +11638,10 @@ label49:
 	# save decremented value into variable
 	sw $v1 0($fp)
 	# unconditional branch to beginning of WhileStmt
-	b label46
+	b label61
 
 	# end of while statement
-label47:
+label62:
 
 	# Starting epilog of method
 	# pop space for local vars

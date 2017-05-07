@@ -1121,7 +1121,6 @@ public class CodeGenVisitor extends Visitor {
         String endLeftShiftExpr = assemblySupport.getLabel();
 
         assemblySupport.genComment("binary signed left shift expr");
-
         assemblySupport.genComment("evaluate right expr");
         node.getRightExpr().accept(this);
 
@@ -1157,19 +1156,15 @@ public class CodeGenVisitor extends Visitor {
     @Override
     public Object visit(BinaryLogicRightShiftExpr node) {
         String endRightShiftExpr = assemblySupport.getLabel();
+        String divLeftExprLabel = assemblySupport.getLabel();
 
-        assemblySupport.genComment("binary signed left shift expr");
-
+        assemblySupport.genComment("binary signed right shift expr");
         assemblySupport.genComment("evaluate right expr");
         node.getRightExpr().accept(this);
 
         assemblySupport.genComment("if the right expr is 0, don't do any shifts");
         assemblySupport.genCondBeq(assemblySupport.getResultReg(),
                 assemblySupport.getZeroReg(), endRightShiftExpr);
-
-        assemblySupport.genComment("find the sign of the right expr, store in $t1");
-        assemblySupport.genDiv(assemblySupport.getT1Reg(),
-                assemblySupport.getResultReg(), assemblySupport.getResultReg());
 
         assemblySupport.genComment("push result of right expr onto stack");
         genPush(assemblySupport.getResultReg());
@@ -1181,13 +1176,27 @@ public class CodeGenVisitor extends Visitor {
         assemblySupport.genComment("pop result of right expr off stack onto $v1");
         genPop("$v1");
 
-        assemblySupport.genComment("shift left expr($v0) by $v1 bits");
-        assemblySupport.genShiftRight(assemblySupport.getResultReg(),
-                assemblySupport.getResultReg(), "$v1");
+        assemblySupport.genComment("find the positive number of bits to shift, store in $t1");
+        assemblySupport.genMod(assemblySupport.getT1Reg(), "$v1", 32);
+        assemblySupport.genAdd(assemblySupport.getT1Reg(),
+                assemblySupport.getT1Reg(), 32);
+        assemblySupport.genMod(assemblySupport.getT1Reg(),
+                assemblySupport.getT1Reg(), 32);
 
-        assemblySupport.genComment("multiply by sign of right expr to preserve sign");
-        assemblySupport.genMul(assemblySupport.getResultReg(),
-                assemblySupport.getResultReg(), assemblySupport.getT1Reg());
+        assemblySupport.genComment("Load -1 into $t2, if the result is -1, break");
+        assemblySupport.genLoadImm(assemblySupport.getT2Reg(), -1);
+
+        assemblySupport.genComment("shift left expr($v0) by $t1 bits");
+        assemblySupport.genComment("same as dividing $v0 $t1 times");
+        assemblySupport.genLabel(divLeftExprLabel);
+        assemblySupport.genCondBeq(assemblySupport.getResultReg(),
+                assemblySupport.getT2Reg(), endRightShiftExpr);
+        assemblySupport.genDiv(assemblySupport.getResultReg(),
+                assemblySupport.getResultReg(), 2);
+        assemblySupport.genSub(assemblySupport.getT1Reg(),
+                assemblySupport.getT1Reg(), 1);
+        assemblySupport.genCondBgt(assemblySupport.getT1Reg(),
+                assemblySupport.getZeroReg(), divLeftExprLabel);
 
         assemblySupport.genComment("end of signed right shift expr");
         assemblySupport.genLabel(endRightShiftExpr);
@@ -1205,8 +1214,7 @@ public class CodeGenVisitor extends Visitor {
     public Object visit(BinaryLogicUnsignedShiftExpr node) {
         String endUnsignedShiftExpr = assemblySupport.getLabel();
 
-        assemblySupport.genComment("binary signed left shift expr");
-
+        assemblySupport.genComment("binary unsigned right shift expr");
         assemblySupport.genComment("evaluate right expr");
         node.getRightExpr().accept(this);
 
@@ -1228,7 +1236,7 @@ public class CodeGenVisitor extends Visitor {
         assemblySupport.genShiftRight(assemblySupport.getResultReg(),
                 assemblySupport.getResultReg(), "$v1");
 
-        assemblySupport.genComment("end of signed right shift expr");
+        assemblySupport.genComment("end of unsigned right shift expr");
         assemblySupport.genLabel(endUnsignedShiftExpr);
 
         return null;
@@ -1345,11 +1353,8 @@ public class CodeGenVisitor extends Visitor {
         if (refExpr == null) {
             if(varName.equals("this")) {
                 assemblySupport.genComment("move reference to \"this\" obj to $v0");
-//                assemblySupport.genComment("load reference to \"this\" obj to $v0");
                 assemblySupport.genMove(assemblySupport.getResultReg(),
                         assemblySupport.getArg0Reg());
-//                assemblySupport.genLoadAddr(assemblySupport.getResultReg(),
-//                        currClassNode.getName() + "_template");
             }
             else if(varName.equals("super")) {
                 assemblySupport.genComment("load reference to \"this\" obj to $v0");

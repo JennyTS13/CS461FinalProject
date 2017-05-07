@@ -94,7 +94,7 @@ public class Main {
      * Visitor flags for the AST
      */
     private static boolean mainMainVisitor, stringConstantsVisior, numLocalVarsVisitor,
-                            printVisitor, prettyPrintVisitor;
+                            printVisitor;
     /**
      * Optimization level (0 means off)
      */
@@ -133,7 +133,7 @@ public class Main {
         System.err.println("Usage: bantamc [-h] [-o <output_file>] [-t <architecture>]");
         System.err.println("               [-gc] [-int] [-bantam.opt <num>]");
         System.err.println("               [-dt] [-dl] [-dp] [-ds] ");
-        System.err.println("               [-mm] [-sc] [-lv] [-pv] [-ppv]");
+        System.err.println("               [-mm] [-sc] [-lv] [-pv] ");
         System.err.println("               [-di] [-do] [-dc] [-sl] [-sp] [-ss] [-so] <input_files>");
         System.err.println("man bantamc for more details");
         System.exit(1);
@@ -227,9 +227,6 @@ public class Main {
             }
             else if(args[i].equals("-pv")) {
                 printVisitor = true;
-            }
-            else if(args[i].equals("-ppv")) {
-                prettyPrintVisitor = true;
             }
 
             // if -sl, -sp, -ss, -so then set corresponding boolean to stop compilation
@@ -426,22 +423,15 @@ public class Main {
             }
             if (printVisitor) {
                 // if printVisitor==true, then print the source file
-                PrintVisitor visitor = new PrintVisitor();
-                visitor.visit((Program) result.value);
-                System.exit(0);
-            }
-            if (prettyPrintVisitor) {
-                // if printVisitor==true, then print the source file
-                PrettyPrintVisitor visitor = new PrettyPrintVisitor(
-                            /*start at indent 0*/0,
+                PrintVisitor visitor = new PrintVisitor(/*start at indent 0*/0,
 							/*increment by 4 each indent level*/4);
                 visitor.visit((Program) result.value);
                 System.exit(0);
             }
-
             if (stopAfterParsing) {
                 // if stopAfterParsing==true, then print AST and exit
-                PrintVisitor visitor = new PrintVisitor();
+                PrintVisitor visitor = new PrintVisitor(/*start at indent 0*/0,
+							/*increment by 4 each indent level*/4);
                 visitor.visit((Program) result.value);
                 System.exit(0);
             }
@@ -467,7 +457,8 @@ public class Main {
             }
             if (stopAfterSemant) {
                 // if stopAfterSemant==true, then print AST (with types) and exit
-                PrintVisitor printVisitor = new PrintVisitor();
+                PrintVisitor printVisitor = new PrintVisitor(/*start at indent 0*/0,
+							/*increment by 4 each indent level*/4);
                 printVisitor.visit((Program) result.value);
                 System.exit(0);
             }

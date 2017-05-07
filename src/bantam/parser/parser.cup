@@ -662,9 +662,9 @@ binary_logic_expr
         | expr:leftExpr SIGNEDLEFTSHIFT expr:rightExpr
             {: RESULT = new BinaryLogicLeftShiftExpr(getCurrLineNum(), leftExpr, rightExpr); :}
         | expr:leftExpr SIGNEDRIGHTSHIFT expr:rightExpr
-            {: RESULT = new BinaryLogicLeftShiftExpr(getCurrLineNum(), leftExpr, rightExpr); :}
+            {: RESULT = new BinaryLogicRightShiftExpr(getCurrLineNum(), leftExpr, rightExpr); :}
         | expr:leftExpr UNSIGNEDRIGHTSHIFT expr:rightExpr
-            {: RESULT = new BinaryLogicLeftShiftExpr(getCurrLineNum(), leftExpr, rightExpr); :}
+            {: RESULT = new BinaryLogicUnsignedShiftExpr(getCurrLineNum(), leftExpr, rightExpr); :}
     ;
 
 /* unary expression */

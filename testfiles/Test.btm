@@ -212,8 +212,77 @@ class FunctionalityTest extends TestSuperClass {
         textIO.putString("\nt || f \t expected: true; actual: ");
         printBooleanValue(t || f);
 
-        textIO.putString("\n3 << -1 \t expected: -2147483648; actual: ");
-        textIO.putInt(3 << -1);
+        textIO.putString("\n-32 << -4 \t expected: 0; actual: ");
+        textIO.putInt(-32 << -4);
+
+        textIO.putString("\n32 << -4 \t expected: 0; actual: ");
+        textIO.putInt(32 << -4);
+
+        textIO.putString("\n32 << 4 \t expected: 512; actual: ");
+        textIO.putInt(32 << 4);
+
+        textIO.putString("\n-32 << 4 \t expected: -512; actual: ");
+        textIO.putInt(-32 << 4);
+
+        textIO.putString("\n-32 >> -4 \t expected: -1; actual: ");
+        textIO.putInt(-32 >> -4);
+
+        textIO.putString("\n32 >> -4 \t expected: 0; actual: ");
+        textIO.putInt(32 >> -4);
+
+        textIO.putString("\n32 >> 4 \t expected: 2; actual: ");
+        textIO.putInt(32 >> 4);
+
+        textIO.putString("\n-32 >> 4 \t expected: -2; actual: ");
+        textIO.putInt(-32 >> 4);
+
+        textIO.putString("\n-32 >>> -4 \t expected: 15; actual: ");
+        textIO.putInt(-32 >>> -4);
+
+        textIO.putString("\n32 >>> -4 \t expected: 0; actual: ");
+        textIO.putInt(32 >>> -4);
+
+        textIO.putString("\n32 >>> 4 \t expected: 2; actual: ");
+        textIO.putInt(32 >>> 4);
+
+        textIO.putString("\n-32 >>> 4 \t expected: 268435454; actual: ");
+        textIO.putInt(-32 >>> 4);
+
+        textIO.putString("\n-37 & -13 \t expected: -45; actual: ");
+        textIO.putInt(-37 & -13);
+
+        textIO.putString("\n37 & -13 \t expected: 33; actual: ");
+        textIO.putInt(37 & -13);
+
+        textIO.putString("\n37 & 13 \t expected: 5; actual: ");
+        textIO.putInt(37 & 13);
+
+        textIO.putString("\n-37 & 13 \t expected: 9; actual: ");
+        textIO.putInt(-37 & 13);
+
+        textIO.putString("\n-37 | -13 \t expected: -5; actual: ");
+        textIO.putInt(-37 | -13);
+
+        textIO.putString("\n37 | -13 \t expected: -9; actual: ");
+        textIO.putInt(37 | -13);
+
+        textIO.putString("\n37 | 13 \t expected: 45; actual: ");
+        textIO.putInt(37 | 13);
+
+        textIO.putString("\n-37 | 13 \t expected: -33; actual: ");
+        textIO.putInt(-37 | 13);
+
+        textIO.putString("\n-37 ^ -13 \t expected: 40; actual: ");
+        textIO.putInt(-37 ^ -13);
+
+        textIO.putString("\n37 ^ -13 \t expected: -42; actual: ");
+        textIO.putInt(37 ^ -13);
+
+        textIO.putString("\n37 ^ 13 \t expected: 40; actual: ");
+        textIO.putInt(37 ^ 13);
+
+        textIO.putString("\n-37 ^ 13 \t expected: -42; actual: ");
+        textIO.putInt(-37 ^ 13);
     }
 
     /**
