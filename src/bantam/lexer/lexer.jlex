@@ -262,6 +262,8 @@ instanceof                  { return new Symbol(TokenIds.INSTANCEOF,
                                 new Token("|", yyline)); }
 "^"                         { return new Symbol(TokenIds.BITXOR,
                                 new Token("^", yyline)); }
+"~"                         { return new Symbol(TokenIds.BITNOT,
+                                new Token("^", yyline)); }
 if                          { return new Symbol(TokenIds.IF,
                                 new Token("IF", yyline)); }
 return                      { return new Symbol(TokenIds.RETURN,

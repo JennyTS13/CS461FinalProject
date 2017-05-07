@@ -1269,6 +1269,35 @@ public class CodeGenVisitor extends Visitor {
      */
     @Override
     public Object visit(UnaryNotExpr node) {
+        String trueLabel = assemblySupport.getLabel();
+        String endNotLabel = assemblySupport.getLabel();
+
+        assemblySupport.genComment("evaluate value to NOT");
+        node.getExpr().accept(this);
+
+        assemblySupport.genComment("if value in $v0 = 0, branch to true label");
+        assemblySupport.genCondBeq(assemblySupport.getResultReg(),
+                assemblySupport.getZeroReg(), trueLabel);
+        assemblySupport.genMove(assemblySupport.getResultReg(),
+                assemblySupport.getZeroReg());
+        assemblySupport.genUncondBr(endNotLabel);
+
+        assemblySupport.genComment("True label");
+        assemblySupport.genLabel(trueLabel);
+        assemblySupport.genLoadImm(assemblySupport.getResultReg(), -1);
+
+        assemblySupport.genLabel(endNotLabel);
+        return null;
+    }
+
+    /**
+     * Generate MIPS code for a unary bitwise NOT expression node
+     *
+     * @param node the unary NOT expression node
+     * @return result of the visit
+     */
+    @Override
+    public Object visit(UnaryBitNotExpr node) {
         assemblySupport.genComment("evaluate value to NOT");
         node.getExpr().accept(this);
 

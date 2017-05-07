@@ -498,6 +498,12 @@ class FunctionalityTest extends TestSuperClass {
         textIO.putString("\ni = -i; \t expected: -13; actual: ");
         textIO.putInt(i);
 
+        textIO.putString("\n~13; \t expected: -14; actual: ");
+        textIO.putInt(~13);
+
+        textIO.putString("\n~-13; \t expected: 12; actual: ");
+        textIO.putInt(~-13);
+
         t = !t;
         textIO.putString("\nt = !t; \t expected: false; actual: ");
         printBooleanValue(t);

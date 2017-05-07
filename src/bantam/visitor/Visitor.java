@@ -696,6 +696,17 @@ public abstract class Visitor {
     }
 
     /**
+     * Visit a unary bitwise NOT expression node
+     *
+     * @param node the unary NOT expression node
+     * @return result of the visit
+     */
+    public Object visit(UnaryBitNotExpr node) {
+        node.getExpr().accept(this);
+        return null;
+    }
+
+    /**
      * Visit a unary increment expression node
      *
      * @param node the unary increment expression node

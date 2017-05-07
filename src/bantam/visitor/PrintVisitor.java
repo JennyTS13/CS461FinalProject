@@ -669,6 +669,18 @@ public class PrintVisitor extends Visitor {
     }
 
     /**
+     * Visit a unary bitwise NOT expression node
+     *
+     * @param node the unary NOT expression node
+     * @return result of the visit
+     */
+    @Override
+    public Object visit(UnaryBitNotExpr node) {
+        printUnaryExpr(node);
+        return null;
+    }
+
+    /**
      * Print AST node
      *
      * @param node AST node

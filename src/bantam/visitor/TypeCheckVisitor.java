@@ -1134,6 +1134,23 @@ public class TypeCheckVisitor extends Visitor {
     }
 
     /**
+     * Visit a unary bitwise NOT expression node
+     *
+     * @param node the unary NOT expression node
+     * @return result of the visit
+     */
+    @Override
+    public Object visit(UnaryBitNotExpr node) {
+        node.setExprType("int");
+        node.getExpr().accept(this);
+        if(!areTypesEqual(node.getExpr().getExprType(), "int")) {
+            errorHandler.register(2, fileName, node.getLineNum(),
+                    "Operand must be of type int");
+        }
+        return "UnaryBitNotExpr";
+    }
+
+    /**
      * Type checks a unary expr expecting an int VarExpr/ArrayExpr as its expr
      *
      * @param node the UnaryExpr node

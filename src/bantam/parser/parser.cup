@@ -199,7 +199,7 @@ terminal Token LPAREN, RPAREN, LBRACE, RBRACE, LSQBRACE, RSQBRACE;
 terminal Token SEMI, COMMA, DOT;
 terminal Token ID, INT_CONST, BOOLEAN_CONST, STRING_CONST;
 terminal Token SIGNEDLEFTSHIFT, SIGNEDRIGHTSHIFT, UNSIGNEDRIGHTSHIFT;
-terminal Token BITOR, BITXOR, BITAND;
+terminal Token BITOR, BITXOR, BITAND, BITNOT;
 
 /* list of non-terminals used in context-free grammar
    format: nonterminal <type> <list of nonterminal names>
@@ -242,6 +242,7 @@ nonterminal BinaryLogicExpr binary_logic_expr;
 nonterminal UnaryExpr unary_expr;
 nonterminal UnaryNegExpr unary_neg_expr;
 nonterminal UnaryNotExpr unary_not_expr;
+nonterminal UnaryBitNotExpr unary_bit_not_expr;
 nonterminal UnaryIncrExpr unary_incr_expr;
 nonterminal UnaryDecrExpr unary_decr_expr;
 nonterminal ConstExpr const_expr;
@@ -267,7 +268,7 @@ precedence left INSTANCEOF, LT, LEQ, GT, GEQ;
 precedence left SIGNEDLEFTSHIFT, SIGNEDRIGHTSHIFT, UNSIGNEDRIGHTSHIFT;
 precedence left PLUS, MINUS;
 precedence left TIMES, DIVIDE, MODULUS;
-precedence right INCR, DECR, NOT;
+precedence right INCR, DECR, NOT, BITNOT;
 precedence left DOT, LPAREN, RPAREN, LSQBRACE, RSQBRACE;
 precedence left ELSE;
 
@@ -670,10 +671,11 @@ binary_logic_expr
 /* unary expression */
 unary_expr
     ::=
-        unary_neg_expr:unaryNegExpr        {: RESULT = unaryNegExpr; :}
-        | unary_not_expr:unaryNotExpr      {: RESULT = unaryNotExpr; :}
-        | unary_incr_expr:unaryIncrExpr    {: RESULT = unaryIncrExpr; :}
-        | unary_decr_expr:unaryDecrExpr    {: RESULT = unaryDecrExpr; :}
+        unary_neg_expr:unaryNegExpr             {: RESULT = unaryNegExpr; :}
+        | unary_not_expr:unaryNotExpr           {: RESULT = unaryNotExpr; :}
+        | unary_bit_not_expr:unaryBitNotExpr    {: RESULT = unaryBitNotExpr; :}
+        | unary_incr_expr:unaryIncrExpr         {: RESULT = unaryIncrExpr; :}
+        | unary_decr_expr:unaryDecrExpr         {: RESULT = unaryDecrExpr; :}
     ;
 
 /* unary neg expression */
@@ -688,6 +690,13 @@ unary_not_expr
     ::=
         NOT expr:expression
             {: RESULT = new UnaryNotExpr(getCurrLineNum(), expression); :}
+    ;
+
+/* unary bitwise not expression */
+unary_bit_not_expr
+    ::=
+        BITNOT expr:expression
+            {: RESULT = new UnaryBitNotExpr(getCurrLineNum(), expression); :}
     ;
 
 /* unary incr expression */
