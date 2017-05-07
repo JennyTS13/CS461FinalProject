@@ -132,6 +132,10 @@ class FunctionalityTest extends TestSuperClass {
         textIO.putString("\ni = 7 \t expected: 7; actual: ");
         textIO.putInt(i);
 
+        i += 7;
+        textIO.putString("\ni += 7 \t expected: 14; actual: ");
+        textIO.putInt(i);
+
         integer = 3;
         textIO.putString("\ninteger = 3 \t expected: 3; actual: ");
         textIO.putInt(i);

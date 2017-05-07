@@ -430,8 +430,8 @@ public class TypeCheckVisitor extends Visitor {
         String exprTypr = (String)node.getExpr().accept(this);
 
         List<String> validExprType = Arrays.asList(
-                "AssignExpr", "ArrayAssignExpr", "UnaryIncrExpr", "UnaryDecrExpr",
-                "DispatchExpr", "NewExpr", "NewArrayExpr");
+                "AssignExpr", "PlusEqualsExpr", "ArrayAssignExpr", "UnaryIncrExpr",
+                "UnaryDecrExpr", "DispatchExpr", "NewExpr", "NewArrayExpr");
         if(!validExprType.contains(exprTypr)){
             errorHandler.register(2, fileName, node.getLineNum(),
                     "Expected: assignments, increment/decrement operations, method calls, " +
@@ -749,6 +749,43 @@ public class TypeCheckVisitor extends Visitor {
         }
 
         return "AssignExpr";
+    }
+
+    /**
+     * Type checks a shortcut assign expr (i.e +=)
+     *
+     * @param node ShortcutAssignExpr to type check
+     */
+    private void checkShortcutExpr(ShortcutAssignExpr node){
+        node.getExpr().accept(this);
+        String varType = getReferencedVarType(node, node.getRefName(), node.getName());
+
+        //see if the variable has been declared
+        if(varType == null){
+            errorHandler.register(2, fileName, node.getLineNum(),
+                    node.getName() + " has not been declared.");
+        }
+        else{
+            node.setExprType("int");
+            //if one is not a type of the other, register an error
+            if(!areTypesEqual(varType, "int")) {
+                errorHandler.register(2, fileName, node.getLineNum(),
+                        "Operands of wrong type. Expected: int" +
+                                " Actual: " + varType);
+            }
+        }
+    }
+
+    /**
+     * Visit a plus equals expression node
+     *
+     * @param node the assignment expression node
+     * @return result of the visit
+     */
+    @Override
+    public Object visit(PlusEqualsExpr node) {
+        checkShortcutExpr(node);
+        return "PlusEqualsExpr";
     }
 
     /**

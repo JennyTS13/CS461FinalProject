@@ -450,6 +450,33 @@ public class PrintVisitor extends Visitor {
     }
 
     /**
+     * Prints a ShortcutAssignExpr
+     *
+     * @param node ShortcutAssignExpr node to print
+     */
+    private void printShortcutAssignExpr(ShortcutAssignExpr node){
+        System.out.print("(");
+        printExprMeta(node);
+        if (node.getRefName() != null) {
+            System.out.print(node.getRefName() + ".");
+        }
+        System.out.print(node.getName() + " " + node.getOpName() + " ");
+        node.getExpr().accept(this);
+        System.out.print(")");
+    }
+
+    /**
+     * Print AST node
+     *
+     * @param node AST node
+     * @return null (returns value to satisfy compiler)
+     */
+    public Object visit(PlusEqualsExpr node) {
+        printShortcutAssignExpr(node);
+        return null;
+    }
+
+    /**
      * Print AST node
      *
      * @param node AST node

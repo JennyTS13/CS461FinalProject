@@ -585,6 +585,32 @@ public class CodeGenVisitor extends Visitor {
     }
 
     /**
+     * Return the location of the left side of the assign expression
+     *
+     * @param varNode the assignment expression node
+     * @return Location of the left side of the assign expression
+     */
+    private Location getAssignNodeLocation(AssignExpr varNode) {
+        String varName = varNode.getName();
+        if(varNode.getRefName() != null) {
+            //this.something
+            if (varNode.getRefName().equals("this")) {
+                //look for the variable at the field's scope
+                return (Location) varSymbolTable.peek(varName,
+                        getSymTableFieldLevel(currClassNode));
+            }
+            //super.something
+            else {
+                return (Location) varSymbolTable.peek(varName,
+                        getSymTableFieldLevel(currClassNode.getParent()));
+            }
+        }
+        else{
+            return (Location) varSymbolTable.lookup(varName);
+        }
+    }
+
+    /**
      * Generate MIPS code for an assignment expression node
      *
      * @param node the assignment expression node
@@ -592,28 +618,55 @@ public class CodeGenVisitor extends Visitor {
      */
     @Override
     public Object visit(AssignExpr node) {
-        String varName = node.getName();
-        Location varLocation = null;
-        if(node.getRefName() != null) {
-            //this.something
-            if (node.getRefName().equals("this")) {
-                //look for the variable at the field's scope
-                varLocation = (Location) varSymbolTable.peek(varName,
-                        getSymTableFieldLevel(currClassNode));
-            }
-            //super.something
-            else {
-                varLocation = (Location) varSymbolTable.peek(varName,
-                        getSymTableFieldLevel(currClassNode.getParent()));
-            }
-        }
-        else{
-            varLocation = (Location) varSymbolTable.lookup(varName);
-        }
+        Location varLocation = getAssignNodeLocation(node);
 
         //evaluate the expr
         assemblySupport.genComment("evaluate right side of assign expr");
         node.getExpr().accept(this);
+
+        //move result from expr from $v0 into its position on the stack
+        assemblySupport.genStoreWord(assemblySupport.getResultReg(),
+                varLocation.getOffset(), varLocation.getBaseReg());
+
+        return null;
+    }
+
+    /**
+     * Generate MIPS code for a shortcut assign expr up until
+     * the arithmetic operation.
+     *
+     * @param node the ShortcutAssignExpr node
+     */
+    public void visitShortcutAssignExpr(ShortcutAssignExpr node) {
+        Location varLocation = getAssignNodeLocation(node);
+
+        assemblySupport.genComment("load value of left expr into $v0");
+        assemblySupport.genLoadWord(assemblySupport.getResultReg(),
+                varLocation.getOffset(), varLocation.getBaseReg());
+
+        //push the value of the left expr onto stack
+        genPush(assemblySupport.getResultReg());
+
+        //evaluate the right expr
+        assemblySupport.genComment("evaluate right side of plus equals expr");
+        node.getExpr().accept(this);
+
+        //pop the value of the left expr off of stack
+        genPop("$v1");
+    }
+
+    /**
+     * Generate MIPS code for a plus equals expression node
+     *
+     * @param node AST node
+     * @return null (returns value to satisfy compiler)
+     */
+    public Object visit(PlusEqualsExpr node) {
+        Location varLocation = getAssignNodeLocation(node);
+
+        visitShortcutAssignExpr(node);
+        assemblySupport.genAdd(assemblySupport.getResultReg(),
+                assemblySupport.getResultReg(), "$v1");
 
         //move result from expr from $v0 into its position on the stack
         assemblySupport.genStoreWord(assemblySupport.getResultReg(),

@@ -200,6 +200,7 @@ terminal Token SEMI, COMMA, DOT;
 terminal Token ID, INT_CONST, BOOLEAN_CONST, STRING_CONST;
 terminal Token SIGNEDLEFTSHIFT, SIGNEDRIGHTSHIFT, UNSIGNEDRIGHTSHIFT;
 terminal Token BITOR, BITXOR, BITAND, BITNOT;
+terminal Token PLUSASSIGN;
 
 /* list of non-terminals used in context-free grammar
    format: nonterminal <type> <list of nonterminal names>
@@ -229,6 +230,7 @@ nonterminal BreakStmt break_stmt;
 nonterminal ReturnStmt ret_stmt;
 nonterminal BlockStmt block_stmt;
 nonterminal AssignExpr assign_expr;
+nonterminal PlusEqualsExpr plus_equals_expr;
 nonterminal ArrayAssignExpr arr_assign_expr;
 nonterminal DispatchExpr dispatch_expr;
 nonterminal NewExpr new_expr;
@@ -257,7 +259,7 @@ nonterminal ArrayExpr arr_expr;
    note: use a single precedence rule for terminals with same precedence
    associativity specified by middle operand (left, right, none)
 */
-precedence right ASSIGN;
+precedence right ASSIGN, PLUSASSIGN;
 precedence left OR;
 precedence left AND;
 precedence left BITOR;
@@ -529,6 +531,21 @@ assign_expr
         /* assignment with reference like this.x = y */
         | ID:reference DOT ID:name ASSIGN expr:expression
             {: RESULT = new AssignExpr(getCurrLineNum(),
+                reference.getName(), name.getName(), expression); :}
+        | plus_equals_expr:plusEqualsExpr
+            {: RESULT = plusEqualsExpr; :}
+    ;
+
+/* assignment expression */
+plus_equals_expr
+    ::=
+        /* simple assignment like x += 3 */
+        ID:name PLUSASSIGN expr:expression
+            {: RESULT = new PlusEqualsExpr(getCurrLineNum(),
+                null, name.getName(), expression); :}
+        /* assignment with reference like this.x += 3 */
+        | ID:reference DOT ID:name PLUSASSIGN expr:expression
+            {: RESULT = new PlusEqualsExpr(getCurrLineNum(),
                 reference.getName(), name.getName(), expression); :}
     ;
 

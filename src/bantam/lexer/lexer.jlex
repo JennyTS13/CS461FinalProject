@@ -315,6 +315,8 @@ true|false                  { return new Symbol(TokenIds.BOOLEAN_CONST,
                                 new Token(">", yyline)); }
 \<                          { return new Symbol(TokenIds.LT,
                                 new Token("<", yyline)); }
+"+="                        { return new Symbol(TokenIds.PLUSASSIGN,
+                                new Token("=", yyline)); }
 =                           { return new Symbol(TokenIds.ASSIGN,
                                 new Token("=", yyline)); }
 ;                           { return new Symbol(TokenIds.SEMI,

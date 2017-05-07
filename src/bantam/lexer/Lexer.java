@@ -409,40 +409,40 @@ public class Lexer implements java_cup.runtime.Scanner {
 		/* 56 */ YY_NO_ANCHOR,
 		/* 57 */ YY_NO_ANCHOR,
 		/* 58 */ YY_NO_ANCHOR,
-		/* 59 */ YY_NOT_ACCEPT,
-		/* 60 */ YY_NO_ANCHOR,
+		/* 59 */ YY_NO_ANCHOR,
+		/* 60 */ YY_NOT_ACCEPT,
 		/* 61 */ YY_NO_ANCHOR,
 		/* 62 */ YY_NO_ANCHOR,
 		/* 63 */ YY_NO_ANCHOR,
-		/* 64 */ YY_END,
-		/* 65 */ YY_NO_ANCHOR,
+		/* 64 */ YY_NO_ANCHOR,
+		/* 65 */ YY_END,
 		/* 66 */ YY_NO_ANCHOR,
 		/* 67 */ YY_NO_ANCHOR,
-		/* 68 */ YY_NOT_ACCEPT,
-		/* 69 */ YY_NO_ANCHOR,
+		/* 68 */ YY_NO_ANCHOR,
+		/* 69 */ YY_NOT_ACCEPT,
 		/* 70 */ YY_NO_ANCHOR,
-		/* 71 */ YY_END,
-		/* 72 */ YY_NO_ANCHOR,
-		/* 73 */ YY_NOT_ACCEPT,
-		/* 74 */ YY_NO_ANCHOR,
-		/* 75 */ YY_END,
-		/* 76 */ YY_NOT_ACCEPT,
-		/* 77 */ YY_NO_ANCHOR,
-		/* 78 */ YY_NOT_ACCEPT,
-		/* 79 */ YY_NO_ANCHOR,
-		/* 80 */ YY_NOT_ACCEPT,
-		/* 81 */ YY_NO_ANCHOR,
-		/* 82 */ YY_NOT_ACCEPT,
-		/* 83 */ YY_NO_ANCHOR,
-		/* 84 */ YY_NOT_ACCEPT,
-		/* 85 */ YY_NO_ANCHOR,
-		/* 86 */ YY_NOT_ACCEPT,
-		/* 87 */ YY_NO_ANCHOR,
-		/* 88 */ YY_NOT_ACCEPT,
-		/* 89 */ YY_NO_ANCHOR,
-		/* 90 */ YY_NOT_ACCEPT,
-		/* 91 */ YY_NO_ANCHOR,
-		/* 92 */ YY_NOT_ACCEPT,
+		/* 71 */ YY_NO_ANCHOR,
+		/* 72 */ YY_END,
+		/* 73 */ YY_NO_ANCHOR,
+		/* 74 */ YY_NOT_ACCEPT,
+		/* 75 */ YY_NO_ANCHOR,
+		/* 76 */ YY_END,
+		/* 77 */ YY_NOT_ACCEPT,
+		/* 78 */ YY_NO_ANCHOR,
+		/* 79 */ YY_NOT_ACCEPT,
+		/* 80 */ YY_NO_ANCHOR,
+		/* 81 */ YY_NOT_ACCEPT,
+		/* 82 */ YY_NO_ANCHOR,
+		/* 83 */ YY_NOT_ACCEPT,
+		/* 84 */ YY_NO_ANCHOR,
+		/* 85 */ YY_NOT_ACCEPT,
+		/* 86 */ YY_NO_ANCHOR,
+		/* 87 */ YY_NOT_ACCEPT,
+		/* 88 */ YY_NO_ANCHOR,
+		/* 89 */ YY_NOT_ACCEPT,
+		/* 90 */ YY_NO_ANCHOR,
+		/* 91 */ YY_NOT_ACCEPT,
+		/* 92 */ YY_NO_ANCHOR,
 		/* 93 */ YY_NOT_ACCEPT,
 		/* 94 */ YY_NOT_ACCEPT,
 		/* 95 */ YY_NOT_ACCEPT,
@@ -467,15 +467,15 @@ public class Lexer implements java_cup.runtime.Scanner {
 		/* 114 */ YY_NOT_ACCEPT,
 		/* 115 */ YY_NOT_ACCEPT,
 		/* 116 */ YY_NOT_ACCEPT,
-		/* 117 */ YY_NO_ANCHOR,
-		/* 118 */ YY_END,
-		/* 119 */ YY_NO_ANCHOR,
-		/* 120 */ YY_NOT_ACCEPT,
+		/* 117 */ YY_NOT_ACCEPT,
+		/* 118 */ YY_NO_ANCHOR,
+		/* 119 */ YY_END,
+		/* 120 */ YY_NO_ANCHOR,
 		/* 121 */ YY_NOT_ACCEPT,
 		/* 122 */ YY_NOT_ACCEPT,
 		/* 123 */ YY_NOT_ACCEPT,
 		/* 124 */ YY_NOT_ACCEPT,
-		/* 125 */ YY_NO_ANCHOR,
+		/* 125 */ YY_NOT_ACCEPT,
 		/* 126 */ YY_NO_ANCHOR,
 		/* 127 */ YY_NO_ANCHOR,
 		/* 128 */ YY_NO_ANCHOR,
@@ -505,15 +505,16 @@ public class Lexer implements java_cup.runtime.Scanner {
 		/* 152 */ YY_NO_ANCHOR,
 		/* 153 */ YY_NO_ANCHOR,
 		/* 154 */ YY_NO_ANCHOR,
-		/* 155 */ YY_NO_ANCHOR
+		/* 155 */ YY_NO_ANCHOR,
+		/* 156 */ YY_NO_ANCHOR
 	};
 	private int yy_cmap[] = unpackFromString(1,130,
 "14:9,11,8,14,11,8,14:18,52,29,9,14:2,47,32,13,19,20,6,45,50,46,51,5,41,42:9" +
 ",14,49,30,48,31,14:2,44:26,17,7,18,34,43,14,3,37,1,40,24,25,44,22,23,44,38," +
 "2,44,28,26,44:2,27,4,10,36,44,21,39,44:2,15,33,16,35,14,0,12")[0];
 
-	private int yy_rmap[] = unpackFromString(1,156,
-"0,1,2,3,1:9,4,5,6,7,8,1:2,9:2,10,11,1,12,1:3,13,14,15,16,1,17,1:3,18,1:7,17" +
+	private int yy_rmap[] = unpackFromString(1,157,
+"0,1,2,3,1:9,4,5,6,7,8,1:2,9:2,10,11,1,12,1:3,13,14,15,16,1,17,1:3,18,1:8,17" +
 ":2,1,19,17,1,17:7,20,21,20,22,1:2,23,24,25,26,27,28,29,30,23,31,32,33,34,35" +
 ",36,37,38,39,40,41,42,15,43,44,45,16,46,47,48,49,50,51,52,53,19,54,55,56,29" +
 ",32,24,25,57,58,59,60,61,62,63,64,65,66,67,68,24,69,70,63,68,30,71,72,73,74" +
@@ -521,61 +522,61 @@ public class Lexer implements java_cup.runtime.Scanner {
 ",99,100")[0];
 
 	private int yy_nxt[][] = unpackFromString(101,53,
-"1,2,150:3,3,4,5,6,61,135,6,1,70,5,7,8,9,10,11,12,152,150,60,136,117,150,154" +
-",125,13,14,15,16,17,18,19,150,155,150:3,20,62,21,150,22,23,24,25,26,27,28,6" +
-",-1:54,150,137,150:2,-1:5,150,-1:10,150:8,-1:7,150:9,-1:13,29,30,-1:94,35,-" +
+"1,2,151:3,3,4,5,6,62,136,6,1,71,5,7,8,9,10,11,12,153,151,61,137,118,151,155" +
+",126,13,14,15,16,17,18,19,151,156,151:3,20,63,21,151,22,23,24,25,26,27,28,6" +
+",-1:54,151,138,151:2,-1:5,151,-1:10,151:8,-1:7,151:9,-1:13,29,30,-1:94,35,-" +
 "1:34,36,-1:17,37,-1:35,38,-1:16,39,-1:36,40,-1:53,41,-1:20,21:4,-1:5,21,-1:" +
-"10,21:8,-1:7,21:9,-1:53,42,-1:53,43,-1:54,44,-1:5,29:7,-1,29:3,-1,29:40,-1," +
-"30:4,78,80,30:5,-1,30:40,-1,86:6,88,31,45,86:2,64,86:40,-1,90:6,92,-1,90:3," +
-"-1,90:40,-1,150:4,-1:5,150,-1:10,150:8,-1:7,150:9,-1:39,48,-1:22,99:6,100,-" +
-"1,49,99:2,-1,99:40,-1,59:6,68,31,32,59:2,64,59:40,-1,150:4,-1:5,150,-1:10,1" +
-"50:4,34,150:2,139,-1:7,150:9,-1:9,21:4,-1:5,21,-1:10,21:8,-1:7,21:5,62:2,21" +
-":2,-1:21,33,-1:40,105:7,-1,119,105:2,-1,105:40,-1,106:6,110,98,49,106:2,-1," +
-"106:40,-1,82:6,120,71,84,59,82,64,82:12,59,82,59:2,82:24,-1,150:4,-1:5,150," +
-"-1:10,150:6,46,150,-1:7,150:9,-1:9,73:6,76,-1,73:2,-1:2,33,73:39,-1,95:6,96" +
-",75,119,95:2,64,95:40,-1,124:6,115,98,66,124:2,-1,124:40,-1,150:4,-1:5,150," +
-"-1:10,47,150:7,-1:7,150:9,-1:9,104:7,75,-1,104:2,64,104:40,-1,93:6,-1,93,-1" +
-",73,93,-1,65,93:11,73,93,73:2,93:24,-1,150:4,-1:5,150,-1:10,150:3,50,150:4," +
-"-1:7,150:9,-1:9,78:5,80,78:5,-1,78:40,-1,150:4,-1:5,150,-1:10,150:3,52,150:" +
-"4,-1:7,150:9,-1:9,78:4,63,80,78:5,-1,78:40,-1,150:3,53,-1:5,150,-1:10,150:8" +
-",-1:7,150:9,-1:9,82:6,94,31,49,82:2,64,82:40,-1,150:4,-1:5,150,-1:10,150:3," +
-"54,150:4,-1:7,150:9,-1:9,84:6,97,98,32,84:2,-1,84:40,-1,150:4,-1:5,150,-1:1" +
-"0,150:8,-1:7,150:2,55,150:6,-1:9,150:4,-1:5,150,-1:10,150:7,56,-1:7,150:9,-" +
-"1:9,86:7,75,98,86:2,64,86:40,-1,150:3,57,-1:5,150,-1:10,150:8,-1:7,150:9,-1" +
-":9,150:4,-1:5,150,-1:10,150:4,58,150:3,-1:7,150:9,-1:9,99:6,92,122,90:2,99," +
-"-1,99:12,90,99,90:2,99:24,-1:13,51,-1:40,82:6,121,71,67,82:2,64,82:40,-1,95" +
-":7,75,119,95:2,64,95:40,-1,103:6,95,71,119,95,103,64,103:12,95,103,95:2,103" +
-":24,-1,106:6,107,122,84:2,106,-1,106:12,84,106,84:2,106:24,-1,98:6,108,98,4" +
-"5,98:2,-1,98:40,-1,99:6,100,122,49,99:2,-1,99:40,-1,101:6,111,31,66,101:2,6" +
-"4,101:40,-1,123:6,101,71,72,101,123,64,123:12,101,123,101:2,123:24,-1,106:6" +
-",97,112,32,84,106,-1,106:12,84,106,84:2,106:24,-1,98:7,-1,98:3,-1,98:40,-1," +
-"113:6,105,122,119,105,113,-1,113:12,105,113,105:2,113:24,-1,106:6,114,122,6" +
-"7,106:2,-1,106:40,-1,101:7,75,72,101:2,64,101:40,-1,124:6,116,98,66,124:2,-" +
-"1,124:40,-1,105:6,109,-1,119,105:2,-1,105:40,-1,106:6,110,112,49,106:2,-1,1" +
-"06:40,-1,124:7,-1,72,124:2,-1,124:40,-1,112:6,124,122,72,124,112,-1,112:12," +
-"124,112,124:2,112:24,-1,150:2,141,150,-1:5,150,-1:10,150:5,69,150:2,-1:7,15" +
-"0:9,-1:9,101:6,102,31,66,101:2,64,101:40,-1,82:6,68,118,32,59,82,64,82:12,5" +
-"9,82,59:2,82:24,-1,82:6,94,118,49,82:2,64,82:40,-1,150:4,-1:5,150,-1:10,150" +
-":3,74,150:4,-1:7,150:9,-1:9,150:4,-1:5,150,-1:10,150:8,-1:7,77,150:8,-1:9,1" +
-"50:3,79,-1:5,150,-1:10,150:8,-1:7,150:9,-1:9,150:3,81,-1:5,150,-1:10,150:8," +
-"-1:7,150:9,-1:9,150,83,150:2,-1:5,150,-1:10,150:8,-1:7,150:9,-1:9,150:3,77," +
-"-1:5,150,-1:10,150:8,-1:7,150:9,-1:9,150:2,85,150,-1:5,150,-1:10,150:8,-1:7" +
-",150:9,-1:9,150:4,-1:5,150,-1:10,150:6,87,150,-1:7,150:9,-1:9,150:4,-1:5,15" +
-"0,-1:10,150:8,-1:7,150:4,89,150:4,-1:9,150:4,-1:5,150,-1:10,150:5,91,150:2," +
-"-1:7,150:9,-1:9,150:4,-1:5,150,-1:10,150:6,126,150,-1:7,150:9,-1:9,150,127," +
-"150:2,-1:5,150,-1:10,150:8,-1:7,150:3,140,150:5,-1:9,150:2,128,150,-1:5,150" +
-",-1:10,150:8,-1:7,150:9,-1:9,150:4,-1:5,150,-1:10,150:2,129,150:5,-1:7,150:" +
-"9,-1:9,150:3,153,-1:5,150,-1:10,150:8,-1:7,150:9,-1:9,150:4,-1:5,143,-1:10," +
-"150:8,-1:7,150:9,-1:9,150,130,150:2,-1:5,150,-1:10,150:8,-1:7,150:9,-1:9,15" +
-"0:4,-1:5,150,-1:10,150:3,131,150:4,-1:7,150:9,-1:9,150:4,-1:5,150,-1:10,150" +
-":3,146,150:4,-1:7,150:9,-1:9,150:4,-1:5,150,-1:10,150:8,-1:7,132,150:8,-1:9" +
-",150:2,147,150,-1:5,150,-1:10,150:8,-1:7,150:9,-1:9,150:4,-1:5,150,-1:10,15" +
-"0:7,133,-1:7,150:9,-1:9,150:4,-1:5,150,-1:10,150:7,148,-1:7,150:9,-1:9,149," +
-"150:3,-1:5,150,-1:10,150:8,-1:7,150:9,-1:9,150:4,-1:5,150,-1:10,150:3,134,1" +
-"50:4,-1:7,150:9,-1:9,150:4,-1:5,144,-1:10,150:8,-1:7,150:9,-1:9,150:4,-1:5," +
-"150,-1:10,150,138,150:6,-1:7,150:9,-1:9,150:4,-1:5,145,-1:10,150:8,-1:7,150" +
-":9,-1:9,150:4,-1:5,150,-1:10,150:3,151,150:4,-1:7,150:9,-1:9,150:4,-1:5,150" +
-",-1:10,150:6,142,150,-1:7,150:9,-1:8");
+"10,21:8,-1:7,21:9,-1:53,42,-1:2,43,-1:50,44,-1:54,45,-1:5,29:7,-1,29:3,-1,2" +
+"9:40,-1,30:4,79,81,30:5,-1,30:40,-1,87:6,89,31,46,87:2,65,87:40,-1,91:6,93," +
+"-1,91:3,-1,91:40,-1,151:4,-1:5,151,-1:10,151:8,-1:7,151:9,-1:39,49,-1:22,10" +
+"0:6,101,-1,50,100:2,-1,100:40,-1,60:6,69,31,32,60:2,65,60:40,-1,151:4,-1:5," +
+"151,-1:10,151:4,34,151:2,140,-1:7,151:9,-1:9,21:4,-1:5,21,-1:10,21:8,-1:7,2" +
+"1:5,63:2,21:2,-1:21,33,-1:40,106:7,-1,120,106:2,-1,106:40,-1,107:6,111,99,5" +
+"0,107:2,-1,107:40,-1,83:6,121,72,85,60,83,65,83:12,60,83,60:2,83:24,-1,151:" +
+"4,-1:5,151,-1:10,151:6,47,151,-1:7,151:9,-1:9,74:6,77,-1,74:2,-1:2,33,74:39" +
+",-1,96:6,97,76,120,96:2,65,96:40,-1,125:6,116,99,67,125:2,-1,125:40,-1,151:" +
+"4,-1:5,151,-1:10,48,151:7,-1:7,151:9,-1:9,105:7,76,-1,105:2,65,105:40,-1,94" +
+":6,-1,94,-1,74,94,-1,66,94:11,74,94,74:2,94:24,-1,151:4,-1:5,151,-1:10,151:" +
+"3,51,151:4,-1:7,151:9,-1:9,79:5,81,79:5,-1,79:40,-1,151:4,-1:5,151,-1:10,15" +
+"1:3,53,151:4,-1:7,151:9,-1:9,79:4,64,81,79:5,-1,79:40,-1,151:3,54,-1:5,151," +
+"-1:10,151:8,-1:7,151:9,-1:9,83:6,95,31,50,83:2,65,83:40,-1,151:4,-1:5,151,-" +
+"1:10,151:3,55,151:4,-1:7,151:9,-1:9,85:6,98,99,32,85:2,-1,85:40,-1,151:4,-1" +
+":5,151,-1:10,151:8,-1:7,151:2,56,151:6,-1:9,151:4,-1:5,151,-1:10,151:7,57,-" +
+"1:7,151:9,-1:9,87:7,76,99,87:2,65,87:40,-1,151:3,58,-1:5,151,-1:10,151:8,-1" +
+":7,151:9,-1:9,151:4,-1:5,151,-1:10,151:4,59,151:3,-1:7,151:9,-1:9,100:6,93," +
+"123,91:2,100,-1,100:12,91,100,91:2,100:24,-1:13,52,-1:40,83:6,122,72,68,83:" +
+"2,65,83:40,-1,96:7,76,120,96:2,65,96:40,-1,104:6,96,72,120,96,104,65,104:12" +
+",96,104,96:2,104:24,-1,107:6,108,123,85:2,107,-1,107:12,85,107,85:2,107:24," +
+"-1,99:6,109,99,46,99:2,-1,99:40,-1,100:6,101,123,50,100:2,-1,100:40,-1,102:" +
+"6,112,31,67,102:2,65,102:40,-1,124:6,102,72,73,102,124,65,124:12,102,124,10" +
+"2:2,124:24,-1,107:6,98,113,32,85,107,-1,107:12,85,107,85:2,107:24,-1,99:7,-" +
+"1,99:3,-1,99:40,-1,114:6,106,123,120,106,114,-1,114:12,106,114,106:2,114:24" +
+",-1,107:6,115,123,68,107:2,-1,107:40,-1,102:7,76,73,102:2,65,102:40,-1,125:" +
+"6,117,99,67,125:2,-1,125:40,-1,106:6,110,-1,120,106:2,-1,106:40,-1,107:6,11" +
+"1,113,50,107:2,-1,107:40,-1,125:7,-1,73,125:2,-1,125:40,-1,113:6,125,123,73" +
+",125,113,-1,113:12,125,113,125:2,113:24,-1,151:2,142,151,-1:5,151,-1:10,151" +
+":5,70,151:2,-1:7,151:9,-1:9,102:6,103,31,67,102:2,65,102:40,-1,83:6,69,119," +
+"32,60,83,65,83:12,60,83,60:2,83:24,-1,83:6,95,119,50,83:2,65,83:40,-1,151:4" +
+",-1:5,151,-1:10,151:3,75,151:4,-1:7,151:9,-1:9,151:4,-1:5,151,-1:10,151:8,-" +
+"1:7,78,151:8,-1:9,151:3,80,-1:5,151,-1:10,151:8,-1:7,151:9,-1:9,151:3,82,-1" +
+":5,151,-1:10,151:8,-1:7,151:9,-1:9,151,84,151:2,-1:5,151,-1:10,151:8,-1:7,1" +
+"51:9,-1:9,151:3,78,-1:5,151,-1:10,151:8,-1:7,151:9,-1:9,151:2,86,151,-1:5,1" +
+"51,-1:10,151:8,-1:7,151:9,-1:9,151:4,-1:5,151,-1:10,151:6,88,151,-1:7,151:9" +
+",-1:9,151:4,-1:5,151,-1:10,151:8,-1:7,151:4,90,151:4,-1:9,151:4,-1:5,151,-1" +
+":10,151:5,92,151:2,-1:7,151:9,-1:9,151:4,-1:5,151,-1:10,151:6,127,151,-1:7," +
+"151:9,-1:9,151,128,151:2,-1:5,151,-1:10,151:8,-1:7,151:3,141,151:5,-1:9,151" +
+":2,129,151,-1:5,151,-1:10,151:8,-1:7,151:9,-1:9,151:4,-1:5,151,-1:10,151:2," +
+"130,151:5,-1:7,151:9,-1:9,151:3,154,-1:5,151,-1:10,151:8,-1:7,151:9,-1:9,15" +
+"1:4,-1:5,144,-1:10,151:8,-1:7,151:9,-1:9,151,131,151:2,-1:5,151,-1:10,151:8" +
+",-1:7,151:9,-1:9,151:4,-1:5,151,-1:10,151:3,132,151:4,-1:7,151:9,-1:9,151:4" +
+",-1:5,151,-1:10,151:3,147,151:4,-1:7,151:9,-1:9,151:4,-1:5,151,-1:10,151:8," +
+"-1:7,133,151:8,-1:9,151:2,148,151,-1:5,151,-1:10,151:8,-1:7,151:9,-1:9,151:" +
+"4,-1:5,151,-1:10,151:7,134,-1:7,151:9,-1:9,151:4,-1:5,151,-1:10,151:7,149,-" +
+"1:7,151:9,-1:9,150,151:3,-1:5,151,-1:10,151:8,-1:7,151:9,-1:9,151:4,-1:5,15" +
+"1,-1:10,151:3,135,151:4,-1:7,151:9,-1:9,151:4,-1:5,145,-1:10,151:8,-1:7,151" +
+":9,-1:9,151:4,-1:5,151,-1:10,151,139,151:6,-1:7,151:9,-1:9,151:4,-1:5,146,-" +
+"1:10,151:8,-1:7,151:9,-1:9,151:4,-1:5,151,-1:10,151:3,152,151:4,-1:7,151:9," +
+"-1:9,151:4,-1:5,151,-1:10,151:6,143,151,-1:7,151:9,-1:8");
 
 	public java_cup.runtime.Symbol next_token ()
 		throws java.io.IOException {
@@ -854,215 +855,215 @@ public class Lexer implements java_cup.runtime.Scanner {
 					case -43:
 						break;
 					case 43:
-						{ return new Symbol(TokenIds.DECR,
-                                new Token("--", yyline)); }
+						{ return new Symbol(TokenIds.PLUSASSIGN,
+                                new Token("=", yyline)); }
 					case -44:
 						break;
 					case 44:
-						{ return new Symbol(TokenIds.EQ,
-                                new Token("==", yyline)); }
+						{ return new Symbol(TokenIds.DECR,
+                                new Token("--", yyline)); }
 					case -45:
 						break;
 					case 45:
-						{ return new Symbol(TokenIds.LEX_ERROR,
-                                new Token("String constant spanning multiple lines.", yyline)); }
+						{ return new Symbol(TokenIds.EQ,
+                                new Token("==", yyline)); }
 					case -46:
 						break;
 					case 46:
-						{ return new Symbol(TokenIds.FOR,
-                                new Token("FOR", yyline)); }
+						{ return new Symbol(TokenIds.LEX_ERROR,
+                                new Token("String constant spanning multiple lines.", yyline)); }
 					case -47:
 						break;
 					case 47:
-						{ return new Symbol(TokenIds.NEW,
-                                new Token("NEW", yyline)); }
+						{ return new Symbol(TokenIds.FOR,
+                                new Token("FOR", yyline)); }
 					case -48:
 						break;
 					case 48:
-						{ return new Symbol(TokenIds.UNSIGNEDRIGHTSHIFT,
-                                new Token(">>>", yyline)); }
+						{ return new Symbol(TokenIds.NEW,
+                                new Token("NEW", yyline)); }
 					case -49:
 						break;
 					case 49:
-						{ return new Symbol(TokenIds.LEX_ERROR,
-                                new Token("Unsupported escape character within a string", yyline)); }
+						{ return new Symbol(TokenIds.UNSIGNEDRIGHTSHIFT,
+                                new Token(">>>", yyline)); }
 					case -50:
 						break;
 					case 50:
-						{ return new Symbol(TokenIds.BOOLEAN_CONST,
-                                new Token(yytext(), yyline)); }
+						{ return new Symbol(TokenIds.LEX_ERROR,
+                                new Token("Unsupported escape character within a string", yyline)); }
 					case -51:
 						break;
 					case 51:
-						{ return new Symbol(TokenIds.LEX_ERROR,
-                                new Token("Unsupported escape character within a string.", yyline)); }
+						{ return new Symbol(TokenIds.BOOLEAN_CONST,
+                                new Token(yytext(), yyline)); }
 					case -52:
 						break;
 					case 52:
-						{ return new Symbol(TokenIds.ELSE,
-                                new Token("ELSE", yyline)); }
+						{ return new Symbol(TokenIds.LEX_ERROR,
+                                new Token("Unsupported escape character within a string.", yyline)); }
 					case -53:
 						break;
 					case 53:
-						{ return new Symbol(TokenIds.CLASS,
-						        new Token("CLASS", yyline)); }
+						{ return new Symbol(TokenIds.ELSE,
+                                new Token("ELSE", yyline)); }
 					case -54:
 						break;
 					case 54:
-						{ return new Symbol(TokenIds.WHILE,
-                                new Token("WHILE", yyline)); }
+						{ return new Symbol(TokenIds.CLASS,
+						        new Token("CLASS", yyline)); }
 					case -55:
 						break;
 					case 55:
-						{ return new Symbol(TokenIds.BREAK,
-                                new Token("BREAK", yyline)); }
+						{ return new Symbol(TokenIds.WHILE,
+                                new Token("WHILE", yyline)); }
 					case -56:
 						break;
 					case 56:
-						{ return new Symbol(TokenIds.RETURN,
-                                new Token("RETURN", yyline)); }
+						{ return new Symbol(TokenIds.BREAK,
+                                new Token("BREAK", yyline)); }
 					case -57:
 						break;
 					case 57:
-						{ return new Symbol(TokenIds.EXTENDS,
-                                new Token("EXTENDS", yyline)); }
+						{ return new Symbol(TokenIds.RETURN,
+                                new Token("RETURN", yyline)); }
 					case -58:
 						break;
 					case 58:
-						{ return new Symbol(TokenIds.INSTANCEOF,
-                                new Token("INSTANCEOF", yyline)); }
+						{ return new Symbol(TokenIds.EXTENDS,
+                                new Token("EXTENDS", yyline)); }
 					case -59:
 						break;
-					case 60:
-						{ return new Symbol(TokenIds.ID,
-                                new Token(yytext(), yyline)); }
+					case 59:
+						{ return new Symbol(TokenIds.INSTANCEOF,
+                                new Token("INSTANCEOF", yyline)); }
 					case -60:
 						break;
 					case 61:
-						{ return new Symbol(TokenIds.LEX_ERROR,
-                                new Token("Unsupported character.", yyline)); }
+						{ return new Symbol(TokenIds.ID,
+                                new Token(yytext(), yyline)); }
 					case -61:
 						break;
 					case 62:
+						{ return new Symbol(TokenIds.LEX_ERROR,
+                                new Token("Unsupported character.", yyline)); }
+					case -62:
+						break;
+					case 63:
 						{ if(new BigInteger(yytext()).compareTo(BigInteger.valueOf(2147483647)) == 1) {
                                 return new Symbol(TokenIds.LEX_ERROR,
                                     new Token("Integer constant too big.", yyline)); }
                               return new Symbol(TokenIds.INT_CONST,
                                 new Token(yytext(), yyline)); }
-					case -62:
-						break;
-					case 63:
-						{ }
 					case -63:
 						break;
 					case 64:
-						{ return new Symbol(TokenIds.LEX_ERROR,
-                                new Token("Unterminated string constant.", yyline)); }
+						{ }
 					case -64:
 						break;
 					case 65:
-						{ return new Symbol(TokenIds.STRING_CONST,
-                                        new Token(yytext(), yyline)); }
+						{ return new Symbol(TokenIds.LEX_ERROR,
+                                new Token("Unterminated string constant.", yyline)); }
 					case -65:
 						break;
 					case 66:
-						{ return new Symbol(TokenIds.LEX_ERROR,
-                                new Token("String constant spanning multiple lines.", yyline)); }
+						{ return new Symbol(TokenIds.STRING_CONST,
+                                        new Token(yytext(), yyline)); }
 					case -66:
 						break;
 					case 67:
 						{ return new Symbol(TokenIds.LEX_ERROR,
-                                new Token("Unsupported escape character within a string", yyline)); }
+                                new Token("String constant spanning multiple lines.", yyline)); }
 					case -67:
 						break;
-					case 69:
-						{ return new Symbol(TokenIds.ID,
-                                new Token(yytext(), yyline)); }
+					case 68:
+						{ return new Symbol(TokenIds.LEX_ERROR,
+                                new Token("Unsupported escape character within a string", yyline)); }
 					case -68:
 						break;
 					case 70:
-						{ return new Symbol(TokenIds.LEX_ERROR,
-                                new Token("Unsupported character.", yyline)); }
+						{ return new Symbol(TokenIds.ID,
+                                new Token(yytext(), yyline)); }
 					case -69:
 						break;
 					case 71:
 						{ return new Symbol(TokenIds.LEX_ERROR,
-                                new Token("Unterminated string constant.", yyline)); }
+                                new Token("Unsupported character.", yyline)); }
 					case -70:
 						break;
 					case 72:
 						{ return new Symbol(TokenIds.LEX_ERROR,
-                                new Token("Unsupported escape character within a string", yyline)); }
+                                new Token("Unterminated string constant.", yyline)); }
 					case -71:
 						break;
-					case 74:
-						{ return new Symbol(TokenIds.ID,
-                                new Token(yytext(), yyline)); }
+					case 73:
+						{ return new Symbol(TokenIds.LEX_ERROR,
+                                new Token("Unsupported escape character within a string", yyline)); }
 					case -72:
 						break;
 					case 75:
-						{ return new Symbol(TokenIds.LEX_ERROR,
-                                new Token("Unterminated string constant.", yyline)); }
-					case -73:
-						break;
-					case 77:
 						{ return new Symbol(TokenIds.ID,
                                 new Token(yytext(), yyline)); }
+					case -73:
+						break;
+					case 76:
+						{ return new Symbol(TokenIds.LEX_ERROR,
+                                new Token("Unterminated string constant.", yyline)); }
 					case -74:
 						break;
-					case 79:
+					case 78:
 						{ return new Symbol(TokenIds.ID,
                                 new Token(yytext(), yyline)); }
 					case -75:
 						break;
-					case 81:
+					case 80:
 						{ return new Symbol(TokenIds.ID,
                                 new Token(yytext(), yyline)); }
 					case -76:
 						break;
-					case 83:
+					case 82:
 						{ return new Symbol(TokenIds.ID,
                                 new Token(yytext(), yyline)); }
 					case -77:
 						break;
-					case 85:
+					case 84:
 						{ return new Symbol(TokenIds.ID,
                                 new Token(yytext(), yyline)); }
 					case -78:
 						break;
-					case 87:
+					case 86:
 						{ return new Symbol(TokenIds.ID,
                                 new Token(yytext(), yyline)); }
 					case -79:
 						break;
-					case 89:
+					case 88:
 						{ return new Symbol(TokenIds.ID,
                                 new Token(yytext(), yyline)); }
 					case -80:
 						break;
-					case 91:
+					case 90:
 						{ return new Symbol(TokenIds.ID,
                                 new Token(yytext(), yyline)); }
 					case -81:
 						break;
-					case 117:
+					case 92:
 						{ return new Symbol(TokenIds.ID,
                                 new Token(yytext(), yyline)); }
 					case -82:
 						break;
 					case 118:
-						{ return new Symbol(TokenIds.LEX_ERROR,
-                                new Token("Unterminated string constant.", yyline)); }
+						{ return new Symbol(TokenIds.ID,
+                                new Token(yytext(), yyline)); }
 					case -83:
 						break;
 					case 119:
 						{ return new Symbol(TokenIds.LEX_ERROR,
-                                new Token("Unsupported escape character within a string", yyline)); }
+                                new Token("Unterminated string constant.", yyline)); }
 					case -84:
 						break;
-					case 125:
-						{ return new Symbol(TokenIds.ID,
-                                new Token(yytext(), yyline)); }
+					case 120:
+						{ return new Symbol(TokenIds.LEX_ERROR,
+                                new Token("Unsupported escape character within a string", yyline)); }
 					case -85:
 						break;
 					case 126:
@@ -1214,6 +1215,11 @@ public class Lexer implements java_cup.runtime.Scanner {
 						{ return new Symbol(TokenIds.ID,
                                 new Token(yytext(), yyline)); }
 					case -115:
+						break;
+					case 156:
+						{ return new Symbol(TokenIds.ID,
+                                new Token(yytext(), yyline)); }
+					case -116:
 						break;
 					default:
 						yy_error(YY_E_INTERNAL,false);

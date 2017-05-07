@@ -384,6 +384,27 @@ public abstract class Visitor {
     }
 
     /**
+     * Visit a shortcut assign expression node (should never be called)
+     *
+     * @param node the expression node
+     * @return result of the visit
+     */
+    public Object visit(ShortcutAssignExpr node) {
+        throw new RuntimeException("This bantam.visitor method should not be called (node is abstract)");
+    }
+
+    /**
+     * Visit a plus equals expression node
+     *
+     * @param node the assignment expression node
+     * @return result of the visit
+     */
+    public Object visit(PlusEqualsExpr node) {
+        node.getExpr().accept(this);
+        return null;
+    }
+
+    /**
      * Visit an array assignment expression node
      *
      * @param node the array assignment expression node

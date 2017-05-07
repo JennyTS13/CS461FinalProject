@@ -199,7 +199,8 @@ terminal Token LPAREN, RPAREN, LBRACE, RBRACE, LSQBRACE, RSQBRACE;
 terminal Token SEMI, COMMA, DOT;
 terminal Token ID, INT_CONST, BOOLEAN_CONST, STRING_CONST;
 terminal Token SIGNEDLEFTSHIFT, SIGNEDRIGHTSHIFT, UNSIGNEDRIGHTSHIFT;
-terminal Token BITOR, BITXOR, BITAND;
+terminal Token BITOR, BITXOR, BITAND, BITNOT;
+terminal Token PLUSASSIGN;
 
 /* list of non-terminals used in context-free grammar
    format: nonterminal <type> <list of nonterminal names>
@@ -229,6 +230,7 @@ nonterminal BreakStmt break_stmt;
 nonterminal ReturnStmt ret_stmt;
 nonterminal BlockStmt block_stmt;
 nonterminal AssignExpr assign_expr;
+nonterminal PlusEqualsExpr plus_equals_expr;
 nonterminal ArrayAssignExpr arr_assign_expr;
 nonterminal DispatchExpr dispatch_expr;
 nonterminal NewExpr new_expr;
@@ -242,6 +244,7 @@ nonterminal BinaryLogicExpr binary_logic_expr;
 nonterminal UnaryExpr unary_expr;
 nonterminal UnaryNegExpr unary_neg_expr;
 nonterminal UnaryNotExpr unary_not_expr;
+nonterminal UnaryBitNotExpr unary_bit_not_expr;
 nonterminal UnaryIncrExpr unary_incr_expr;
 nonterminal UnaryDecrExpr unary_decr_expr;
 nonterminal ConstExpr const_expr;
@@ -256,7 +259,7 @@ nonterminal ArrayExpr arr_expr;
    note: use a single precedence rule for terminals with same precedence
    associativity specified by middle operand (left, right, none)
 */
-precedence right ASSIGN;
+precedence right ASSIGN, PLUSASSIGN;
 precedence left OR;
 precedence left AND;
 precedence left BITOR;
@@ -267,7 +270,7 @@ precedence left INSTANCEOF, LT, LEQ, GT, GEQ;
 precedence left SIGNEDLEFTSHIFT, SIGNEDRIGHTSHIFT, UNSIGNEDRIGHTSHIFT;
 precedence left PLUS, MINUS;
 precedence left TIMES, DIVIDE, MODULUS;
-precedence right INCR, DECR, NOT;
+precedence right INCR, DECR, NOT, BITNOT;
 precedence left DOT, LPAREN, RPAREN, LSQBRACE, RSQBRACE;
 precedence left ELSE;
 
@@ -529,6 +532,21 @@ assign_expr
         | ID:reference DOT ID:name ASSIGN expr:expression
             {: RESULT = new AssignExpr(getCurrLineNum(),
                 reference.getName(), name.getName(), expression); :}
+        | plus_equals_expr:plusEqualsExpr
+            {: RESULT = plusEqualsExpr; :}
+    ;
+
+/* assignment expression */
+plus_equals_expr
+    ::=
+        /* simple assignment like x += 3 */
+        ID:name PLUSASSIGN expr:expression
+            {: RESULT = new PlusEqualsExpr(getCurrLineNum(),
+                null, name.getName(), expression); :}
+        /* assignment with reference like this.x += 3 */
+        | ID:reference DOT ID:name PLUSASSIGN expr:expression
+            {: RESULT = new PlusEqualsExpr(getCurrLineNum(),
+                reference.getName(), name.getName(), expression); :}
     ;
 
 /* array assignment expression */
@@ -670,10 +688,11 @@ binary_logic_expr
 /* unary expression */
 unary_expr
     ::=
-        unary_neg_expr:unaryNegExpr        {: RESULT = unaryNegExpr; :}
-        | unary_not_expr:unaryNotExpr      {: RESULT = unaryNotExpr; :}
-        | unary_incr_expr:unaryIncrExpr    {: RESULT = unaryIncrExpr; :}
-        | unary_decr_expr:unaryDecrExpr    {: RESULT = unaryDecrExpr; :}
+        unary_neg_expr:unaryNegExpr             {: RESULT = unaryNegExpr; :}
+        | unary_not_expr:unaryNotExpr           {: RESULT = unaryNotExpr; :}
+        | unary_bit_not_expr:unaryBitNotExpr    {: RESULT = unaryBitNotExpr; :}
+        | unary_incr_expr:unaryIncrExpr         {: RESULT = unaryIncrExpr; :}
+        | unary_decr_expr:unaryDecrExpr         {: RESULT = unaryDecrExpr; :}
     ;
 
 /* unary neg expression */
@@ -688,6 +707,13 @@ unary_not_expr
     ::=
         NOT expr:expression
             {: RESULT = new UnaryNotExpr(getCurrLineNum(), expression); :}
+    ;
+
+/* unary bitwise not expression */
+unary_bit_not_expr
+    ::=
+        BITNOT expr:expression
+            {: RESULT = new UnaryBitNotExpr(getCurrLineNum(), expression); :}
     ;
 
 /* unary incr expression */
