@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a2606ef-fccb-4e35-a55b-d0e7adc61672" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bantam/ast/DivEqualsExpr.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bantam/ast/MinusEqualsExpr.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bantam/ast/ModEqualsExpr.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bantam/ast/TimesEqualsExpr.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/codegenmips/CodeGenVisitor.class" afterPath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/codegenmips/CodeGenVisitor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/codegenmips/Test.asm" afterPath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/codegenmips/Test.asm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bantam/ast/PlusEqualsExpr.java" afterPath="$PROJECT_DIR$/src/bantam/ast/PlusEqualsExpr.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bantam/codegenmips/CodeGenVisitor.java" afterPath="$PROJECT_DIR$/src/bantam/codegenmips/CodeGenVisitor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bantam/codegenmips/Test.asm" afterPath="$PROJECT_DIR$/src/bantam/codegenmips/Test.asm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bantam/lexer/Lexer.java" afterPath="$PROJECT_DIR$/src/bantam/lexer/Lexer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bantam/lexer/lexer.jlex" afterPath="$PROJECT_DIR$/src/bantam/lexer/lexer.jlex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bantam/parser/Parser.java" afterPath="$PROJECT_DIR$/src/bantam/parser/Parser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bantam/parser/TokenIds.java" afterPath="$PROJECT_DIR$/src/bantam/parser/TokenIds.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bantam/parser/parser-out.txt" afterPath="$PROJECT_DIR$/src/bantam/parser/parser-out.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bantam/parser/parser.cup" afterPath="$PROJECT_DIR$/src/bantam/parser/parser.cup" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bantam/visitor/TypeCheckVisitor.java" afterPath="$PROJECT_DIR$/src/bantam/visitor/TypeCheckVisitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bantam/visitor/Visitor.java" afterPath="$PROJECT_DIR$/src/bantam/visitor/Visitor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testfiles/Test.btm" afterPath="$PROJECT_DIR$/testfiles/Test.btm" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,7 +23,28 @@
     <favorites_list name="BantamJavaStudentPkg" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Test.btm" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/testfiles/Test.btm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="139" column="37" selection-start-line="139" selection-start-column="37" selection-end-line="139" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test.asm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bantam/codegenmips/Test.asm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="2849" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="12974" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -111,7 +119,6 @@
         <option value="$PROJECT_DIR$/src/bantam/ast/UnaryBitNotExpr.java" />
         <option value="$PROJECT_DIR$/src/bantam/ast/ShortcutAssignExpr.java" />
         <option value="$PROJECT_DIR$/src/bantam/visitor/PrintVisitor.java" />
-        <option value="$PROJECT_DIR$/testfiles/Test.btm" />
         <option value="$PROJECT_DIR$/src/bantam/ast/PlusEqualsExpr.java" />
         <option value="$PROJECT_DIR$/src/bantam/ast/ModEqualsExpr.java" />
         <option value="$PROJECT_DIR$/src/bantam/ast/DivEqualsExpr.java" />
@@ -122,6 +129,7 @@
         <option value="$PROJECT_DIR$/src/bantam/visitor/Visitor.java" />
         <option value="$PROJECT_DIR$/src/bantam/visitor/TypeCheckVisitor.java" />
         <option value="$PROJECT_DIR$/src/bantam/codegenmips/CodeGenVisitor.java" />
+        <option value="$PROJECT_DIR$/testfiles/Test.btm" />
       </list>
     </option>
   </component>
@@ -195,6 +203,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="tools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CS461FinalProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CS461FinalProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testfiles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -990,13 +1012,6 @@
       <option name="presentableId" value="Default" />
       <updated>1486503667190</updated>
     </task>
-    <task id="LOCAL-00258" summary="for(initExpr; predExpr; updateExpr)Stmt">
-      <created>1493317175846</created>
-      <option name="number" value="00258" />
-      <option name="presentableId" value="LOCAL-00258" />
-      <option name="project" value="LOCAL" />
-      <updated>1493317175846</updated>
-    </task>
     <task id="LOCAL-00259" summary="for loop">
       <created>1493317418348</created>
       <option name="number" value="00259" />
@@ -1333,7 +1348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1494146406650</updated>
     </task>
-    <option name="localTasksCounter" value="307" />
+    <task id="LOCAL-00307" summary="Added shortcut expressions">
+      <created>1494189007446</created>
+      <option name="number" value="00307" />
+      <option name="presentableId" value="LOCAL-00307" />
+      <option name="project" value="LOCAL" />
+      <updated>1494189007446</updated>
+    </task>
+    <option name="localTasksCounter" value="308" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1379,7 +1401,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="931" y="135" width="748" height="846" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1387,14 +1409,14 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25219575" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29185867" sideWeight="0.50542" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2519894" sideWeight="0.5056657" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2519894" sideWeight="0.49457994" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2519894" sideWeight="0.49433428" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21529745" sideWeight="0.49765807" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21529745" sideWeight="0.49765807" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14179105" sideWeight="0.5023419" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3427762" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1454,7 +1476,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="midi handler and support" />
     <MESSAGE value="add midiHandler as built in to semantic analyzer" />
     <MESSAGE value="added MidiHandler to code gen built in" />
     <MESSAGE value="added MidiHandler to code gen built in (fixed typo)" />
@@ -1479,7 +1500,8 @@
     <MESSAGE value="Added more logic exprs" />
     <MESSAGE value="Added all logic expr" />
     <MESSAGE value="Added += shortcut" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added += shortcut" />
+    <MESSAGE value="Added shortcut expressions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added shortcut expressions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1724,7 +1746,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2174" selection-end-column="10" />
           <folding>
-            <marker date="1494188931000" expanded="true" signature="108804:108867" ph="..." />
+            <marker date="1494189920000" expanded="true" signature="108740:108803" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1900,22 +1922,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bantam/codegenmips/Test.asm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="2853" column="14" selection-start-line="2853" selection-start-column="6" selection-end-line="2853" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testfiles/Test.btm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="117" column="19" selection-start-line="117" selection-start-column="19" selection-end-line="117" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/bantam/ast/ModEqualsExpr.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
@@ -2039,6 +2045,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="413" column="0" selection-start-line="413" selection-start-column="0" selection-end-line="448" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bantam/codegenmips/Test.asm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="2849" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="12974" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testfiles/Test.btm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="139" column="37" selection-start-line="139" selection-start-column="37" selection-end-line="139" selection-end-column="37" />
           <folding />
         </state>
       </provider>
