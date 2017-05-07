@@ -430,7 +430,8 @@ public class TypeCheckVisitor extends Visitor {
         String exprTypr = (String)node.getExpr().accept(this);
 
         List<String> validExprType = Arrays.asList(
-                "AssignExpr", "PlusEqualsExpr", "ArrayAssignExpr", "UnaryIncrExpr",
+                "AssignExpr", "PlusEqualsExpr", "MinusEqualsExpr", "TimesEqualsExpr",
+                "DivEqualsExpr", "ModEqualsExpr", "ArrayAssignExpr", "UnaryIncrExpr",
                 "UnaryDecrExpr", "DispatchExpr", "NewExpr", "NewArrayExpr");
         if(!validExprType.contains(exprTypr)){
             errorHandler.register(2, fileName, node.getLineNum(),
@@ -777,15 +778,63 @@ public class TypeCheckVisitor extends Visitor {
     }
 
     /**
-     * Visit a plus equals expression node
+     * Type checks a plus equals expression node
      *
-     * @param node the assignment expression node
-     * @return result of the visit
+     * @param node the plus equals assignment expression node
+     * @return String of type of Expr
      */
     @Override
     public Object visit(PlusEqualsExpr node) {
         checkShortcutExpr(node);
         return "PlusEqualsExpr";
+    }
+
+    /**
+     * Type checks a minus equals expression node
+     *
+     * @param node the minus equals assignment expression node
+     * @return String of type of Expr
+     */
+    @Override
+    public Object visit(MinusEqualsExpr node) {
+        checkShortcutExpr(node);
+        return "MinusEqualsExpr";
+    }
+
+    /**
+     * Type checks a times equals expression node
+     *
+     * @param node the times equals assignment expression node
+     * @return String of type of Expr
+     */
+    @Override
+    public Object visit(TimesEqualsExpr node) {
+        checkShortcutExpr(node);
+        return "TimesEqualsExpr";
+    }
+
+    /**
+     * Type checks a divide equals expression node
+     *
+     * @param node the divide equals assignment expression node
+     * @return String of type of Expr
+     */
+    @Override
+    public Object visit(DivEqualsExpr node) {
+        checkShortcutExpr(node);
+        return "DivEqualsExpr";
+    }
+
+    /**
+     * Type checks a mod equals expression node
+     *
+     * @param node the mod equals assignment expression node
+     * @return String of type of Expr
+     */
+    @Override
+    public Object visit(ModEqualsExpr node) {
+        checkShortcutExpr(node);
+        return "ModEqualsExpr";
     }
 
     /**

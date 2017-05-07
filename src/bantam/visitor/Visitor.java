@@ -396,10 +396,54 @@ public abstract class Visitor {
     /**
      * Visit a plus equals expression node
      *
-     * @param node the assignment expression node
+     * @param node the plus equals expression node
      * @return result of the visit
      */
     public Object visit(PlusEqualsExpr node) {
+        node.getExpr().accept(this);
+        return null;
+    }
+
+    /**
+     * Visit a minus equals expression node
+     *
+     * @param node the minus equals expression node
+     * @return result of the visit
+     */
+    public Object visit(MinusEqualsExpr node) {
+        node.getExpr().accept(this);
+        return null;
+    }
+
+    /**
+     * Visit a times equals expression node
+     *
+     * @param node the times equals expression node
+     * @return result of the visit
+     */
+    public Object visit(TimesEqualsExpr node) {
+        node.getExpr().accept(this);
+        return null;
+    }
+
+    /**
+     * Visit a divide equals expression node
+     *
+     * @param node the divide equals expression node
+     * @return result of the visit
+     */
+    public Object visit(DivEqualsExpr node) {
+        node.getExpr().accept(this);
+        return null;
+    }
+
+    /**
+     * Visit a mod equals expression node
+     *
+     * @param node the mod equals expression node
+     * @return result of the visit
+     */
+    public Object visit(ModEqualsExpr node) {
         node.getExpr().accept(this);
         return null;
     }

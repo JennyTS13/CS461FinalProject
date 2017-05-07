@@ -1,5 +1,5 @@
 /*
- * File: PlusEqualsExpr.java
+ * File: DivEqualsExpr.java
  * Author: Tiffany Lam, Jenny Lin
  * Course: CS461
  * Project: 6
@@ -11,32 +11,32 @@ package bantam.ast;
 import bantam.visitor.Visitor;
 
 /**
- * The PlusEqualsExpr class represents '+=' expressions
+ * The DivEqualsExpr class represents '/=' expressions
  *
  * @see ASTNode
  * @see Expr
  */
-public class PlusEqualsExpr extends ShortcutAssignExpr {
+public class DivEqualsExpr extends ShortcutAssignExpr{
 
     /**
-     * PlusEqualsExpr constructor
+     * DivEqualsExpr constructor
      *
      * @param lineNum source line number corresponding to this AST node
      * @param refName the optional reference object used to access the lefthand variable
      * @param name    the name of the lefthand variable
-     * @param expr    righthand expression for adding to the lefthand variable
+     * @param expr    righthand expression for diving the lefthand variable by
      */
-    public PlusEqualsExpr(int lineNum, String refName, String name, Expr expr) {
+    public DivEqualsExpr(int lineNum, String refName, String name, Expr expr) {
         super(lineNum, refName, name, expr);
     }
 
     /**
-     * Get the operation name ("+=")
+     * Get the operation name ("/=")
      *
      * @return op name
      */
     public String getOpName() {
-        return "+=";
+        return "/=";
     }
 
     /**

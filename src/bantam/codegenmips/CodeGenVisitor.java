@@ -640,6 +640,8 @@ public class CodeGenVisitor extends Visitor {
     public void visitShortcutAssignExpr(ShortcutAssignExpr node) {
         Location varLocation = getAssignNodeLocation(node);
 
+        assemblySupport.genComment("shortcut assign expr: " + node.getOpName());
+
         assemblySupport.genComment("load value of left expr into $v0");
         assemblySupport.genLoadWord(assemblySupport.getResultReg(),
                 varLocation.getOffset(), varLocation.getBaseReg());
@@ -652,6 +654,7 @@ public class CodeGenVisitor extends Visitor {
         node.getExpr().accept(this);
 
         //pop the value of the left expr off of stack
+        assemblySupport.genComment("pop value of left expr off stack into $v1");
         genPop("$v1");
     }
 
@@ -667,6 +670,95 @@ public class CodeGenVisitor extends Visitor {
         visitShortcutAssignExpr(node);
         assemblySupport.genAdd(assemblySupport.getResultReg(),
                 assemblySupport.getResultReg(), "$v1");
+
+        //move result from expr from $v0 into its position on the stack
+        assemblySupport.genStoreWord(assemblySupport.getResultReg(),
+                varLocation.getOffset(), varLocation.getBaseReg());
+
+        return null;
+    }
+
+    /**
+     * Type checks a minus equals expression node
+     *
+     * @param node the minus equals assignment expression node
+     * @return String of type of Expr
+     */
+    @Override
+    public Object visit(MinusEqualsExpr node) {
+        Location varLocation = getAssignNodeLocation(node);
+
+        visitShortcutAssignExpr(node);
+        assemblySupport.genSub(assemblySupport.getResultReg(),
+                "$v1", assemblySupport.getResultReg());
+
+        //move result from expr from $v0 into its position on the stack
+        assemblySupport.genStoreWord(assemblySupport.getResultReg(),
+                varLocation.getOffset(), varLocation.getBaseReg());
+
+        return null;
+    }
+
+    /**
+     * Type checks a times equals expression node
+     *
+     * @param node the times equals assignment expression node
+     * @return String of type of Expr
+     */
+    @Override
+    public Object visit(TimesEqualsExpr node) {
+        Location varLocation = getAssignNodeLocation(node);
+
+        visitShortcutAssignExpr(node);
+        assemblySupport.genMul(assemblySupport.getResultReg(),
+                "$v1", assemblySupport.getResultReg());
+
+        //move result from expr from $v0 into its position on the stack
+        assemblySupport.genStoreWord(assemblySupport.getResultReg(),
+                varLocation.getOffset(), varLocation.getBaseReg());
+
+        return null;
+    }
+
+    /**
+     * Type checks a divide equals expression node
+     *
+     * @param node the divide equals assignment expression node
+     * @return String of type of Expr
+     */
+    @Override
+    public Object visit(DivEqualsExpr node) {
+        Location varLocation = getAssignNodeLocation(node);
+
+        visitShortcutAssignExpr(node);
+
+        assemblySupport.genComment("throw divide by zero exception if divisor == 0");
+        assemblySupport.genCondBeq(assemblySupport.getResultReg(),
+                assemblySupport.getZeroReg(), "_divide_zero_error");
+
+        assemblySupport.genDiv(assemblySupport.getResultReg(),
+                "$v1", assemblySupport.getResultReg());
+
+        //move result from expr from $v0 into its position on the stack
+        assemblySupport.genStoreWord(assemblySupport.getResultReg(),
+                varLocation.getOffset(), varLocation.getBaseReg());
+
+        return null;
+    }
+
+    /**
+     * Type checks a mod equals expression node
+     *
+     * @param node the mod equals assignment expression node
+     * @return String of type of Expr
+     */
+    @Override
+    public Object visit(ModEqualsExpr node) {
+        Location varLocation = getAssignNodeLocation(node);
+
+        visitShortcutAssignExpr(node);
+        assemblySupport.genMod(assemblySupport.getResultReg(),
+                "$v1", assemblySupport.getResultReg());
 
         //move result from expr from $v0 into its position on the stack
         assemblySupport.genStoreWord(assemblySupport.getResultReg(),

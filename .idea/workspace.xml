@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a2606ef-fccb-4e35-a55b-d0e7adc61672" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bantam/ast/PlusEqualsExpr.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bantam/ast/ShortcutAssignExpr.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/codegenmips/CodeGenVisitor.class" afterPath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/codegenmips/CodeGenVisitor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/lexer/Lexer.class" afterPath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/lexer/Lexer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/parser/CUP$Parser$actions.class" afterPath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/parser/CUP$Parser$actions.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/parser/Parser.class" afterPath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/parser/Parser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/parser/TokenIds.class" afterPath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/parser/TokenIds.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/visitor/PrintVisitor.class" afterPath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/visitor/PrintVisitor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/visitor/TypeCheckVisitor.class" afterPath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/visitor/TypeCheckVisitor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/visitor/Visitor.class" afterPath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/visitor/Visitor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bantam/ast/DivEqualsExpr.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bantam/ast/MinusEqualsExpr.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bantam/ast/ModEqualsExpr.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bantam/ast/TimesEqualsExpr.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/codegenmips/Test.asm" afterPath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/codegenmips/Test.asm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/lexer/lexer.jlex" afterPath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/lexer/lexer.jlex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/parser/parser-out.txt" afterPath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/parser/parser-out.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/parser/parser.cup" afterPath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/parser/parser.cup" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bantam/ast/PlusEqualsExpr.java" afterPath="$PROJECT_DIR$/src/bantam/ast/PlusEqualsExpr.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bantam/codegenmips/CodeGenVisitor.java" afterPath="$PROJECT_DIR$/src/bantam/codegenmips/CodeGenVisitor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bantam/codegenmips/Test.asm" afterPath="$PROJECT_DIR$/src/bantam/codegenmips/Test.asm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bantam/lexer/Lexer.java" afterPath="$PROJECT_DIR$/src/bantam/lexer/Lexer.java" />
@@ -25,10 +17,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bantam/parser/TokenIds.java" afterPath="$PROJECT_DIR$/src/bantam/parser/TokenIds.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bantam/parser/parser-out.txt" afterPath="$PROJECT_DIR$/src/bantam/parser/parser-out.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bantam/parser/parser.cup" afterPath="$PROJECT_DIR$/src/bantam/parser/parser.cup" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bantam/visitor/PrintVisitor.java" afterPath="$PROJECT_DIR$/src/bantam/visitor/PrintVisitor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bantam/visitor/TypeCheckVisitor.java" afterPath="$PROJECT_DIR$/src/bantam/visitor/TypeCheckVisitor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bantam/visitor/Visitor.java" afterPath="$PROJECT_DIR$/src/bantam/visitor/Visitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testfiles/Test.btm" afterPath="$PROJECT_DIR$/testfiles/Test.btm" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,48 +36,7 @@
     <favorites_list name="BantamJavaStudentPkg" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Test.btm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testfiles/Test.btm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="135" column="50" selection-start-line="135" selection-start-column="50" selection-end-line="135" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TypeCheckVisitor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bantam/visitor/TypeCheckVisitor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="433" column="33" selection-start-line="433" selection-start-column="33" selection-end-line="433" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test.asm" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/bantam/codegenmips/Test.asm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="242" column="14" selection-start-line="242" selection-start-column="14" selection-end-line="242" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CodeGenVisitor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bantam/codegenmips/CodeGenVisitor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="666" column="17" selection-start-line="666" selection-start-column="17" selection-end-line="666" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -122,10 +71,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/testfiles/BadlyFormatedProgram.btm" />
-        <option value="$PROJECT_DIR$/testfiles/BadlyFormattedProgram.btm" />
-        <option value="$PROJECT_DIR$/bin/java_cup/runtime/lr_parser.java" />
-        <option value="$PROJECT_DIR$/src/bantam/parser/Parser.java" />
         <option value="$PROJECT_DIR$/src/bantam/codegenmidimips/MidiMipsSupport.java" />
         <option value="$PROJECT_DIR$/src/bantam/codegenmidimips/Note.java" />
         <option value="$PROJECT_DIR$/src/bantam/codegenmidimips/MidiHandler.java" />
@@ -165,14 +110,18 @@
         <option value="$PROJECT_DIR$/src/bantam/codegenmips/Test.asm" />
         <option value="$PROJECT_DIR$/src/bantam/ast/UnaryBitNotExpr.java" />
         <option value="$PROJECT_DIR$/src/bantam/ast/ShortcutAssignExpr.java" />
+        <option value="$PROJECT_DIR$/src/bantam/visitor/PrintVisitor.java" />
+        <option value="$PROJECT_DIR$/testfiles/Test.btm" />
+        <option value="$PROJECT_DIR$/src/bantam/ast/PlusEqualsExpr.java" />
+        <option value="$PROJECT_DIR$/src/bantam/ast/ModEqualsExpr.java" />
+        <option value="$PROJECT_DIR$/src/bantam/ast/DivEqualsExpr.java" />
+        <option value="$PROJECT_DIR$/src/bantam/ast/TimesEqualsExpr.java" />
+        <option value="$PROJECT_DIR$/src/bantam/ast/MinusEqualsExpr.java" />
+        <option value="$PROJECT_DIR$/src/bantam/lexer/lexer.jlex" />
         <option value="$PROJECT_DIR$/src/bantam/parser/parser.cup" />
         <option value="$PROJECT_DIR$/src/bantam/visitor/Visitor.java" />
-        <option value="$PROJECT_DIR$/src/bantam/ast/PlusEqualsExpr.java" />
-        <option value="$PROJECT_DIR$/src/bantam/visitor/PrintVisitor.java" />
-        <option value="$PROJECT_DIR$/src/bantam/codegenmips/CodeGenVisitor.java" />
-        <option value="$PROJECT_DIR$/src/bantam/lexer/lexer.jlex" />
-        <option value="$PROJECT_DIR$/testfiles/Test.btm" />
         <option value="$PROJECT_DIR$/src/bantam/visitor/TypeCheckVisitor.java" />
+        <option value="$PROJECT_DIR$/src/bantam/codegenmips/CodeGenVisitor.java" />
       </list>
     </option>
   </component>
@@ -184,9 +133,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="879" />
+    <option name="x" value="931" />
     <option name="y" value="135" />
-    <option name="width" value="800" />
+    <option name="width" value="748" />
     <option name="height" value="846" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -286,28 +235,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="visitor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS461FinalProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS461FinalProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bantam" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="parser" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1063,13 +990,6 @@
       <option name="presentableId" value="Default" />
       <updated>1486503667190</updated>
     </task>
-    <task id="LOCAL-00257" summary="for(; predExpr; updateExpr)Stmt">
-      <created>1493317031250</created>
-      <option name="number" value="00257" />
-      <option name="presentableId" value="LOCAL-00257" />
-      <option name="project" value="LOCAL" />
-      <updated>1493317031251</updated>
-    </task>
     <task id="LOCAL-00258" summary="for(initExpr; predExpr; updateExpr)Stmt">
       <created>1493317175846</created>
       <option name="number" value="00258" />
@@ -1406,7 +1326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1494142502776</updated>
     </task>
-    <option name="localTasksCounter" value="306" />
+    <task id="LOCAL-00306" summary="Added += shortcut">
+      <created>1494146406650</created>
+      <option name="number" value="00306" />
+      <option name="presentableId" value="LOCAL-00306" />
+      <option name="project" value="LOCAL" />
+      <updated>1494146406650</updated>
+    </task>
+    <option name="localTasksCounter" value="307" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1451,8 +1378,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="879" y="135" width="800" height="846" extended-state="0" />
-    <editor active="true" />
+    <frame x="931" y="135" width="748" height="846" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1467,9 +1394,9 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22823219" sideWeight="0.49765807" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21529745" sideWeight="0.49765807" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14179105" sideWeight="0.5023419" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34300792" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3427762" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39835164" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -1527,7 +1454,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="midimipssupport renamed" />
     <MESSAGE value="midi handler and support" />
     <MESSAGE value="add midiHandler as built in to semantic analyzer" />
     <MESSAGE value="added MidiHandler to code gen built in" />
@@ -1552,7 +1478,8 @@
     <MESSAGE value="Reverting lexer and parser" />
     <MESSAGE value="Added more logic exprs" />
     <MESSAGE value="Added all logic expr" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added all logic expr" />
+    <MESSAGE value="Added += shortcut" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added += shortcut" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1668,58 +1595,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="118" column="19" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="329" column="16" selection-start-line="329" selection-start-column="16" selection-end-line="329" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bantam/codegenmips/MipsCodeGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="198" column="35" selection-start-line="198" selection-start-column="35" selection-end-line="198" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bantam/ast/BinaryLogicRightShiftExpr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#1662#0" expanded="false" />
-            <element signature="e#1113#1114#0" expanded="false" />
-            <element signature="e#1140#1141#0" expanded="false" />
-            <element signature="e#1249#1250#0" expanded="false" />
-            <element signature="e#1277#1278#0" expanded="false" />
-            <element signature="e#1394#1395#0" expanded="false" />
-            <element signature="e#1422#1423#0" expanded="false" />
-            <element signature="e#1623#1624#0" expanded="false" />
-            <element signature="e#1659#1660#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bantam/ast/BinaryLogicBitAndExpr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#1636#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/bantam/ast/BinaryLogicUnsignedShiftExpr.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
@@ -1849,7 +1724,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2174" selection-end-column="10" />
           <folding>
-            <marker date="1494146330000" expanded="true" signature="114946:115009" ph="..." />
+            <marker date="1494188931000" expanded="true" signature="108804:108867" ph="..." />
           </folding>
         </state>
       </provider>
@@ -2014,24 +1889,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bantam/visitor/Visitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="395" column="4" selection-start-line="395" selection-start-column="4" selection-end-line="404" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bantam/ast/PlusEqualsExpr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#1528#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/bantam/visitor/PrintVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
@@ -2043,48 +1900,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bantam/parser/parser.cup">
+    <entry file="file://$PROJECT_DIR$/src/bantam/codegenmips/Test.asm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="547" column="39" selection-start-line="547" selection-start-column="39" selection-end-line="547" selection-end-column="39" />
+        <state relative-caret-position="169">
+          <caret line="2853" column="14" selection-start-line="2853" selection-start-column="6" selection-end-line="2853" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bantam/codegenmips/CodeGenVisitor.java">
+    <entry file="file://$PROJECT_DIR$/testfiles/Test.btm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="666" column="17" selection-start-line="666" selection-start-column="17" selection-end-line="666" selection-end-column="17" />
+        <state relative-caret-position="64">
+          <caret line="117" column="19" selection-start-line="117" selection-start-column="19" selection-end-line="117" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bantam/lexer/lexer.jlex">
+    <entry file="file://$PROJECT_DIR$/src/bantam/ast/ModEqualsExpr.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="317" column="28" selection-start-line="317" selection-start-column="28" selection-end-line="317" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="506">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#1512#0" expanded="true" />
+            <element signature="e#920#921#0" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bantam/ast/DivEqualsExpr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-163">
+          <caret line="26" column="78" selection-start-line="26" selection-start-column="78" selection-end-line="26" selection-end-column="78" />
+          <folding>
+            <element signature="e#0#1516#0" expanded="true" />
+            <element signature="e#924#925#0" expanded="true" />
+            <element signature="e#951#952#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bantam/ast/TimesEqualsExpr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#1531#0" expanded="true" />
+            <element signature="e#939#940#0" expanded="true" />
+            <element signature="e#966#967#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bantam/ast/PlusEqualsExpr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="69" column="5" selection-start-line="19" selection-start-column="0" selection-end-line="69" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#1522#0" expanded="true" />
+            <element signature="e#1482#1483#0" expanded="true" />
+            <element signature="e#1518#1519#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bantam/ast/MinusEqualsExpr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#1533#0" expanded="true" />
+            <element signature="e#1493#1494#0" expanded="true" />
+            <element signature="e#1529#1530#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bantam/lexer/Lexer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-2">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
           <folding>
-            <element signature="e#0#40329#0" expanded="true" />
+            <element signature="e#0#41095#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#4459#4460#0" expanded="true" />
-            <element signature="e#4481#4482#0" expanded="true" />
-            <element signature="e#4628#4629#0" expanded="true" />
-            <element signature="e#4662#4663#0" expanded="true" />
-            <element signature="e#7059#7060#0" expanded="true" />
-            <element signature="e#7090#7091#0" expanded="true" />
-            <element signature="e#8815#8816#0" expanded="true" />
-            <element signature="e#8853#8854#0" expanded="true" />
-            <element signature="e#9363#9364#0" expanded="true" />
-            <element signature="e#9408#9409#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bantam/parser/parser.cup">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1051">
+          <caret line="264" column="2" selection-start-line="264" selection-start-column="2" selection-end-line="264" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2096,26 +2003,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testfiles/Test.btm">
+    <entry file="file://$PROJECT_DIR$/src/bantam/lexer/lexer.jlex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="135" column="50" selection-start-line="135" selection-start-column="50" selection-end-line="135" selection-end-column="50" />
+        <state relative-caret-position="254">
+          <caret line="294" column="48" selection-start-line="294" selection-start-column="48" selection-end-line="294" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testfiles/array-store-error2.input">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bantam/visitor/TypeCheckVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="433" column="33" selection-start-line="433" selection-start-column="33" selection-end-line="433" selection-end-column="33" />
+        <state relative-caret-position="245">
+          <caret line="837" column="5" selection-start-line="791" selection-start-column="4" selection-end-line="837" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bantam/codegenmips/Test.asm">
+    <entry file="file://$PROJECT_DIR$/src/bantam/codegenmips/CodeGenVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="242" column="14" selection-start-line="242" selection-start-column="14" selection-end-line="242" selection-end-column="14" />
+        <state relative-caret-position="-19">
+          <caret line="736" column="39" selection-start-line="736" selection-start-column="39" selection-end-line="736" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bantam/visitor/Visitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="413" column="0" selection-start-line="413" selection-start-column="0" selection-end-line="448" selection-end-column="5" />
           <folding />
         </state>
       </provider>

@@ -2851,6 +2851,7 @@ FunctionalityTest.testAssignExpr:
 	lw $a0 0($sp)
 	add $sp $sp 4
 
+	# shortcut assign expr: +=
 	# load value of left expr into $v0
 	lw $v0 0($fp)
 	add $sp $sp -4
