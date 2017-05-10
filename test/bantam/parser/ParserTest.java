@@ -16,6 +16,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import bantam.util.ErrorHandler;
+import org.junit.rules.Timeout;
 
 import java.io.StringReader;
 
@@ -1141,4 +1142,94 @@ public class ParserTest
         assertEquals("y", arrayWithRefExpr.getName());
         assertEquals(1, constIntWithRefExpr.getIntConstant());
     }
+
+    /**
+     * tests the case of shortcut assignment expressions
+     * @throws Exception
+     */
+    @Test
+    public void shortcutAssignExprTest() throws Exception {
+        StmtList stmtList = getStmtList("x+=3; x-=3; x*=3; x/=3; x%=3;");
+        assertEquals(5, stmtList.getSize());
+        ExprStmt exprStmt1 = (ExprStmt)stmtList.get(0);
+        ExprStmt exprStmt2 = (ExprStmt)stmtList.get(1);
+        ExprStmt exprStmt3 = (ExprStmt)stmtList.get(2);
+        ExprStmt exprStmt4 = (ExprStmt)stmtList.get(3);
+        ExprStmt exprStmt5 = (ExprStmt)stmtList.get(4);
+        PlusEqualsExpr plusEqualsExpr = (PlusEqualsExpr)exprStmt1.getExpr();
+        MinusEqualsExpr minusEqualsExpr = (MinusEqualsExpr)exprStmt2.getExpr();
+        TimesEqualsExpr timesEqualsExpr = (TimesEqualsExpr)exprStmt3.getExpr();
+        DivEqualsExpr divEqualsExpr = (DivEqualsExpr)exprStmt4.getExpr();
+        ModEqualsExpr modEqualsExpr = (ModEqualsExpr)exprStmt5.getExpr();
+
+        //tests x+=3
+        assertEquals("+=", plusEqualsExpr.getOpName());
+        assertEquals(3, ((ConstIntExpr)plusEqualsExpr.getExpr()).getIntConstant());
+        //tests x-=3
+        assertEquals("-=", minusEqualsExpr.getOpName());
+        assertEquals(3, ((ConstIntExpr)minusEqualsExpr.getExpr()).getIntConstant());
+        //tests x*=3
+        assertEquals("*=", timesEqualsExpr.getOpName());
+        assertEquals(3, ((ConstIntExpr)timesEqualsExpr.getExpr()).getIntConstant());
+        //tests x/=3
+        assertEquals("/=", divEqualsExpr.getOpName());
+        assertEquals(3, ((ConstIntExpr)divEqualsExpr.getExpr()).getIntConstant());
+        //tests x%=3
+        assertEquals("%=", modEqualsExpr.getOpName());
+        assertEquals(3, ((ConstIntExpr)modEqualsExpr.getExpr()).getIntConstant());
+    }
+
+    /**
+     * tests the case of bitwise logic expressions
+     * @throws Exception
+     */
+    @Test
+    public void bitwiseLogicTest() throws Exception {
+        StmtList stmtList = getStmtList("~3; 3&3; 3|3; 3^3; 3<<3; 3>>3; 3>>>3;");
+        assertEquals(7, stmtList.getSize());
+        ExprStmt exprStmt1 = (ExprStmt)stmtList.get(0);
+        ExprStmt exprStmt2 = (ExprStmt)stmtList.get(1);
+        ExprStmt exprStmt3 = (ExprStmt)stmtList.get(2);
+        ExprStmt exprStmt4 = (ExprStmt)stmtList.get(3);
+        ExprStmt exprStmt5 = (ExprStmt)stmtList.get(4);
+        ExprStmt exprStmt6 = (ExprStmt)stmtList.get(5);
+        ExprStmt exprStmt7 = (ExprStmt)stmtList.get(6);
+        UnaryBitNotExpr notExpr = (UnaryBitNotExpr)exprStmt1.getExpr();
+        BinaryLogicBitAndExpr andExpr = (BinaryLogicBitAndExpr)exprStmt2.getExpr();
+        BinaryLogicBitOrExpr orExpr = (BinaryLogicBitOrExpr)exprStmt3.getExpr();
+        BinaryLogicBitXorExpr xorExpr = (BinaryLogicBitXorExpr)exprStmt4.getExpr();
+        BinaryLogicLeftShiftExpr leftShiftExpr = (BinaryLogicLeftShiftExpr)exprStmt5.getExpr();
+        BinaryLogicRightShiftExpr rightShiftExpr = (BinaryLogicRightShiftExpr)exprStmt6.getExpr();
+        BinaryLogicUnsignedShiftExpr unsignedShiftExpr = (BinaryLogicUnsignedShiftExpr)exprStmt7.getExpr();
+
+        //tests ~3
+        assertEquals("~", notExpr.getOpName());
+        assertEquals(3, ((ConstIntExpr)notExpr.getExpr()).getIntConstant());
+        //tests 3&3
+        assertEquals("&", andExpr.getOpName());
+        assertEquals(3, ((ConstIntExpr)andExpr.getLeftExpr()).getIntConstant());
+        assertEquals(3, ((ConstIntExpr)andExpr.getRightExpr()).getIntConstant());
+        //tests 3|3
+        assertEquals("|", orExpr.getOpName());
+        assertEquals(3, ((ConstIntExpr)orExpr.getLeftExpr()).getIntConstant());
+        assertEquals(3, ((ConstIntExpr)orExpr.getRightExpr()).getIntConstant());
+        //tests 3^3
+        assertEquals("^", xorExpr.getOpName());
+        assertEquals(3, ((ConstIntExpr)xorExpr.getLeftExpr()).getIntConstant());
+        assertEquals(3, ((ConstIntExpr)xorExpr.getRightExpr()).getIntConstant());
+        //tests 3<<3
+        assertEquals("<<", leftShiftExpr.getOpName());
+        assertEquals(3, ((ConstIntExpr)leftShiftExpr.getLeftExpr()).getIntConstant());
+        assertEquals(3, ((ConstIntExpr)leftShiftExpr.getRightExpr()).getIntConstant());
+        //tests 3>>3
+        assertEquals(">>", rightShiftExpr.getOpName());
+        assertEquals(3, ((ConstIntExpr)rightShiftExpr.getLeftExpr()).getIntConstant());
+        assertEquals(3, ((ConstIntExpr)rightShiftExpr.getRightExpr()).getIntConstant());
+        //tests 3>>>3
+        assertEquals(">>>", unsignedShiftExpr.getOpName());
+        assertEquals(3, ((ConstIntExpr)unsignedShiftExpr.getLeftExpr()).getIntConstant());
+        assertEquals(3, ((ConstIntExpr)unsignedShiftExpr.getRightExpr()).getIntConstant());
+
+    }
+
 }
