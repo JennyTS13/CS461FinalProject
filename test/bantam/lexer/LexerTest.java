@@ -526,6 +526,126 @@ public class LexerTest
     }
 
     /**
+     * tests the left shift token
+     * @throws Exception
+     */
+    @Test
+    public void leftShiftToken() throws Exception {
+        Lexer lexer = new Lexer(new StringReader("<<"));
+        assertEquals("<<", getNextTokenName(lexer));
+    }
+
+    /**
+     * tests the signed right shift token
+     * @throws Exception
+     */
+    @Test
+    public void signedRightShiftToken() throws Exception {
+        Lexer lexer = new Lexer(new StringReader(">>"));
+        assertEquals(">>", getNextTokenName(lexer));
+    }
+
+    /**
+     * tests the signed right shift token
+     * @throws Exception
+     */
+    @Test
+    public void unsignedRightShiftToken() throws Exception {
+        Lexer lexer = new Lexer(new StringReader(">>>"));
+        assertEquals(">>>", getNextTokenName(lexer));
+    }
+
+    /**
+     * tests the bitwise and token
+     * @throws Exception
+     */
+    @Test
+    public void bitAndToken() throws Exception {
+        Lexer lexer = new Lexer(new StringReader("&"));
+        assertEquals("&", getNextTokenName(lexer));
+    }
+
+    /**
+     * tests the bitwise or token
+     * @throws Exception
+     */
+    @Test
+    public void bitOrToken() throws Exception {
+        Lexer lexer = new Lexer(new StringReader("|"));
+        assertEquals("|", getNextTokenName(lexer));
+    }
+
+    /**
+     * tests the bitwise xor token
+     * @throws Exception
+     */
+    @Test
+    public void bitXorToken() throws Exception {
+        Lexer lexer = new Lexer(new StringReader("^"));
+        assertEquals("^", getNextTokenName(lexer));
+    }
+
+    /**
+     * tests the bitwise not token
+     * @throws Exception
+     */
+    @Test
+    public void bitNotToken() throws Exception {
+        Lexer lexer = new Lexer(new StringReader("~"));
+        assertEquals("~", getNextTokenName(lexer));
+    }
+
+    /**
+     * tests the plus equals token
+     * @throws Exception
+     */
+    @Test
+    public void plusEqualsToken() throws Exception {
+        Lexer lexer = new Lexer(new StringReader("+="));
+        assertEquals("+=", getNextTokenName(lexer));
+    }
+
+    /**
+     * tests the minus equals token
+     * @throws Exception
+     */
+    @Test
+    public void minusEqualsToken() throws Exception {
+        Lexer lexer = new Lexer(new StringReader("-="));
+        assertEquals("-=", getNextTokenName(lexer));
+    }
+
+    /**
+     * tests the times equals token
+     * @throws Exception
+     */
+    @Test
+    public void timesEqualsToken() throws Exception {
+        Lexer lexer = new Lexer(new StringReader("*="));
+        assertEquals("*=", getNextTokenName(lexer));
+    }
+
+    /**
+     * tests the divide equals token
+     * @throws Exception
+     */
+    @Test
+    public void divideEqualsToken() throws Exception {
+        Lexer lexer = new Lexer(new StringReader("/="));
+        assertEquals("/=", getNextTokenName(lexer));
+    }
+
+    /**
+     * tests the mod equals token
+     * @throws Exception
+     */
+    @Test
+    public void modEqualsToken() throws Exception {
+        Lexer lexer = new Lexer(new StringReader("%="));
+        assertEquals("%=", getNextTokenName(lexer));
+    }
+
+    /**
      * tests the unsupported character token
      * @throws Exception
      */

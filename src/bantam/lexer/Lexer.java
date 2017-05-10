@@ -736,7 +736,7 @@ public class Lexer implements java_cup.runtime.Scanner {
 						break;
 					case 19:
 						{ return new Symbol(TokenIds.BITNOT,
-                                new Token("^", yyline)); }
+                                new Token("~", yyline)); }
 					case -20:
 						break;
 					case 20:
@@ -798,12 +798,12 @@ public class Lexer implements java_cup.runtime.Scanner {
 						break;
 					case 31:
 						{ return new Symbol(TokenIds.DIVASSIGN,
-                                new Token("=", yyline)); }
+                                new Token("/=", yyline)); }
 					case -32:
 						break;
 					case 32:
 						{ return new Symbol(TokenIds.TIMESASSIGN,
-                                new Token("=", yyline)); }
+                                new Token("*=", yyline)); }
 					case -33:
 						break;
 					case 33:
@@ -871,7 +871,7 @@ public class Lexer implements java_cup.runtime.Scanner {
 						break;
 					case 45:
 						{ return new Symbol(TokenIds.PLUSASSIGN,
-                                new Token("=", yyline)); }
+                                new Token("+=", yyline)); }
 					case -46:
 						break;
 					case 46:
@@ -881,7 +881,7 @@ public class Lexer implements java_cup.runtime.Scanner {
 						break;
 					case 47:
 						{ return new Symbol(TokenIds.MINUSASSIGN,
-                                new Token("=", yyline)); }
+                                new Token("-=", yyline)); }
 					case -48:
 						break;
 					case 48:
@@ -891,7 +891,7 @@ public class Lexer implements java_cup.runtime.Scanner {
 						break;
 					case 49:
 						{ return new Symbol(TokenIds.MODASSIGN,
-                                new Token("=", yyline)); }
+                                new Token("%=", yyline)); }
 					case -50:
 						break;
 					case 50:

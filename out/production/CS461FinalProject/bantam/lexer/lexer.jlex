@@ -252,18 +252,18 @@ instanceof                  { return new Symbol(TokenIds.INSTANCEOF,
                                 new Token(">>>", yyline)); }
 ">>"                        { return new Symbol(TokenIds.SIGNEDRIGHTSHIFT,
                                 new Token(">>", yyline)); }
-&&                          { return new Symbol(TokenIds.AND,
-                                new Token("&&", yyline)); }
-\|\|                        { return new Symbol(TokenIds.OR,
-                                new Token("||", yyline)); }
 &                           { return new Symbol(TokenIds.BITAND,
                                 new Token("&", yyline)); }
 \|                          { return new Symbol(TokenIds.BITOR,
                                 new Token("|", yyline)); }
+&&                          { return new Symbol(TokenIds.AND,
+                                new Token("&&", yyline)); }
+\|\|                        { return new Symbol(TokenIds.OR,
+                                new Token("||", yyline)); }
 "^"                         { return new Symbol(TokenIds.BITXOR,
                                 new Token("^", yyline)); }
 "~"                         { return new Symbol(TokenIds.BITNOT,
-                                new Token("^", yyline)); }
+                                new Token("~", yyline)); }
 if                          { return new Symbol(TokenIds.IF,
                                 new Token("IF", yyline)); }
 return                      { return new Symbol(TokenIds.RETURN,
@@ -288,15 +288,15 @@ true|false                  { return new Symbol(TokenIds.BOOLEAN_CONST,
 [A-Za-z][A-Za-z0-9_]*       { return new Symbol(TokenIds.ID,
                                 new Token(yytext(), yyline)); }
 "+="                        { return new Symbol(TokenIds.PLUSASSIGN,
-                                new Token("=", yyline)); }
+                                new Token("+=", yyline)); }
 "-="                        { return new Symbol(TokenIds.MINUSASSIGN,
-                                new Token("=", yyline)); }
+                                new Token("-=", yyline)); }
 "*="                        { return new Symbol(TokenIds.TIMESASSIGN,
-                                new Token("=", yyline)); }
+                                new Token("*=", yyline)); }
 "/="                        { return new Symbol(TokenIds.DIVASSIGN,
-                                new Token("=", yyline)); }
+                                new Token("/=", yyline)); }
 "%="                        { return new Symbol(TokenIds.MODASSIGN,
-                                new Token("=", yyline)); }
+                                new Token("%=", yyline)); }
 \+\+                        { return new Symbol(TokenIds.INCR,
                                 new Token("++", yyline)); }
 --                          { return new Symbol(TokenIds.DECR,
