@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a2606ef-fccb-4e35-a55b-d0e7adc61672" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/semant/SemanticAnalyzer.class" afterPath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/semant/SemanticAnalyzer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/visitor/TypeCheckVisitor.class" afterPath="$PROJECT_DIR$/out/production/CS461FinalProject/bantam/visitor/TypeCheckVisitor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/CS461FinalProject/bantam/parser/ParserTest.class" afterPath="$PROJECT_DIR$/out/test/CS461FinalProject/bantam/parser/ParserTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/CS461FinalProject/bantam/semant/SemanticAnalyzerTest.class" afterPath="$PROJECT_DIR$/out/test/CS461FinalProject/bantam/semant/SemanticAnalyzerTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/bantam/parser/ParserTest.java" afterPath="$PROJECT_DIR$/test/bantam/parser/ParserTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bantam/visitor/TypeCheckVisitor.java" afterPath="$PROJECT_DIR$/src/bantam/visitor/TypeCheckVisitor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/bantam/semant/SemanticAnalyzerTest.java" afterPath="$PROJECT_DIR$/test/bantam/semant/SemanticAnalyzerTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,39 +27,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LexerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/bantam/lexer/LexerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="614" column="12" selection-start-line="614" selection-start-column="12" selection-end-line="614" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParserTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/bantam/parser/ParserTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="1207" column="19" selection-start-line="1207" selection-start-column="19" selection-end-line="1207" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Lexer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bantam/lexer/Lexer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#41100#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CodeGenVisitor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bantam/codegenmips/CodeGenVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -65,11 +37,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test.asm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bantam/codegenmips/Test.asm">
+      <file leaf-file-name="SemanticAnalyzerTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/bantam/semant/SemanticAnalyzerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="2830" column="22" selection-start-line="2830" selection-start-column="22" selection-end-line="2830" selection-end-column="22" />
+            <state relative-caret-position="680">
+              <caret line="1292" column="70" selection-start-line="1292" selection-start-column="70" selection-end-line="1292" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TypeCheckVisitor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bantam/visitor/TypeCheckVisitor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="775" column="91" selection-start-line="775" selection-start-column="91" selection-end-line="775" selection-end-column="91" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SymbolTable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bantam/util/SymbolTable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="43">
+              <caret line="385" column="18" selection-start-line="385" selection-start-column="18" selection-end-line="385" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -110,7 +102,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/bantam/codegenmidimips/MidiHandler.asm" />
         <option value="$PROJECT_DIR$/src/bantam/codegenmidimips/MidiTest.asm" />
         <option value="$PROJECT_DIR$/src/bantam/codegenmidimips/Note.asm" />
         <option value="$PROJECT_DIR$/tools/lib/exceptions.s" />
@@ -119,7 +110,6 @@
         <option value="$PROJECT_DIR$/mipsTest/MidiHandler.btm" />
         <option value="$PROJECT_DIR$/src/bantam/codegenmidimips/MidiHandler.btm" />
         <option value="$PROJECT_DIR$/mipsTest/exceptions.s" />
-        <option value="$PROJECT_DIR$/src/bantam/semant/SemanticAnalyzer.java" />
         <option value="$PROJECT_DIR$/mipsTest/Note.btm" />
         <option value="$PROJECT_DIR$/src/bantam/codegenmidimips/Note.btm" />
         <option value="$PROJECT_DIR$/mipsTest/MidiTest.btm" />
@@ -153,7 +143,6 @@
         <option value="$PROJECT_DIR$/src/bantam/ast/MinusEqualsExpr.java" />
         <option value="$PROJECT_DIR$/src/bantam/parser/parser.cup" />
         <option value="$PROJECT_DIR$/src/bantam/visitor/Visitor.java" />
-        <option value="$PROJECT_DIR$/src/bantam/visitor/TypeCheckVisitor.java" />
         <option value="$PROJECT_DIR$/src/bantam/codegenmips/CodeGenVisitor.java" />
         <option value="$PROJECT_DIR$/testfiles/Test.btm" />
         <option value="$PROJECT_DIR$/mipsTest/MidiTest.asm" />
@@ -161,6 +150,9 @@
         <option value="$PROJECT_DIR$/test/bantam/lexer/LexerTest.java" />
         <option value="$PROJECT_DIR$/src/bantam/lexer/lexer.jlex" />
         <option value="$PROJECT_DIR$/test/bantam/parser/ParserTest.java" />
+        <option value="$PROJECT_DIR$/src/bantam/semant/SemanticAnalyzer.java" />
+        <option value="$PROJECT_DIR$/src/bantam/visitor/TypeCheckVisitor.java" />
+        <option value="$PROJECT_DIR$/test/bantam/semant/SemanticAnalyzerTest.java" />
       </list>
     </option>
   </component>
@@ -172,9 +164,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="903" />
+    <option name="x" value="867" />
     <option name="y" value="70" />
-    <option name="width" value="748" />
+    <option name="width" value="784" />
     <option name="height" value="846" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -355,7 +347,73 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lexer" />
+              <option name="myItemId" value="visitor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CS461FinalProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CS461FinalProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bantam" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CS461FinalProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CS461FinalProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bantam" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="semant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CS461FinalProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CS461FinalProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bantam" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codegenmips" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -604,33 +662,7 @@
       </FILE-GROUP>
     </UpdatedFiles>
   </component>
-  <component name="RunManager" selected="JUnit.ParserTest.bitwiseLogicTest">
-    <configuration default="false" name="SemanticAnalyzerTest.testLegalProgram" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="bantam.semant.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="BantamJavaStudentPkg" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="bantam.semant" />
-      <option name="MAIN_CLASS_NAME" value="bantam.semant.SemanticAnalyzerTest" />
-      <option name="METHOD_NAME" value="testLegalProgram" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.SemanticAnalyzerTest">
     <configuration default="false" name="SemanticAnalyzerTest.testLocalVar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -722,6 +754,32 @@
       <option name="PACKAGE_NAME" value="bantam.parser" />
       <option name="MAIN_CLASS_NAME" value="bantam.parser.ParserTest" />
       <option name="METHOD_NAME" value="bitwiseLogicTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="SemanticAnalyzerTest.testNoMainClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="bantam.semant.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="CS461FinalProject" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="bantam.semant" />
+      <option name="MAIN_CLASS_NAME" value="bantam.semant.SemanticAnalyzerTest" />
+      <option name="METHOD_NAME" value="testNoMainClass" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1246,16 +1304,16 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="BantamJavaStudentPkg" />
+      <module name="CS461FinalProject" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="bantam.semant" />
       <option name="MAIN_CLASS_NAME" value="bantam.semant.SemanticAnalyzerTest" />
-      <option name="METHOD_NAME" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -1273,20 +1331,20 @@
       <item index="4" class="java.lang.String" itemvalue="Application.Test" />
       <item index="5" class="java.lang.String" itemvalue="JUnit.all unit tests" />
       <item index="6" class="java.lang.String" itemvalue="JUnit.SemanticAnalyzerTest.testVariableValidity" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.SemanticAnalyzerTest" />
-      <item index="8" class="java.lang.String" itemvalue="JUnit.SemanticAnalyzerTest.testLegalProgram" />
-      <item index="9" class="java.lang.String" itemvalue="JUnit.SemanticAnalyzerTest.testLocalVar" />
-      <item index="10" class="java.lang.String" itemvalue="JUnit.LexerTest" />
-      <item index="11" class="java.lang.String" itemvalue="JUnit.ParserTest.shortcutAssignExprTest" />
-      <item index="12" class="java.lang.String" itemvalue="JUnit.ParserTest.bitwiseLogicTest" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.SemanticAnalyzerTest.testLocalVar" />
+      <item index="8" class="java.lang.String" itemvalue="JUnit.LexerTest" />
+      <item index="9" class="java.lang.String" itemvalue="JUnit.ParserTest.shortcutAssignExprTest" />
+      <item index="10" class="java.lang.String" itemvalue="JUnit.ParserTest.bitwiseLogicTest" />
+      <item index="11" class="java.lang.String" itemvalue="JUnit.SemanticAnalyzerTest.testNoMainClass" />
+      <item index="12" class="java.lang.String" itemvalue="JUnit.SemanticAnalyzerTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ParserTest.bitwiseLogicTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ParserTest.shortcutAssignExprTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.LexerTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.SemanticAnalyzerTest.testLocalVar" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.SemanticAnalyzerTest.testLegalProgram" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.SemanticAnalyzerTest.testNoMainClass" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ParserTest.bitwiseLogicTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ParserTest.shortcutAssignExprTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.LexerTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.SemanticAnalyzerTest.testLocalVar" />
       </list>
     </recent_temporary>
   </component>
@@ -1306,13 +1364,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1486503667190</updated>
-    </task>
-    <task id="LOCAL-00262" summary="Added ( Expr )">
-      <created>1493327527823</created>
-      <option name="number" value="00262" />
-      <option name="presentableId" value="LOCAL-00262" />
-      <option name="project" value="LOCAL" />
-      <updated>1493327527826</updated>
     </task>
     <task id="LOCAL-00263" summary="Added ( Expr )">
       <created>1493327831496</created>
@@ -1650,39 +1701,46 @@
       <option name="project" value="LOCAL" />
       <updated>1494397043950</updated>
     </task>
-    <option name="localTasksCounter" value="311" />
+    <task id="LOCAL-00311" summary="Added parser tests">
+      <created>1494398623919</created>
+      <option name="number" value="00311" />
+      <option name="presentableId" value="LOCAL-00311" />
+      <option name="project" value="LOCAL" />
+      <updated>1494398623919</updated>
+    </task>
+    <option name="localTasksCounter" value="312" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LexerTest - 2017.05.10 at 02h 12m 02s.xml">
-      <configuration name="LexerTest" configurationId="JUnit" />
+    <history-entry file="SemanticAnalyzerTest - 2017.05.10 at 03h 18m 05s.xml">
+      <configuration name="SemanticAnalyzerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LexerTest - 2017.05.10 at 02h 15m 12s.xml">
-      <configuration name="LexerTest" configurationId="JUnit" />
+    <history-entry file="SemanticAnalyzerTest - 2017.05.10 at 03h 18m 16s.xml">
+      <configuration name="SemanticAnalyzerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LexerTest - 2017.05.10 at 02h 17m 10s.xml">
-      <configuration name="LexerTest" configurationId="JUnit" />
+    <history-entry file="SemanticAnalyzerTest - 2017.05.10 at 03h 18m 37s.xml">
+      <configuration name="SemanticAnalyzerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParserTest_bitwiseLogicTest - 2017.05.10 at 02h 42m 33s.xml">
-      <configuration name="ParserTest.bitwiseLogicTest" configurationId="JUnit" />
+    <history-entry file="SemanticAnalyzerTest - 2017.05.10 at 03h 19m 02s.xml">
+      <configuration name="SemanticAnalyzerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParserTest_bitwiseLogicTest - 2017.05.10 at 02h 43m 05s.xml">
-      <configuration name="ParserTest.bitwiseLogicTest" configurationId="JUnit" />
+    <history-entry file="SemanticAnalyzerTest - 2017.05.10 at 03h 19m 18s.xml">
+      <configuration name="SemanticAnalyzerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParserTest_bitwiseLogicTest - 2017.05.10 at 02h 43m 24s.xml">
-      <configuration name="ParserTest.bitwiseLogicTest" configurationId="JUnit" />
+    <history-entry file="SemanticAnalyzerTest - 2017.05.10 at 03h 19m 36s.xml">
+      <configuration name="SemanticAnalyzerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParserTest_shortcutAssignExprTest - 2017.05.10 at 02h 33m 10s.xml">
-      <configuration name="ParserTest.shortcutAssignExprTest" configurationId="JUnit" />
+    <history-entry file="SemanticAnalyzerTest - 2017.05.10 at 03h 19m 55s.xml">
+      <configuration name="SemanticAnalyzerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SemanticAnalyzerTest_testLegalProgram - 2017.04.07 at 01h 43m 40s.xml">
-      <configuration name="SemanticAnalyzerTest.testLegalProgram" configurationId="JUnit" />
+    <history-entry file="SemanticAnalyzerTest - 2017.05.10 at 03h 20m 02s.xml">
+      <configuration name="SemanticAnalyzerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SemanticAnalyzerTest_testLocalVar - 2017.04.24 at 21h 23m 52s.xml">
-      <configuration name="SemanticAnalyzerTest.testLocalVar" configurationId="JUnit" />
+    <history-entry file="SemanticAnalyzerTest - 2017.05.10 at 03h 20m 09s.xml">
+      <configuration name="SemanticAnalyzerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SemanticAnalyzerTest_testLocalVar - 2017.04.24 at 21h 25m 29s.xml">
-      <configuration name="SemanticAnalyzerTest.testLocalVar" configurationId="JUnit" />
+    <history-entry file="SemanticAnalyzerTest - 2017.05.10 at 03h 20m 31s.xml">
+      <configuration name="SemanticAnalyzerTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1695,7 +1753,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="903" y="70" width="748" height="846" extended-state="0" />
+    <frame x="867" y="70" width="784" height="846" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1711,7 +1769,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21529745" sideWeight="0.49765807" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20485175" sideWeight="0.49765807" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14179105" sideWeight="0.5023419" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3427762" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1771,7 +1829,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="added MidiHandler to code gen built in (fixed typo)" />
     <MESSAGE value="updated comments" />
     <MESSAGE value="added methods to note and midihandler" />
     <MESSAGE value="btm files" />
@@ -1796,7 +1853,8 @@
     <MESSAGE value="Added shortcut expressions" />
     <MESSAGE value="Renamed files and directories" />
     <MESSAGE value="Added lexer tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added lexer tests" />
+    <MESSAGE value="Added parser tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added parser tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1912,34 +1970,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/testfiles/HelloWorld.btm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bantam/codegenmidimips/Note.btm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bantam/codegenmidimips/MidiHandler.btm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bantam/codegenmidimips/MidiMipsSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/bantam/visitor/PrettyPrintVisitor.java" />
     <entry file="file://$PROJECT_DIR$/src/bantam/parser/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -2097,6 +2127,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
           <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="108" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#3222#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2184,13 +2217,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bantam/visitor/TypeCheckVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="837" column="5" selection-start-line="791" selection-start-column="4" selection-end-line="837" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/bantam/visitor/Visitor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -2210,14 +2236,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="2830" column="22" selection-start-line="2830" selection-start-column="22" selection-end-line="2830" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bantam/codegenmips/CodeGenVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="1337" column="35" selection-start-line="1337" selection-start-column="35" selection-end-line="1337" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -2276,10 +2294,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/bantam/codegenmips/CodeGenVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="1337" column="35" selection-start-line="1337" selection-start-column="35" selection-end-line="1337" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bantam/util/SymbolTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="385" column="18" selection-start-line="385" selection-start-column="18" selection-end-line="385" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bantam/semant/SemanticAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="480" column="36" selection-start-line="480" selection-start-column="36" selection-end-line="480" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bantam/visitor/MemberVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="73" column="21" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bantam/visitor/TypeCheckVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="775" column="91" selection-start-line="775" selection-start-column="91" selection-end-line="775" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/bantam/parser/ParserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
+        <state relative-caret-position="317">
           <caret line="1207" column="19" selection-start-line="1207" selection-start-column="19" selection-end-line="1207" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/bantam/semant/SemanticAnalyzerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="1292" column="70" selection-start-line="1292" selection-start-column="70" selection-end-line="1292" selection-end-column="70" />
           <folding />
         </state>
       </provider>

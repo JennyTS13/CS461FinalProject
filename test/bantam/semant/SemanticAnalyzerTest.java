@@ -201,11 +201,11 @@ public class SemanticAnalyzerTest {
             assertEquals(analyzer.getErrorHandler().getErrorList().get(0).getMessage(),
                     "Missing Main class");
             assertEquals(analyzer.getErrorHandler().getErrorList().get(1).getMessage(),
-                    "B cannot extend TextIO. TextIO is not extendable.");
-            assertEquals(analyzer.getErrorHandler().getErrorList().get(2).getMessage(),
-                    "C cannot extend Sys. Sys is not extendable.");
-            assertEquals(analyzer.getErrorHandler().getErrorList().get(3).getMessage(),
                     "A cannot extend String. String is not extendable.");
+            assertEquals(analyzer.getErrorHandler().getErrorList().get(2).getMessage(),
+                    "B cannot extend TextIO. TextIO is not extendable.");
+            assertEquals(analyzer.getErrorHandler().getErrorList().get(3).getMessage(),
+                    "C cannot extend Sys. Sys is not extendable.");
         }
         assertTrue(thrown);
     }
@@ -250,36 +250,6 @@ public class SemanticAnalyzerTest {
                     "boolean is a reserved keyword.");
             assertEquals(analyzer.getErrorHandler().getErrorList().get(6).getMessage(),
                     "int is a reserved keyword.");
-        }
-        assertTrue(thrown);
-    }
-
-    /**
-     * tests the case of an inheritance tree having loops
-     *
-     * @throws Exception
-     */
-    @Test
-    public void testInheritanceLoop() throws Exception {
-        boolean thrown = false;
-        SemanticAnalyzer analyzer = getSemanticAnalyzer(
-                "class A extends B {}" +
-                "class B extends A {}"
-        );
-
-        try {
-            analyzer.analyze();
-        }
-        catch (Exception e) {
-            thrown = true;
-            assertEquals(e.getMessage(), "Bantam semantic analyzer found errors.");
-            assertEquals(3, analyzer.getErrorHandler().getErrorList().size());
-            assertEquals(analyzer.getErrorHandler().getErrorList().get(0).getMessage(),
-                    "Missing Main class");
-            assertEquals(analyzer.getErrorHandler().getErrorList().get(1).getMessage(),
-                    "B is not a descendant of Object.");
-            assertEquals(analyzer.getErrorHandler().getErrorList().get(2).getMessage(),
-                    "A is not a descendant of Object.");
         }
         assertTrue(thrown);
     }
@@ -1253,6 +1223,74 @@ public class SemanticAnalyzerTest {
             assertEquals(1, analyzer.getErrorHandler().getErrorList().size());
             assertEquals(analyzer.getErrorHandler().getErrorList().get(0).getMessage(),
                     "Cannot cast String to Main.");
+        }
+        assertTrue(thrown);
+    }
+
+    /**
+     * tests the case of invalid shortcut assignment expressions
+     *
+     * @throws Exception
+     */
+    @Test
+    public void testShortcutAssignExpr() throws Exception {
+        boolean thrown = false;
+        SemanticAnalyzer analyzer = getSemanticAnalyzer(
+                "class Main {" +
+                    "void main() { " +
+                        "int x = 5;" +
+                        "boolean b = true;" +
+                        "x += true;" +
+                        "b -= 4;" +
+                    "} " +
+                "}"
+        );
+
+        try {
+            analyzer.analyze();
+        }
+        catch (Exception e){
+            thrown = true;
+            assertEquals(e.getMessage(), "Bantam semantic analyzer found errors.");
+            assertEquals(2, analyzer.getErrorHandler().getErrorList().size());
+            assertEquals(analyzer.getErrorHandler().getErrorList().get(0).getMessage(),
+                    "Operands of wrong type. Expected: int, int Actual: int, boolean");
+            assertEquals(analyzer.getErrorHandler().getErrorList().get(1).getMessage(),
+                    "Operands of wrong type. Expected: int, int Actual: boolean, int");
+        }
+        assertTrue(thrown);
+    }
+
+    /**
+     * tests the case of invalid bitwise logic expressions
+     *
+     * @throws Exception
+     */
+    @Test
+    public void testBitwiseLogicExpr() throws Exception {
+        boolean thrown = false;
+        SemanticAnalyzer analyzer = getSemanticAnalyzer(
+                "class Main {" +
+                    "void main() { " +
+                        "int x = 5 << true;" +
+                        "boolean b = ~true;" +
+                    "} " +
+                "}"
+        );
+
+        try {
+            analyzer.analyze();
+        }
+        catch (Exception e){
+            thrown = true;
+            assertEquals(e.getMessage(), "Bantam semantic analyzer found errors.");
+            assertEquals(3, analyzer.getErrorHandler().getErrorList().size());
+            assertEquals(analyzer.getErrorHandler().getErrorList().get(0).getMessage(),
+                    "Operands of wrong type. Expected: int, int Actual: int, boolean");
+            assertEquals(analyzer.getErrorHandler().getErrorList().get(1).getMessage(),
+                    "Operand must be of type int");
+            assertEquals(analyzer.getErrorHandler().getErrorList().get(2).getMessage(),
+                    "Incompatible types. Expected: boolean Actual: int");
         }
         assertTrue(thrown);
     }

@@ -769,10 +769,11 @@ public class TypeCheckVisitor extends Visitor {
         else{
             node.setExprType("int");
             //if one is not a type of the other, register an error
-            if(!areTypesEqual(varType, "int")) {
+            if(!areTypesEqual(varType, "int") ||
+                    !areTypesEqual(node.getExpr().getExprType(), "int")) {
                 errorHandler.register(2, fileName, node.getLineNum(),
-                        "Operands of wrong type. Expected: int" +
-                                " Actual: " + varType);
+                        "Operands of wrong type. Expected: int, int" +
+                                " Actual: " + varType + ", " + node.getExpr().getExprType());
             }
         }
     }
