@@ -27168,681 +27168,12 @@ Main.main:
 	add $sp $sp -4
 	sw $v0 0($sp)
 	# load int value into $v0
-	li $v0 0
+	li $v0 2
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
 	# load int value into $v0
-	li $v0 720
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load address of string constant label
-	la $v0 String_const_1
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 125
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 20($sp)
-	# Finding location of code to execute: setNoteAttributes
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 12($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to setNoteAttributes
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 4($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load address of string constant label
-	la $v0 String_const_0
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# evaluate value to negate
-	# load int value into $v0
-	li $v0 1
-	# negate value in $v0 
-	neg $v0 $v0
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 720
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load address of string constant label
-	la $v0 String_const_18
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 125
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 20($sp)
-	# Finding location of code to execute: setNoteAttributes
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 12($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to play
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 8($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load variable from stack to $v0
-	lw $v0 0($fp)
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 4($sp)
-	# Finding location of code to execute: play
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 12($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to play
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 8($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load variable from stack to $v0
-	lw $v0 4($fp)
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 4($sp)
-	# Finding location of code to execute: play
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 12($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to rest
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 8($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load int value into $v0
-	li $v0 720
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 4($sp)
-	# Finding location of code to execute: rest
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 16($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to setNoteAttributes
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 0($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load address of string constant label
-	la $v0 String_const_2
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 0
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 240
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load address of string constant label
-	la $v0 String_const_1
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 120
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 20($sp)
-	# Finding location of code to execute: setNoteAttributes
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 12($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to setNoteAttributes
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 4($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load address of string constant label
-	la $v0 String_const_2
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# evaluate value to negate
-	# load int value into $v0
-	li $v0 1
-	# negate value in $v0 
-	neg $v0 $v0
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 240
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load address of string constant label
-	la $v0 String_const_18
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 120
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 20($sp)
-	# Finding location of code to execute: setNoteAttributes
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 12($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to play
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 8($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load variable from stack to $v0
-	lw $v0 0($fp)
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 4($sp)
-	# Finding location of code to execute: play
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 12($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to play
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 8($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load variable from stack to $v0
-	lw $v0 4($fp)
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 4($sp)
-	# Finding location of code to execute: play
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 12($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to rest
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 8($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load int value into $v0
-	li $v0 240
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 4($sp)
-	# Finding location of code to execute: rest
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 16($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to setNoteAttributes
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 0($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load address of string constant label
-	la $v0 String_const_3
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 0
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 240
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load address of string constant label
-	la $v0 String_const_1
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 120
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 20($sp)
-	# Finding location of code to execute: setNoteAttributes
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 12($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to setNoteAttributes
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 4($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load address of string constant label
-	la $v0 String_const_3
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# evaluate value to negate
-	# load int value into $v0
-	li $v0 1
-	# negate value in $v0 
-	neg $v0 $v0
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 240
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load address of string constant label
-	la $v0 String_const_18
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 120
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 20($sp)
-	# Finding location of code to execute: setNoteAttributes
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 12($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to play
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 8($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load variable from stack to $v0
-	lw $v0 0($fp)
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 4($sp)
-	# Finding location of code to execute: play
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 12($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to play
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 8($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load variable from stack to $v0
-	lw $v0 4($fp)
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 4($sp)
-	# Finding location of code to execute: play
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 12($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to rest
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 8($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load int value into $v0
-	li $v0 240
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 4($sp)
-	# Finding location of code to execute: rest
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 16($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to setNoteAttributes
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 0($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load address of string constant label
-	la $v0 String_const_0
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 1
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 720
+	li $v0 960
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -27898,7 +27229,7 @@ Main.main:
 	add $sp $sp -4
 	sw $v0 0($sp)
 	# load int value into $v0
-	li $v0 720
+	li $v0 960
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -28016,7 +27347,227 @@ Main.main:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load int value into $v0
-	li $v0 720
+	li $v0 960
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: rest
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 16($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_9
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 2
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 480
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_9
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 480
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_18
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to rest
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load int value into $v0
+	li $v0 480
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -28057,7 +27608,7 @@ Main.main:
 	add $sp $sp -4
 	sw $v0 0($sp)
 	# load int value into $v0
-	li $v0 1
+	li $v0 2
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -28272,678 +27823,12 @@ Main.main:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_0
+	la $v0 String_const_9
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
 	# load int value into $v0
-	li $v0 1
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 240
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load address of string constant label
-	la $v0 String_const_1
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 120
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 20($sp)
-	# Finding location of code to execute: setNoteAttributes
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 12($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to setNoteAttributes
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 4($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load address of string constant label
-	la $v0 String_const_0
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 0
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 240
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load address of string constant label
-	la $v0 String_const_18
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 120
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 20($sp)
-	# Finding location of code to execute: setNoteAttributes
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 12($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to play
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 8($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load variable from stack to $v0
-	lw $v0 0($fp)
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 4($sp)
-	# Finding location of code to execute: play
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 12($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to play
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 8($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load variable from stack to $v0
-	lw $v0 4($fp)
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 4($sp)
-	# Finding location of code to execute: play
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 12($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to rest
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 8($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load int value into $v0
-	li $v0 240
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 4($sp)
-	# Finding location of code to execute: rest
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 16($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to setNoteAttributes
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 0($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load address of string constant label
-	la $v0 String_const_4
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 0
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 240
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load address of string constant label
-	la $v0 String_const_1
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 120
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 20($sp)
-	# Finding location of code to execute: setNoteAttributes
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 12($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to setNoteAttributes
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 4($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load address of string constant label
-	la $v0 String_const_4
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# evaluate value to negate
-	# load int value into $v0
-	li $v0 1
-	# negate value in $v0 
-	neg $v0 $v0
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 240
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load address of string constant label
-	la $v0 String_const_18
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 120
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 20($sp)
-	# Finding location of code to execute: setNoteAttributes
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 12($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to play
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 8($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load variable from stack to $v0
-	lw $v0 0($fp)
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 4($sp)
-	# Finding location of code to execute: play
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 12($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to play
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 8($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load variable from stack to $v0
-	lw $v0 4($fp)
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 4($sp)
-	# Finding location of code to execute: play
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 12($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to rest
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 8($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load int value into $v0
-	li $v0 240
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 4($sp)
-	# Finding location of code to execute: rest
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 16($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to setNoteAttributes
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 0($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load address of string constant label
-	la $v0 String_const_3
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 0
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 240
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load address of string constant label
-	la $v0 String_const_1
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 120
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 20($sp)
-	# Finding location of code to execute: setNoteAttributes
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 12($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to setNoteAttributes
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 4($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load address of string constant label
-	la $v0 String_const_3
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# evaluate value to negate
-	# load int value into $v0
-	li $v0 1
-	# negate value in $v0 
-	neg $v0 $v0
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 240
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load address of string constant label
-	la $v0 String_const_18
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 120
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 20($sp)
-	# Finding location of code to execute: setNoteAttributes
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 12($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to play
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 8($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load variable from stack to $v0
-	lw $v0 0($fp)
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 4($sp)
-	# Finding location of code to execute: play
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 12($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to play
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 8($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load variable from stack to $v0
-	lw $v0 4($fp)
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 4($sp)
-	# Finding location of code to execute: play
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 12($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to rest
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 8($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load int value into $v0
-	li $v0 240
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 4($sp)
-	# Finding location of code to execute: rest
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 16($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to setNoteAttributes
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 0($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load address of string constant label
-	la $v0 String_const_0
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 0
+	li $v0 2
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -28994,15 +27879,12 @@ Main.main:
 	sw $v0 0($sp)
 	# Computing parameters and pushing onto stack
 	# load address of string constant label
-	la $v0 String_const_0
+	la $v0 String_const_9
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
-	# evaluate value to negate
 	# load int value into $v0
-	li $v0 1
-	# negate value in $v0 
-	neg $v0 $v0
+	li $v0 0
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -29166,12 +28048,12 @@ Main.main:
 	add $sp $sp -4
 	sw $v0 0($sp)
 	# load int value into $v0
-	li $v0 0
+	li $v0 2
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
 	# load int value into $v0
-	li $v0 480
+	li $v0 240
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -29181,7 +28063,7 @@ Main.main:
 	add $sp $sp -4
 	sw $v0 0($sp)
 	# load int value into $v0
-	li $v0 120
+	li $v0 125
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -29221,11 +28103,668 @@ Main.main:
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
-	# evaluate value to negate
 	# load int value into $v0
-	li $v0 1
-	# negate value in $v0 
-	neg $v0 $v0
+	li $v0 0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 240
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_18
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to rest
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load int value into $v0
+	li $v0 240
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: rest
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 16($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 2
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 960
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 960
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_18
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to rest
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load int value into $v0
+	li $v0 960
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: rest
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 16($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 2
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 960
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 960
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_18
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to rest
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load int value into $v0
+	li $v0 960
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: rest
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 16($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_7
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 2
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 480
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_7
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 0
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -29240,7 +28779,7 @@ Main.main:
 	add $sp $sp -4
 	sw $v0 0($sp)
 	# load int value into $v0
-	li $v0 120
+	li $v0 125
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -29379,6 +28918,3588 @@ Main.main:
 	# Computing DispatchExpr ref
 	# load variable from stack to $v0
 	lw $v0 0($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_3
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 240
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_3
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# evaluate value to negate
+	# load int value into $v0
+	li $v0 1
+	# negate value in $v0 
+	neg $v0 $v0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 240
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_18
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to rest
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load int value into $v0
+	li $v0 240
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: rest
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 16($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_7
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 2
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 240
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_7
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 240
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_18
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to rest
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load int value into $v0
+	li $v0 240
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: rest
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 16($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 2
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 1440
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 1440
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_18
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to rest
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load int value into $v0
+	li $v0 1440
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: rest
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 16($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 2
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 480
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 480
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_18
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to rest
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load int value into $v0
+	li $v0 480
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: rest
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 16($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 2
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 960
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 960
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_18
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to rest
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load int value into $v0
+	li $v0 960
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: rest
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 16($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_9
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 2
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 480
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_9
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 480
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_18
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to rest
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load int value into $v0
+	li $v0 480
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: rest
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 16($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_2
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 2
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 480
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_2
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 480
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_18
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to rest
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load int value into $v0
+	li $v0 480
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: rest
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 16($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_9
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 2
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 720
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_9
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 720
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_18
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to rest
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load int value into $v0
+	li $v0 720
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: rest
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 16($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 2
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 240
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 240
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_18
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to rest
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load int value into $v0
+	li $v0 240
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: rest
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 16($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 2
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 960
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 960
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_18
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to rest
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load int value into $v0
+	li $v0 960
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: rest
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 16($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 2
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 480
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 480
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_18
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to rest
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load int value into $v0
+	li $v0 480
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: rest
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 16($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_2
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 2
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 160
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_2
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 160
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_18
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to rest
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load int value into $v0
+	li $v0 160
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: rest
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 16($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 2
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 160
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 160
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_18
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to rest
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load int value into $v0
+	li $v0 160
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: rest
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 16($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_2
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 2
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 160
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_2
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 160
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_18
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to rest
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load int value into $v0
+	li $v0 160
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: rest
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 16($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_3
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 2
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 480
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_3
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 480
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_18
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to rest
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load int value into $v0
+	li $v0 480
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: rest
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 16($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_3
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 480
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_3
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# evaluate value to negate
+	# load int value into $v0
+	li $v0 1
+	# negate value in $v0 
+	neg $v0 $v0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 480
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_18
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to play
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load variable from stack to $v0
+	lw $v0 4($fp)
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: play
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to rest
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load int value into $v0
+	li $v0 480
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: rest
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 16($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 0($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load address of string constant label
+	la $v0 String_const_0
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 2
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 1920
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load address of string constant label
+	la $v0 String_const_1
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# load int value into $v0
+	li $v0 125
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 20($sp)
+	# Finding location of code to execute: setNoteAttributes
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to setNoteAttributes
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 4($fp)
 	# temporarily push ref on the stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -29399,68 +32520,12 @@ Main.main:
 	add $sp $sp -4
 	sw $v0 0($sp)
 	# load address of string constant label
-	la $v0 String_const_1
+	la $v0 String_const_18
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
 	# load int value into $v0
-	li $v0 120
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Loading obj ref into $a0
-	lw $a0 20($sp)
-	# Finding location of code to execute: setNoteAttributes
-	# ptr to vtf is the 3rd slot, 8 bytes down
-	lw $t0 8($a0)
-	# loading method location into $t0
-	lw $t0 12($t0)
-	# jump to the method in $t0
-	jalr $t0
-	# pop ref off the stack
-	lw $a0 0($sp)
-	add $sp $sp 4
-	# Restoring important registers
-	lw $s0 0($sp)
-	add $sp $sp 4
-	lw $a0 0($sp)
-	add $sp $sp 4
-
-	# code for call to setNoteAttributes
-	# Saving important registers
-	add $sp $sp -4
-	sw $a0 0($sp)
-	add $sp $sp -4
-	sw $s0 0($sp)
-	# Computing DispatchExpr ref
-	# load variable from stack to $v0
-	lw $v0 4($fp)
-	# temporarily push ref on the stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# Computing parameters and pushing onto stack
-	# load address of string constant label
-	la $v0 String_const_0
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 1
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 1920
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load address of string constant label
-	la $v0 String_const_1
-	# push param onto stack
-	add $sp $sp -4
-	sw $v0 0($sp)
-	# load int value into $v0
-	li $v0 120
+	li $v0 125
 	# push param onto stack
 	add $sp $sp -4
 	sw $v0 0($sp)
@@ -29543,6 +32608,42 @@ Main.main:
 	lw $t0 8($a0)
 	# loading method location into $t0
 	lw $t0 12($t0)
+	# jump to the method in $t0
+	jalr $t0
+	# pop ref off the stack
+	lw $a0 0($sp)
+	add $sp $sp 4
+	# Restoring important registers
+	lw $s0 0($sp)
+	add $sp $sp 4
+	lw $a0 0($sp)
+	add $sp $sp 4
+
+	# code for call to rest
+	# Saving important registers
+	add $sp $sp -4
+	sw $a0 0($sp)
+	add $sp $sp -4
+	sw $s0 0($sp)
+	# Computing DispatchExpr ref
+	# load variable from stack to $v0
+	lw $v0 8($fp)
+	# temporarily push ref on the stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Computing parameters and pushing onto stack
+	# load int value into $v0
+	li $v0 1920
+	# push param onto stack
+	add $sp $sp -4
+	sw $v0 0($sp)
+	# Loading obj ref into $a0
+	lw $a0 4($sp)
+	# Finding location of code to execute: rest
+	# ptr to vtf is the 3rd slot, 8 bytes down
+	lw $t0 8($a0)
+	# loading method location into $t0
+	lw $t0 16($t0)
 	# jump to the method in $t0
 	jalr $t0
 	# pop ref off the stack

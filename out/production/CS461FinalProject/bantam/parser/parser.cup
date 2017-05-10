@@ -200,7 +200,7 @@ terminal Token SEMI, COMMA, DOT;
 terminal Token ID, INT_CONST, BOOLEAN_CONST, STRING_CONST;
 terminal Token SIGNEDLEFTSHIFT, SIGNEDRIGHTSHIFT, UNSIGNEDRIGHTSHIFT;
 terminal Token BITOR, BITXOR, BITAND, BITNOT;
-terminal Token PLUSASSIGN;
+terminal Token PLUSASSIGN, MINUSASSIGN, TIMESASSIGN, DIVASSIGN, MODASSIGN;
 
 /* list of non-terminals used in context-free grammar
    format: nonterminal <type> <list of nonterminal names>
@@ -231,6 +231,10 @@ nonterminal ReturnStmt ret_stmt;
 nonterminal BlockStmt block_stmt;
 nonterminal AssignExpr assign_expr;
 nonterminal PlusEqualsExpr plus_equals_expr;
+nonterminal MinusEqualsExpr minus_equals_expr;
+nonterminal TimesEqualsExpr times_equals_expr;
+nonterminal DivEqualsExpr div_equals_expr;
+nonterminal ModEqualsExpr mod_equals_expr;
 nonterminal ArrayAssignExpr arr_assign_expr;
 nonterminal DispatchExpr dispatch_expr;
 nonterminal NewExpr new_expr;
@@ -259,7 +263,7 @@ nonterminal ArrayExpr arr_expr;
    note: use a single precedence rule for terminals with same precedence
    associativity specified by middle operand (left, right, none)
 */
-precedence right ASSIGN, PLUSASSIGN;
+precedence right ASSIGN, PLUSASSIGN, MINUSASSIGN, TIMESASSIGN, DIVASSIGN, MODASSIGN;
 precedence left OR;
 precedence left AND;
 precedence left BITOR;
@@ -534,9 +538,17 @@ assign_expr
                 reference.getName(), name.getName(), expression); :}
         | plus_equals_expr:plusEqualsExpr
             {: RESULT = plusEqualsExpr; :}
+        | minus_equals_expr:minusEqualsExpr
+            {: RESULT = minusEqualsExpr; :}
+        | times_equals_expr:timesEqualsExpr
+            {: RESULT = timesEqualsExpr; :}
+        | div_equals_expr:divEqualsExpr
+            {: RESULT = divEqualsExpr; :}
+        | mod_equals_expr:modEqualsExpr
+            {: RESULT = modEqualsExpr; :}
     ;
 
-/* assignment expression */
+/* plus equals assignment expression */
 plus_equals_expr
     ::=
         /* simple assignment like x += 3 */
@@ -546,6 +558,58 @@ plus_equals_expr
         /* assignment with reference like this.x += 3 */
         | ID:reference DOT ID:name PLUSASSIGN expr:expression
             {: RESULT = new PlusEqualsExpr(getCurrLineNum(),
+                reference.getName(), name.getName(), expression); :}
+    ;
+
+/* minus equals assignment expression */
+minus_equals_expr
+    ::=
+        /* simple assignment like x -= 3 */
+        ID:name MINUSASSIGN expr:expression
+            {: RESULT = new MinusEqualsExpr(getCurrLineNum(),
+                null, name.getName(), expression); :}
+        /* assignment with reference like this.x -= 3 */
+        | ID:reference DOT ID:name MINUSASSIGN expr:expression
+            {: RESULT = new MinusEqualsExpr(getCurrLineNum(),
+                reference.getName(), name.getName(), expression); :}
+    ;
+
+/* times equals assignment expression */
+times_equals_expr
+    ::=
+        /* simple assignment like x *= 3 */
+        ID:name TIMESASSIGN expr:expression
+            {: RESULT = new TimesEqualsExpr(getCurrLineNum(),
+                null, name.getName(), expression); :}
+        /* assignment with reference like this.x *= 3 */
+        | ID:reference DOT ID:name TIMESASSIGN expr:expression
+            {: RESULT = new TimesEqualsExpr(getCurrLineNum(),
+                reference.getName(), name.getName(), expression); :}
+    ;
+
+/* divide equals assignment expression */
+div_equals_expr
+    ::=
+        /* simple assignment like x /= 3 */
+        ID:name DIVASSIGN expr:expression
+            {: RESULT = new DivEqualsExpr(getCurrLineNum(),
+                null, name.getName(), expression); :}
+        /* assignment with reference like this.x /= 3 */
+        | ID:reference DOT ID:name DIVASSIGN expr:expression
+            {: RESULT = new DivEqualsExpr(getCurrLineNum(),
+                reference.getName(), name.getName(), expression); :}
+    ;
+
+/* mod equals assignment expression */
+mod_equals_expr
+    ::=
+        /* simple assignment like x %= 3 */
+        ID:name MODASSIGN expr:expression
+            {: RESULT = new ModEqualsExpr(getCurrLineNum(),
+                null, name.getName(), expression); :}
+        /* assignment with reference like this.x %= 3 */
+        | ID:reference DOT ID:name MODASSIGN expr:expression
+            {: RESULT = new ModEqualsExpr(getCurrLineNum(),
                 reference.getName(), name.getName(), expression); :}
     ;
 

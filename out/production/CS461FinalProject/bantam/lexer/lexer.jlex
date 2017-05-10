@@ -287,6 +287,16 @@ true|false                  { return new Symbol(TokenIds.BOOLEAN_CONST,
                                 new Token("Illegal ID", yyline)); }
 [A-Za-z][A-Za-z0-9_]*       { return new Symbol(TokenIds.ID,
                                 new Token(yytext(), yyline)); }
+"+="                        { return new Symbol(TokenIds.PLUSASSIGN,
+                                new Token("=", yyline)); }
+"-="                        { return new Symbol(TokenIds.MINUSASSIGN,
+                                new Token("=", yyline)); }
+"*="                        { return new Symbol(TokenIds.TIMESASSIGN,
+                                new Token("=", yyline)); }
+"/="                        { return new Symbol(TokenIds.DIVASSIGN,
+                                new Token("=", yyline)); }
+"%="                        { return new Symbol(TokenIds.MODASSIGN,
+                                new Token("=", yyline)); }
 \+\+                        { return new Symbol(TokenIds.INCR,
                                 new Token("++", yyline)); }
 --                          { return new Symbol(TokenIds.DECR,
@@ -315,8 +325,6 @@ true|false                  { return new Symbol(TokenIds.BOOLEAN_CONST,
                                 new Token(">", yyline)); }
 \<                          { return new Symbol(TokenIds.LT,
                                 new Token("<", yyline)); }
-"+="                        { return new Symbol(TokenIds.PLUSASSIGN,
-                                new Token("=", yyline)); }
 =                           { return new Symbol(TokenIds.ASSIGN,
                                 new Token("=", yyline)); }
 ;                           { return new Symbol(TokenIds.SEMI,
