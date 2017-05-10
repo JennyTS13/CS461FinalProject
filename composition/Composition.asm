@@ -1,7 +1,7 @@
 	# Author: Tiffany Lam, Jenny Lin
 	# Date: May 10, 2017
 	# Compiled from sources: 
-	# 	mipsTest/MidiTest.btm
+	# 	composition/Composition.btm
 
 	.data
 	.globl	gc_flag
@@ -175,10 +175,10 @@ label0:
 	.align	2
 label1:
 	.word	1
-	.word	40
+	.word	44
 	.word	String_dispatch_table
-	.word	21
-	.ascii	"mipsTest/MidiTest.btm"
+	.word	27
+	.ascii	"composition/Composition.btm"
 	.byte	0
 	.align	2
 
